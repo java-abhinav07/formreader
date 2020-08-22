@@ -6,5 +6,8 @@ This file contains daily logs of work done in a sequential manner. For example, 
 <br><br>
 ***
 
- 1a. Initialized empty repo with gitignore, readme and logfile
+1. 22/08/2020
+    1. Initialized empty repository with gitignore, readme and logfile
+    1. Understanding problem statement and researching 
+
 
