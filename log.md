@@ -16,6 +16,7 @@ This file contains daily logs of work done in a sequential manner. For example, 
     1. Fixed PIL error, successfully made bboxes around each char
     1. Lighting, perspective, noise, padding added ---> moving to tfrecords
 1. 24/08/2020
+    1. Selected best handwritten fonts, various backgrounds
 
     
 
