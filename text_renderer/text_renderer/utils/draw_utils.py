@@ -76,7 +76,8 @@ def draw_text_on_bg(
         top_left = (c_x, c_y - y_offset)
         bottom_right = (c_x + chars_size[i][0] + char_spacings[i], c_y)
         draw.text(top_left, c, fill=text_color, font=font_text.font)
-        draw.rectangle((top_left, bottom_right), outline=(0,0,255), width=3)
+        draw.rectangle((top_left, bottom_right), outline=(0,0,0), width=3)
+        print("drawing..")
         c_x += chars_size[i][0] + char_spacings[i]
 
     return text_mask
