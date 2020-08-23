@@ -17,6 +17,8 @@ This file contains daily logs of work done in a sequential manner. For example, 
     1. Lighting, perspective, noise, padding added ---> moving to tfrecords
 1. 24/08/2020
     1. Selected best handwritten fonts, various backgrounds
+    1. 50k images generated
+    1. Started working on tfrecords for attention-net (target start training by 24th)
 
     
 
