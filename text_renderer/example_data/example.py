@@ -45,7 +45,7 @@ chn_data = GeneratorCfg(
                 **font_cfg
             ),
         ),
-        corpus_effects=Effects([Line(0), OneOf([DropoutRand(), DropoutVertical()])]),
+        corpus_effects=Effects([Line(0.9), OneOf([DropoutRand(), DropoutVertical()])]),
     ),
 )
 
@@ -125,7 +125,7 @@ same_line_data = GeneratorCfg(
             ),
         ],
         corpus_effects=[Effects([Padding(), DropoutRand()]), NoEffects(),],
-        layout_effects=Effects(Line(p=1)),
+        layout_effects=Effects(Line(p=0.9)),
     ),
 )
 
@@ -162,7 +162,7 @@ extra_text_line_data = GeneratorCfg(
             ),
         ],
         corpus_effects=[Effects([Padding()]), NoEffects()],
-        layout_effects=Effects(Line(p=1)),
+        layout_effects=Effects(Line(p=0.9)),
     ),
 )
 

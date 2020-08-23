@@ -70,6 +70,8 @@ class Line(Effect):
         thickness = np.random.randint(*self.thickness)
         draw = ImageDraw.Draw(img)
 
+
+
         draw.rectangle(
             [(0, 0), (img.width, row)],
             outline=self._get_line_color(img, text_bbox),
