@@ -67,11 +67,14 @@ def draw_text_on_bg(
     text_mask = transparent_img((width, height))
     draw = ImageDraw.Draw(text_mask)
 
+    box_widths = [0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2]
+
     c_x = 0
     c_y = 0
     y_offset = font_text.offset[1]
     for i, c in enumerate(font_text.text):
         draw.text((c_x, c_y - y_offset), c, fill=text_color, font=font_text.font)
+        draw.rectangle((c_x, c_y-y_offset), outline=(255,255,255), width=np.random.choice(box_widths))
         c_x += chars_size[i][0] + char_spacings[i]
 
     return text_mask

@@ -37,11 +37,11 @@ chn_data = GeneratorCfg(
         perspective_transform=perspective_transform,
         corpus=CharCorpus(
             CharCorpusCfg(
-                text_paths=[TEXT_DIR / "chn_text.txt", TEXT_DIR / "eng_text.txt"],
+                text_paths=[TEXT_DIR / "eng_text.txt"], # TEXT_DIR / "chn_text.txt", 
                 filter_by_chars=True,
                 chars_file=CHAR_DIR / "chn.txt",
                 length=(5, 10),
-                char_spacing=(0.12, 2.3),
+                char_spacing=(0.2, 1.8),
                 **font_cfg
             ),
         ),
