@@ -72,7 +72,7 @@ class Line(Effect):
 
         draw.rectangle(
             [(0, 0), (img.width, row)],
-            fill=self._get_line_color(img, text_bbox),
+            outline=self._get_line_color(img, text_bbox),
             width=thickness,
         )
 
