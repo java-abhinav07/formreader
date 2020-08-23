@@ -72,7 +72,7 @@ def draw_text_on_bg(
     c_x = 0
     c_y = 0
     colors = ["#000", "#D3D3D3", "#C0C0C0", "#A9A9A9", "#808080"]
-    c_color = np.random.choice(np.array(color))
+    c_color = np.random.choice(np.array(colors))
 
     y_offset = font_text.offset[1]
     for i, c in enumerate(font_text.text):
