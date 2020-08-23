@@ -1,5 +1,5 @@
 {
-  "num-samples": 20,
+  "num-samples": 30,
   "labels": {
     "000000000": "'t change ",
     "000000001": "ssibly could have been. Two hundr",
@@ -20,7 +20,17 @@
     "000000016": "eet tended to scratch the",
     "000000017": " time? She wasn't even suppos",
     "000000018": "and that none of us is actually meant to be",
-    "000000019": "eggs sunnyside up, hash browns, and"
+    "000000019": "eggs sunnyside up, hash browns, and",
+    "000000020": " phone repair), and as it turns out, See's Candy",
+    "000000021": "208785868293254",
+    "000000022": "pecifically pl",
+    "000000023": "and crags of the bark, to freely move at top ",
+    "000000024": "ine overnight halfway up the t",
+    "000000025": "ch love you give, you can always give more. It do",
+    "000000026": "35061036915084615",
+    "000000027": "bbed its horns so hard into his lowest ri",
+    "000000028": "rode over Burke Mountain in a ",
+    "000000029": "8429444688581859792386857779"
   },
   "sizes": {
     "000000000": [
@@ -101,6 +111,46 @@
     ],
     "000000019": [
       553,
+      32
+    ],
+    "000000020": [
+      345,
+      32
+    ],
+    "000000021": [
+      336,
+      32
+    ],
+    "000000022": [
+      220,
+      32
+    ],
+    "000000023": [
+      613,
+      32
+    ],
+    "000000024": [
+      376,
+      32
+    ],
+    "000000025": [
+      701,
+      32
+    ],
+    "000000026": [
+      253,
+      32
+    ],
+    "000000027": [
+      752,
+      32
+    ],
+    "000000028": [
+      499,
+      32
+    ],
+    "000000029": [
+      603,
       32
     ]
   }

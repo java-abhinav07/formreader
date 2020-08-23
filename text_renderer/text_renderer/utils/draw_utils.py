@@ -82,7 +82,7 @@ def draw_text_on_bg(
 
         if rand%1309 == 0:
             draw.rectangle(
-                [top_left, (c_x + chars_size[i][0] + char_spacings[i]//2), c_y + height + 3], outline=c_color, width=1
+                [top_left, (c_x + chars_size[i][0] + char_spacings[i] + 1), c_y + height + 3], outline=c_color, width=1
             )
         else:
             draw.rectangle(
