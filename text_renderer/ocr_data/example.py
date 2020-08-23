@@ -197,7 +197,10 @@ ocr_data = GeneratorCfg(
                 ),
             ),
         ],
-        corpus_effects=[Effects([Padding(), DropoutRand()]), Effects([Padding(), DropoutRand()]),],
+        corpus_effects=[
+            Effects([Padding(), DropoutRand()]),
+            Effects([Padding(), DropoutRand()]),
+        ],
         layout_effects=Effects(Line(p=1)),
     ),
 )

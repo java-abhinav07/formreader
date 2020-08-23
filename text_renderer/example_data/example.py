@@ -37,7 +37,7 @@ chn_data = GeneratorCfg(
         perspective_transform=perspective_transform,
         corpus=CharCorpus(
             CharCorpusCfg(
-                text_paths=[TEXT_DIR / "eng_text.txt"], # TEXT_DIR / "chn_text.txt", 
+                text_paths=[TEXT_DIR / "eng_text.txt"],  # TEXT_DIR / "chn_text.txt",
                 filter_by_chars=True,
                 chars_file=CHAR_DIR / "chn.txt",
                 length=(5, 30),
@@ -45,7 +45,7 @@ chn_data = GeneratorCfg(
                 **font_cfg
             ),
         ),
-        corpus_effects=Effects([Line(1), OneOf([DropoutRand(), DropoutVertical()])]),
+        corpus_effects=Effects([Line(1), OneOf([DropoutRand(), Padding()])]),
     ),
 )
 
@@ -171,7 +171,7 @@ configs = [
     chn_data,
     # enum_data,
     # rand_data,
-    eng_word_data,
+    # eng_word_data,
     # same_line_data,
     # extra_text_line_data
 ]

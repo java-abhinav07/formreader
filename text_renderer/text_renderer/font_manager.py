@@ -94,7 +94,7 @@ class FontManager:
             removed_chars = []
             font = self._get_font(font_path, 10)
             chars = self.font_support_chars_cache[font_path].copy()
-            for c in (chars & charset):
+            for c in chars & charset:
                 bbox = font.getmask(c).getbbox()
                 if (
                     c not in white_list
@@ -141,7 +141,9 @@ class FontManager:
             new_font_paths.append(font_path)
 
         if len(new_font_paths) != self.font_paths:
-            logger.info(f"Filter font path: {len(self.font_paths)} -> {len(new_font_paths)}")
+            logger.info(
+                f"Filter font path: {len(self.font_paths)} -> {len(new_font_paths)}"
+            )
             self.font_paths = new_font_paths
 
     def _load_ttfont(self, font_path: str) -> TTFont:

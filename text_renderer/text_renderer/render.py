@@ -197,7 +197,7 @@ class Render:
         # mean = np.mean(np_img, axis=2)
         mean = np.mean(np_img)
 
-        alpha = np.random.randint(110, 255)
+        alpha = np.random.randint(120, 255)
         r = np.random.randint(0, int(mean * 0.7))
         g = np.random.randint(0, int(mean * 0.7))
         b = np.random.randint(0, int(mean * 0.7))

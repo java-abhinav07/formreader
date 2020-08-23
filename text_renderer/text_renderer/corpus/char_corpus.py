@@ -63,7 +63,9 @@ class CharCorpus(Corpus):
             self.text = Corpus.filter_by_chars(self.text, self.cfg.chars_file)
             self.font_manager.update_font_support_chars(self.cfg.chars_file)
             if self.cfg.filter_font:
-                self.font_manager.filter_font_path(self.cfg.filter_font_min_support_chars)
+                self.font_manager.filter_font_path(
+                    self.cfg.filter_font_min_support_chars
+                )
 
         if len(self.text) < self.cfg.length[1]:
             raise PanicError("too few texts")
