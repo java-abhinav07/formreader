@@ -80,13 +80,15 @@ def draw_text_on_bg(
 
         rand = int(10*np.random.random_sample((1))[0])
 
-        if rand%1309 == 0:
+        if rand%24871 == 0:
+            bottom = (c_x + chars_size[i][0] + char_spacings[i] + 1)
             draw.rectangle(
-                [top_left, (c_x + chars_size[i][0] + char_spacings[i] + 1), c_y + height + 3], outline=c_color, width=1
+                [top_left, bottom, c_y + height + 3], outline=c_color, width=1
             )
         else:
+            bottom = (c_x + chars_size[i][0] + char_spacings[i] - 2)
             draw.rectangle(
-                [top_left, (c_x + chars_size[i][0] + char_spacings[i]), c_y + height + 3], outline=c_color, width=1
+                [top_left, bottom, c_y + height + 3], outline=c_color, width=1
             )
 
 
