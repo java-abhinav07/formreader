@@ -16,7 +16,7 @@ class Line(Effect):
     def __init__(
         self,
         p=0.5,
-        thickness=(2, 4),
+        thickness=(1, 2),
         lr_in_offset=(0, 10),
         lr_out_offset=(0, 5),
         tb_in_offset=(0, 3),
