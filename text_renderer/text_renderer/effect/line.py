@@ -68,7 +68,7 @@ class Line(Effect):
     def apply_char_box(self, img: PILImage, text_bbox: BBox) -> Tuple[PILImage, BBox]:
         row = img.height - 1
         thickness = np.random.randint(*self.thickness)
-        draw = ImageDraw.draw(img)
+        draw = ImageDraw.Draw(img)
 
         draw.rectangle(
             [(0, 0), (img.width, row)],
