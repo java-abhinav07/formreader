@@ -75,7 +75,7 @@ def draw_text_on_bg(
         top_left = (c_x, c_y - y_offset+1)
         bottom_right = (c_x+chars_size[i][0], c_y-height+1)
         print(top_left, bottom_right)
-        draw.rectangle([top_left, bottom_right], outline="black", fill="black" width=2)
+        draw.rectangle([top_left, bottom_right], outline="black", fill="black", width=2)
         draw.text(top_left, c, fill=text_color, font=font_text.font)
         c_x += chars_size[i][0] + char_spacings[i]
 
