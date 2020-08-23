@@ -45,7 +45,7 @@ chn_data = GeneratorCfg(
                 **font_cfg
             ),
         ),
-        corpus_effects=Effects([Line(1), OneOf([DropoutRand(), Padding()])]),
+        corpus_effects=Effects([Line(1), [DropoutRand(0.25), Padding(0.7)]]),
     ),
 )
 
