@@ -52,7 +52,7 @@ def draw_text_on_bg(
         chars_size.append(size)
         width += size[0]
     
-    max_size = max(chars_size)
+    max_size = max(chars_size)[0]
 
     height = font_text.size[1]
 
