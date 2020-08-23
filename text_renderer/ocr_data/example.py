@@ -166,13 +166,52 @@ extra_text_line_data = GeneratorCfg(
     ),
 )
 
+
+################################################################################
+ocr_data = GeneratorCfg(
+    num_image=10,
+    save_dir=OUT_DIR / "ocr_data",
+    render_cfg=RenderCfg(
+        bg_dir=BG_DIR,
+        perspective_transform=perspective_transform,
+        layout=SameLineLayout(),
+        gray=False,
+        corpus=[
+            EnumCorpus(
+                EnumCorpusCfg(
+                    text_paths=[TEXT_DIR / "enum_text.txt"],
+                    filter_by_chars=True,
+                    chars_file=CHAR_DIR / "eng.txt",
+                    **font_cfg
+                ),
+            ),
+            CharCorpus(
+                CharCorpusCfg(
+                    text_paths=[TEXT_DIR / "eng_text.txt"],
+                    filter_by_chars=True,
+                    chars_file=CHAR_DIR / "eng.txt",
+                    length=(5, 50),
+                    font_dir=font_cfg["font_dir"],
+                    font_list_file=font_cfg["font_list_file"],
+                    font_size=(25, 55),
+                ),
+            ),
+        ],
+        corpus_effects=[Effects([Padding(), DropoutRand()]), Effects([Padding(), DropoutRand()]),],
+        layout_effects=Effects(Line(p=1)),
+    ),
+)
+################################################################################
+
 # fmt: off
 configs = [
-    chn_data,
-    enum_data,
-    rand_data,
-    eng_word_data,
-    same_line_data,
-    extra_text_line_data
+    # chn_data,
+    # enum_data,
+    # rand_data,
+    # eng_word_data,
+    # same_line_data,
+    # extra_text_line_data,
+    ocr_data,
+
 ]
 # fmt: on

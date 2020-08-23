@@ -16,7 +16,7 @@ class Line(Effect):
     def __init__(
         self,
         p=0.5,
-        thickness=(1, 3),
+        thickness=(2, 4),
         lr_in_offset=(0, 10),
         lr_out_offset=(0, 5),
         tb_in_offset=(0, 3),
@@ -58,14 +58,14 @@ class Line(Effect):
                 # self.apply_bottom_right,
                 # self.apply_horizontal_middle,
                 # self.apply_vertical_middle,
-                # self.apply_char_box,
+                self.apply_char_box,
             ],
             p=self.line_pos_p,
         )
         return func(img, text_bbox)
 
     def apply_char_box(self, img: PILImage, text_bbox: BBox) -> Tuple[PILImage, BBox]:
-        row = img.height
+        row = img.height - 1
         thickness = np.random.randint(*self.thickness)
         draw = ImageDraw.draw(img)
 
