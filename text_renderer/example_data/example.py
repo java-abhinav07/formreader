@@ -30,7 +30,7 @@ font_cfg = dict(
 perspective_transform = NormPerspectiveTransformCfg(20, 20, 1.5)
 
 chn_data = GeneratorCfg(
-    num_image=50,
+    num_image=10,
     save_dir=OUT_DIR / "char_corpus",
     render_cfg=RenderCfg(
         bg_dir=BG_DIR,
@@ -41,11 +41,11 @@ chn_data = GeneratorCfg(
                 filter_by_chars=True,
                 chars_file=CHAR_DIR / "chn.txt",
                 length=(5, 10),
-                char_spacing=(-0.3, 1.3),
+                char_spacing=(0.12, 2.3),
                 **font_cfg
             ),
         ),
-        corpus_effects=Effects([Line(0.5), OneOf([DropoutRand(), DropoutVertical()])]),
+        corpus_effects=Effects([Line(1), OneOf([DropoutRand(), DropoutVertical()])]),
     ),
 )
 
@@ -96,7 +96,7 @@ eng_word_data = GeneratorCfg(
 
 
 same_line_data = GeneratorCfg(
-    num_image=100,
+    num_image=10,
     save_dir=OUT_DIR / "same_line_data",
     render_cfg=RenderCfg(
         bg_dir=BG_DIR,
@@ -168,11 +168,11 @@ extra_text_line_data = GeneratorCfg(
 
 # fmt: off
 configs = [
-    # chn_data,
+    chn_data,
     # enum_data,
     # rand_data,
     # eng_word_data,
-    same_line_data,
+    # same_line_data,
     # extra_text_line_data
 ]
 # fmt: on
