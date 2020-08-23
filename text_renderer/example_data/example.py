@@ -24,7 +24,7 @@ TEXT_DIR = DATA_DIR / "text"
 font_cfg = dict(
     font_dir=FONT_DIR,
     font_list_file=FONT_LIST_DIR / "font_list.txt",
-    font_size=(30, 31),
+    font_size=(27, 28),
 )
 
 perspective_transform = NormPerspectiveTransformCfg(20, 20, 1.5)
@@ -40,12 +40,12 @@ chn_data = GeneratorCfg(
                 text_paths=[TEXT_DIR / "eng_text.txt"], # TEXT_DIR / "chn_text.txt", 
                 filter_by_chars=True,
                 chars_file=CHAR_DIR / "chn.txt",
-                length=(5, 10),
-                char_spacing=(0.2, 0.5),
+                length=(5, 25),
+                char_spacing=(0.25, 0.26),
                 **font_cfg
             ),
         ),
-        corpus_effects=Effects([Line(0.9), OneOf([DropoutRand(), DropoutVertical()])]),
+        corpus_effects=Effects([Line(1), [Padding(), DropoutRand()]), # OneOf([DropoutRand(), DropoutVertical()])]),
     ),
 )
 
