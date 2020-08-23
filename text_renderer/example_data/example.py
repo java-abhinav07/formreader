@@ -24,7 +24,7 @@ TEXT_DIR = DATA_DIR / "text"
 font_cfg = dict(
     font_dir=FONT_DIR,
     font_list_file=FONT_LIST_DIR / "font_list.txt",
-    font_size=(20, 21),
+    font_size=(18, 19),
 )
 
 perspective_transform = NormPerspectiveTransformCfg(20, 20, 1.5)
@@ -40,7 +40,7 @@ chn_data = GeneratorCfg(
                 text_paths=[TEXT_DIR / "eng_text.txt"], # TEXT_DIR / "chn_text.txt", 
                 filter_by_chars=True,
                 chars_file=CHAR_DIR / "chn.txt",
-                length=(5, 25),
+                length=(5, 30),
                 char_spacing=(0.25, 0.26),
                 **font_cfg
             ),
@@ -78,7 +78,7 @@ rand_data = GeneratorCfg(
 )
 
 eng_word_data = GeneratorCfg(
-    num_image=50,
+    num_image=10,
     save_dir=OUT_DIR / "word_corpus",
     render_cfg=RenderCfg(
         bg_dir=BG_DIR,
@@ -171,7 +171,7 @@ configs = [
     chn_data,
     # enum_data,
     # rand_data,
-    # eng_word_data,
+    eng_word_data,
     # same_line_data,
     # extra_text_line_data
 ]
