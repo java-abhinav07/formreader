@@ -73,8 +73,8 @@ def draw_text_on_bg(
     c_y = 0
     y_offset = font_text.offset[1]
     for i, c in enumerate(font_text.text):
-        top_left = (c_x, c_y - y_offset)
-        bottom_right = (c_x+chars_size[i][0], c_y-height)
+        top_left = (c_x, c_y - y_offset+1)
+        bottom_right = (c_x+chars_size[i][0], c_y-height+1)
         print(top_left, bottom_right)
         draw2.rectangle([top_left, bottom_right], outline="red", width=2)
         draw.text(top_left, c, fill=text_color, font=font_text.font)
