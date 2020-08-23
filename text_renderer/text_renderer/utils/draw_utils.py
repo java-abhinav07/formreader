@@ -51,6 +51,8 @@ def draw_text_on_bg(
         size = font_text.font.getsize(c)
         chars_size.append(size)
         width += size[0]
+    
+    max_size = max(chars_size)
 
     height = font_text.size[1]
 
@@ -71,13 +73,13 @@ def draw_text_on_bg(
     c_y = 0
     y_offset = font_text.offset[1]
     for i, c in enumerate(font_text.text):
-        top_left = (c_x, c_y - y_offset)
+        top_left = (c_x-1, c_y - y_offset)
 
-        draw.rectangle([top_left, (c_x+chars_size[i][0], c_y+height)], outline="#000")
+        draw.rectangle([top_left, (c_x+max_size+2, c_y+height)], outline="#000", width=3)
 
         draw.text(top_left, c, fill=text_color, font=font_text.font)
         c_x += chars_size[i][0] + char_spacings[i]
-        text_mask.show()
+        # text_mask.show()
 
     return text_mask
 
