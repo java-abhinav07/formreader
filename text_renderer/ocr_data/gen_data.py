@@ -46,6 +46,7 @@ ocr_data = GeneratorCfg(
             ),
         ),
         # lighting conditions handled by backgrounds
+        # handwritten fonts used
         corpus_effects=Effects([Line(1), DropoutRand(0.10), Padding(0.8)]),
     ),
 )

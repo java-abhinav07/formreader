@@ -78,9 +78,17 @@ def draw_text_on_bg(
     for i, c in enumerate(font_text.text):
         top_left = (c_x - 2, c_y - y_offset - 3)
 
-        draw.rectangle(
-            [top_left, (c_x + max_size + 1, c_y + height + 3)], outline=c_color, width=1
-        )
+        rand = int(10*np.random.random_sample((1))[0])
+
+        if rand%1309 == 0:
+            draw.rectangle(
+                [top_left, (c_x + chars_size[i][0] + char_spacings[i]//2), c_y + height + 3], outline=c_color, width=1
+            )
+        else:
+            draw.rectangle(
+                [top_left, (c_x + chars_size[i][0] + char_spacings[i]), c_y + height + 3], outline=c_color, width=1
+            )
+
 
         draw.text((c_x - 1, c_y - y_offset), c, fill=text_color, font=font_text.font)
         c_x += chars_size[i][0] + char_spacings[i]
