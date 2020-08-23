@@ -46,22 +46,23 @@ class Line(Effect):
 
     def apply(self, img: PILImage, text_bbox: BBox) -> Tuple[PILImage, BBox]:
         # TODO: merge apply top/bottom/left.. to make it more efficient
-        func = np.random.choice(
-            [
-                # self.apply_top,
-                # self.apply_bottom,
-                # self.apply_left,
-                # self.apply_right,
-                # self.apply_top_left,
-                # self.apply_top_right,
-                # self.apply_bottom_left,
-                # self.apply_bottom_right,
-                # self.apply_horizontal_middle,
-                # self.apply_vertical_middle,
-                self.apply_char_box,
-            ],
-            p=self.line_pos_p,
-        )
+        # func = np.random.choice(
+        #     [
+        #         # self.apply_top,
+        #         # self.apply_bottom,
+        #         # self.apply_left,
+        #         # self.apply_right,
+        #         # self.apply_top_left,
+        #         # self.apply_top_right,
+        #         # self.apply_bottom_left,
+        #         # self.apply_bottom_right,
+        #         # self.apply_horizontal_middle,
+        #         # self.apply_vertical_middle,
+        #         self.apply_char_box,
+        #     ],
+        #     p=self.line_pos_p,
+        # )
+        func = self.apply_char_box
         return func(img, text_bbox)
 
     def apply_char_box(self, img: PILImage, text_bbox: BBox) -> Tuple[PILImage, BBox]:
