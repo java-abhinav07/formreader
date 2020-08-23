@@ -73,10 +73,10 @@ def draw_text_on_bg(
     c_y = 0
     y_offset = font_text.offset[1]
     for i, c in enumerate(font_text.text):
-        top_left = (c_x+0.1, c_y-0.1)
-        bottom_right = (c_x + chars_size[i][0], c_y - y_offset + 0.1)
+        top_left = (c_x, c_y - y_offset)
+        bottom right = (c_x + chars_size[i][0], c_y)
         draw.text(top_left, c, fill=text_color, font=font_text.font)
-        draw.rectangle((top_left, bottom_right))
+        draw.rectangle((top_left, bottom_right), fill=text_color)
         c_x += chars_size[i][0] + char_spacings[i]
 
     return text_mask
