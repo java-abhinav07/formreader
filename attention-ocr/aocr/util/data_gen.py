@@ -20,11 +20,11 @@ class DataGen(object):
     GO_ID = 1
     EOS_ID = 2
     IMAGE_HEIGHT = 32
-    CHARMAP = ['', '  ', ' ', '"', "'"] + list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,.<>/?;:[]{}!@#$%^&*()-=+\|`")
+    CHARMAP = ['', '', '', '"', "'"] + list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,\"\'.<>/?;:[]{}!@#$%^&*()-=+\|` ")
 
     @staticmethod
     def set_full_ascii_charmap():
-        DataGen.CHARMAP = ['', '', ' '] + [chr(i) for i in range(32, 127)]
+        DataGen.CHARMAP = ['', '', ''] + [chr(i) for i in range(32, 127)]
 
     def __init__(self,
                  annotation_fn,
