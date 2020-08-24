@@ -89,6 +89,7 @@ class DataGen(object):
         assert len(lex) < self.bucket_specs[-1][1]
         # print(lex)
         self.CHARMAP.append(' ')
+        print(self.CHARMAP)
         return np.array(
             [self.GO_ID] + [self.CHARMAP.index(char) for char in lex] + [self.EOS_ID],
             dtype=np.int32)
