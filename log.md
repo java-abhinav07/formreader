@@ -19,6 +19,7 @@ This file contains daily logs of work done in a sequential manner. For example, 
     1. Selected best handwritten fonts, various backgrounds
     1. 50k images generated
     1. Started working on tfrecords for attention-net (target start training by 24th)
+    1. Fixing training errors
 
     
 

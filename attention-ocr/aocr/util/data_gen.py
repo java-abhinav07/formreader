@@ -20,7 +20,7 @@ class DataGen(object):
     GO_ID = 1
     EOS_ID = 2
     IMAGE_HEIGHT = 32
-    CHARMAP = ['', '', ''] + list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,\"\'.<>/?;:[]{}!@#$%^&*()-=+\|`")
+    CHARMAP = ['', '', ''] + list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,\"\'.<>/?;:[]{}!@#$%^&*()-=+\|` ")
 
     @staticmethod
     def set_full_ascii_charmap():
@@ -60,7 +60,9 @@ class DataGen(object):
         iterator = dataset.make_one_shot_iterator()
 
         images, labels, comments = iterator.get_next()
-        with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
+        config = tf.ConfigProto(allow_soft_placement=True)
+        config.gpu_options.allow_growth=True
+        with tf.Session(config=config) as sess:
 
             while True:
                 try:
@@ -88,7 +90,7 @@ class DataGen(object):
 
         assert len(lex) < self.bucket_specs[-1][1]
         # print(lex)
-        self.CHARMAP.append(' ')
+        # self.CHARMAP.append(' ')
         # print(self.CHARMAP)
         return np.array(
             [self.GO_ID] + [self.CHARMAP.index(char) for char in lex] + [self.EOS_ID],
