@@ -17,10 +17,10 @@ except AttributeError:
 
 
 class DataGen(object):
-    self.GO_ID = 1
-    self.EOS_ID = 2
-    self.IMAGE_HEIGHT = 32
-    self.CHARMAP = ['', '', ''] + list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,\"\'.<>/?;:[]{}!@#$%^&*()-=+\|`")
+    GO_ID = 1
+    EOS_ID = 2
+    IMAGE_HEIGHT = 32
+    CHARMAP = ['', '', ''] + list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,\"\'.<>/?;:[]{}!@#$%^&*()-=+\|`")
 
     @staticmethod
     def set_full_ascii_charmap():
