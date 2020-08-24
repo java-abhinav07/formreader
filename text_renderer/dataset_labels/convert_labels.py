@@ -8,8 +8,8 @@ with open("labels.json", "r") as f:
     # num_samples = data["num_samples"]
     label_dict = data["labels"]
 
-train_dict = dict(list(label_dict.items())[len(label_dict) // 15 :])
-test_dict = dict(list(label_dict.items())[: len(label_dict) // 15])
+train_dict = dict(list(label_dict.items())[len(label_dict) // 20 :])
+test_dict = dict(list(label_dict.items())[: len(label_dict) // 20])
 
 
 train_json = json.dumps(train_dict)

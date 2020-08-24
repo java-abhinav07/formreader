@@ -1,0 +1,3000 @@
+dataset/images/000000000.jpg 0 24 04 202
+dataset/images/000000001.jpg 2 1244 55
+dataset/images/000000002.jpg 1 2020 20 08
+dataset/images/000000003.jpg 2020 17 06 2020
+dataset/images/000000004.jpg 0 05 06 2020 
+dataset/images/000000005.jpg  12000 YEARS A
+dataset/images/000000006.jpg 6 202
+dataset/images/000000007.jpg E THING SHE D
+dataset/images/000000008.jpg TMAS THE 
+dataset/images/000000009.jpg 0 05 202
+dataset/images/000000010.jpg 6493 4160 485
+dataset/images/000000011.jpg  2020 24
+dataset/images/000000012.jpg OINT WAS DE
+dataset/images/000000013.jpg 7 1862 6451
+dataset/images/000000014.jpg 30 120
+dataset/images/000000015.jpg 3 2487 7904 3
+dataset/images/000000016.jpg 3 9163 
+dataset/images/000000017.jpg  THE M
+dataset/images/000000018.jpg 020 15 
+dataset/images/000000019.jpg HAT HE WOULD
+dataset/images/000000020.jpg 282 6767 455 99
+dataset/images/000000021.jpg T WAS NO
+dataset/images/000000022.jpg DARKNESS 
+dataset/images/000000023.jpg NTIL HE C
+dataset/images/000000024.jpg 7 2020 16 
+dataset/images/000000025.jpg IF IT 
+dataset/images/000000026.jpg NCE SOMEONE H
+dataset/images/000000027.jpg  THAT WAS 
+dataset/images/000000028.jpg 08 02 2020 05
+dataset/images/000000029.jpg  2020 04 03 2
+dataset/images/000000030.jpg 0 04 0
+dataset/images/000000031.jpg 2020 
+dataset/images/000000032.jpg 0 23 06
+dataset/images/000000033.jpg 9 04 2020
+dataset/images/000000034.jpg 2020 29 06 2
+dataset/images/000000035.jpg 20 01 08 2020
+dataset/images/000000036.jpg 1 01 20
+dataset/images/000000037.jpg S HE HAD BR
+dataset/images/000000038.jpg 2020 0
+dataset/images/000000039.jpg  THE TOP OF T
+dataset/images/000000040.jpg  HE WANTED 
+dataset/images/000000041.jpg  NOW S
+dataset/images/000000042.jpg 0 25 03 20
+dataset/images/000000043.jpg 2 2020 1
+dataset/images/000000044.jpg  2020 12 
+dataset/images/000000045.jpg 2 06 2020 25 08
+dataset/images/000000046.jpg PLUCKED AND ROU
+dataset/images/000000047.jpg 2020 2
+dataset/images/000000048.jpg 6 2020 02 
+dataset/images/000000049.jpg 29 04 202
+dataset/images/000000050.jpg Y REV
+dataset/images/000000051.jpg AS A QUESTION
+dataset/images/000000052.jpg  02 202
+dataset/images/000000053.jpg SELF WAS BEING 
+dataset/images/000000054.jpg 68 920 5474 576
+dataset/images/000000055.jpg RE SH
+dataset/images/000000056.jpg HIS N
+dataset/images/000000057.jpg  T OFTEN THAT 
+dataset/images/000000058.jpg ENNIES SAVED ON
+dataset/images/000000059.jpg AS ONE OF THE S
+dataset/images/000000060.jpg  UP THE TREE L
+dataset/images/000000061.jpg OR NOT
+dataset/images/000000062.jpg 10 01
+dataset/images/000000063.jpg  20 05 202
+dataset/images/000000064.jpg 020 23 08 2020 
+dataset/images/000000065.jpg 020 17 03 
+dataset/images/000000066.jpg 2020 17 
+dataset/images/000000067.jpg  2020 23 0
+dataset/images/000000068.jpg 020 09 07
+dataset/images/000000069.jpg  8877 30
+dataset/images/000000070.jpg  8495 6015 
+dataset/images/000000071.jpg E NEVER
+dataset/images/000000072.jpg  THE TOP OF THE
+dataset/images/000000073.jpg 3 9774 3161 2
+dataset/images/000000074.jpg 7 2020
+dataset/images/000000075.jpg ROCER AND
+dataset/images/000000076.jpg 02 2020 17 02
+dataset/images/000000077.jpg 3 2020 04 05 
+dataset/images/000000078.jpg 03 2020 01 07 2
+dataset/images/000000079.jpg  2020 17 03 
+dataset/images/000000080.jpg 04 20
+dataset/images/000000081.jpg ERE AND YET HE
+dataset/images/000000082.jpg 4 07 2020 
+dataset/images/000000083.jpg LF WHO WITH A S
+dataset/images/000000084.jpg TE WHICH HA
+dataset/images/000000085.jpg 51 676
+dataset/images/000000086.jpg  06 04 2
+dataset/images/000000087.jpg LP BUT FEEL THA
+dataset/images/000000088.jpg 80 2840 1229 4
+dataset/images/000000089.jpg 2020 01 03 20
+dataset/images/000000090.jpg 17 05 2020 15
+dataset/images/000000091.jpg 14 1123 4611 52
+dataset/images/000000092.jpg AITING IT WA
+dataset/images/000000093.jpg  SHORT H
+dataset/images/000000094.jpg 020 08 08 20
+dataset/images/000000095.jpg 020 06 03 20
+dataset/images/000000096.jpg  07 2020 0
+dataset/images/000000097.jpg O TEACH HIM BUT
+dataset/images/000000098.jpg 6 2020
+dataset/images/000000099.jpg 9 107
+dataset/images/000000100.jpg 736 3
+dataset/images/000000101.jpg 2 2020 09 01
+dataset/images/000000102.jpg 27 03 2
+dataset/images/000000103.jpg 01 2020 23 02
+dataset/images/000000104.jpg  9540 75
+dataset/images/000000105.jpg  05 01 2
+dataset/images/000000106.jpg  2020 
+dataset/images/000000107.jpg 3 2020 17 
+dataset/images/000000108.jpg 7 2020 11
+dataset/images/000000109.jpg 71 9548 8824 49
+dataset/images/000000110.jpg  QUESTION
+dataset/images/000000111.jpg O WORR
+dataset/images/000000112.jpg 2 2020 0
+dataset/images/000000113.jpg 020 2
+dataset/images/000000114.jpg  05 20
+dataset/images/000000115.jpg 0 8514 5796 
+dataset/images/000000116.jpg 8233 9646 3
+dataset/images/000000117.jpg INT WHAT IT W
+dataset/images/000000118.jpg N T TIME TO S
+dataset/images/000000119.jpg  A QUESTION
+dataset/images/000000120.jpg UT FOOD 
+dataset/images/000000121.jpg  2020 04 04 2
+dataset/images/000000122.jpg ND HE B
+dataset/images/000000123.jpg ED LONG AF
+dataset/images/000000124.jpg 121 3511 1165 6
+dataset/images/000000125.jpg 2020 12 
+dataset/images/000000126.jpg 20 19 03 20
+dataset/images/000000127.jpg NER WAS ENGA
+dataset/images/000000128.jpg  2020
+dataset/images/000000129.jpg  15 08 2020 2
+dataset/images/000000130.jpg  2020 24 08
+dataset/images/000000131.jpg E HAD A
+dataset/images/000000132.jpg BOUT 
+dataset/images/000000133.jpg OCESS A
+dataset/images/000000134.jpg 3 2020 02
+dataset/images/000000135.jpg OULDN T LET
+dataset/images/000000136.jpg  02 2020 05 0
+dataset/images/000000137.jpg  ANYONE A MILL
+dataset/images/000000138.jpg  03 2020 
+dataset/images/000000139.jpg 2020 27 
+dataset/images/000000140.jpg 20 19 02 2020 2
+dataset/images/000000141.jpg  2020 18 04 2
+dataset/images/000000142.jpg 27 07
+dataset/images/000000143.jpg  WASN T QU
+dataset/images/000000144.jpg 19 03 2020 09 
+dataset/images/000000145.jpg  2227 
+dataset/images/000000146.jpg  COULD HAV
+dataset/images/000000147.jpg 5040 3719 352
+dataset/images/000000148.jpg 0 09 04 202
+dataset/images/000000149.jpg 8 07 2020 0
+dataset/images/000000150.jpg GER WHY COU
+dataset/images/000000151.jpg  5984 4996 19
+dataset/images/000000152.jpg 0 13 02 2020
+dataset/images/000000153.jpg 20 23 
+dataset/images/000000154.jpg W OF THE BA
+dataset/images/000000155.jpg  09 03
+dataset/images/000000156.jpg 020 02 07 2
+dataset/images/000000157.jpg  COMPARED TO L
+dataset/images/000000158.jpg  02 20
+dataset/images/000000159.jpg 7 2020 30 04 2
+dataset/images/000000160.jpg G BETWEEN 
+dataset/images/000000161.jpg 2020 20
+dataset/images/000000162.jpg 020 01 04 2
+dataset/images/000000163.jpg  2020 24
+dataset/images/000000164.jpg 04 2020 
+dataset/images/000000165.jpg 32 5082
+dataset/images/000000166.jpg  2020 23 03 202
+dataset/images/000000167.jpg 03 2020 2
+dataset/images/000000168.jpg  SHE KNEW
+dataset/images/000000169.jpg 3 2020 
+dataset/images/000000170.jpg  4727 2009 819
+dataset/images/000000171.jpg 3 2020 25 01 
+dataset/images/000000172.jpg URNING AWAY FR
+dataset/images/000000173.jpg ORK ONE OUT I
+dataset/images/000000174.jpg E UP WITH HIS D
+dataset/images/000000175.jpg 06 2020 2
+dataset/images/000000176.jpg FELT MORE AT E
+dataset/images/000000177.jpg 0 07 02
+dataset/images/000000178.jpg 9 01 2020 
+dataset/images/000000179.jpg IS BABY 
+dataset/images/000000180.jpg TURNS
+dataset/images/000000181.jpg  13 04 2
+dataset/images/000000182.jpg AS HIS 
+dataset/images/000000183.jpg  2020 13 08 20
+dataset/images/000000184.jpg 020 27 03 2020
+dataset/images/000000185.jpg ITH A VAG
+dataset/images/000000186.jpg 01 202
+dataset/images/000000187.jpg T CAME 
+dataset/images/000000188.jpg  25 01 2020
+dataset/images/000000189.jpg 22 04 2
+dataset/images/000000190.jpg 59 13
+dataset/images/000000191.jpg AIDING HER 
+dataset/images/000000192.jpg 2 202
+dataset/images/000000193.jpg 2020 19 02 2020
+dataset/images/000000194.jpg 07 2020
+dataset/images/000000195.jpg  2020 02 
+dataset/images/000000196.jpg 23 04 2
+dataset/images/000000197.jpg  9781 9394 686
+dataset/images/000000198.jpg  WOULD BE 
+dataset/images/000000199.jpg D THERE WAS S
+dataset/images/000000200.jpg T FOR 
+dataset/images/000000201.jpg F THIS
+dataset/images/000000202.jpg  01 05 2020
+dataset/images/000000203.jpg 2020 09 
+dataset/images/000000204.jpg 020 12 04 2
+dataset/images/000000205.jpg FICULT 
+dataset/images/000000206.jpg 0 02 01 2
+dataset/images/000000207.jpg  TIME AND E
+dataset/images/000000208.jpg T STILL IN
+dataset/images/000000209.jpg 020 25 01
+dataset/images/000000210.jpg 10 04 202
+dataset/images/000000211.jpg  08 06 2
+dataset/images/000000212.jpg 19 04
+dataset/images/000000213.jpg  2516 9383
+dataset/images/000000214.jpg 26 02 2020 19 0
+dataset/images/000000215.jpg 20 06 2020 16 
+dataset/images/000000216.jpg 2020 10 0
+dataset/images/000000217.jpg 020 19 01 2020
+dataset/images/000000218.jpg  08 2
+dataset/images/000000219.jpg 020 0
+dataset/images/000000220.jpg  18 06 2020
+dataset/images/000000221.jpg STLE AND TAKE 
+dataset/images/000000222.jpg 2 2020 0
+dataset/images/000000223.jpg 020 23 0
+dataset/images/000000224.jpg IEFLY WONDERED 
+dataset/images/000000225.jpg 0 04 
+dataset/images/000000226.jpg  04 2020 01
+dataset/images/000000227.jpg 1 202
+dataset/images/000000228.jpg 20 20 04 202
+dataset/images/000000229.jpg NG THE LOTTERY
+dataset/images/000000230.jpg 020 05
+dataset/images/000000231.jpg 27 04 
+dataset/images/000000232.jpg GET THE
+dataset/images/000000233.jpg 6 2020 19 03 
+dataset/images/000000234.jpg 72 3959
+dataset/images/000000235.jpg D HAVE
+dataset/images/000000236.jpg 07 2020 
+dataset/images/000000237.jpg O WHY COULDN
+dataset/images/000000238.jpg ND UPSET HE ACT
+dataset/images/000000239.jpg N T LIKE HIS 
+dataset/images/000000240.jpg  MIST PASSIN
+dataset/images/000000241.jpg THE DRIN
+dataset/images/000000242.jpg ANGED HIS LIFE
+dataset/images/000000243.jpg  02 2020 04
+dataset/images/000000244.jpg 0 11 08 2020 30
+dataset/images/000000245.jpg 3 08 2020 12
+dataset/images/000000246.jpg 2020 06
+dataset/images/000000247.jpg BLE DEMANDS H
+dataset/images/000000248.jpg ETIMES THE
+dataset/images/000000249.jpg  8918 445
+dataset/images/000000250.jpg T TIME WAS SO
+dataset/images/000000251.jpg 15 297
+dataset/images/000000252.jpg 6 8600 9328 81
+dataset/images/000000253.jpg 20 11 03 2020 
+dataset/images/000000254.jpg 15 03 2020 13 
+dataset/images/000000255.jpg 3 2020 0
+dataset/images/000000256.jpg 346 2789 
+dataset/images/000000257.jpg INS W
+dataset/images/000000258.jpg 5 05 2020
+dataset/images/000000259.jpg 68 9732 59
+dataset/images/000000260.jpg 2 6767 455 9982
+dataset/images/000000261.jpg 020 04 
+dataset/images/000000262.jpg  01 2020 19 
+dataset/images/000000263.jpg 2603 4237 8
+dataset/images/000000264.jpg RGER HE TOOK 
+dataset/images/000000265.jpg 5 05 202
+dataset/images/000000266.jpg  REMAINS OF 
+dataset/images/000000267.jpg  08 2020 18 0
+dataset/images/000000268.jpg 642 177
+dataset/images/000000269.jpg 0 16 07 2020 
+dataset/images/000000270.jpg 020 1
+dataset/images/000000271.jpg  02 04 2020 19 
+dataset/images/000000272.jpg 0 27 01 2
+dataset/images/000000273.jpg S CURIOS
+dataset/images/000000274.jpg 06 202
+dataset/images/000000275.jpg 25 07 202
+dataset/images/000000276.jpg  YET HERE
+dataset/images/000000277.jpg EST DOIN
+dataset/images/000000278.jpg  STOOD IN FRO
+dataset/images/000000279.jpg 4 2020 28 0
+dataset/images/000000280.jpg ITUDE 
+dataset/images/000000281.jpg  02 2020 1
+dataset/images/000000282.jpg ORADO 
+dataset/images/000000283.jpg 838 9390 9
+dataset/images/000000284.jpg  07 2020 25 01 
+dataset/images/000000285.jpg 7 2020 1
+dataset/images/000000286.jpg PEOPLE
+dataset/images/000000287.jpg TS AND STARTE
+dataset/images/000000288.jpg  2020 26 07
+dataset/images/000000289.jpg 020 25 01 2020 
+dataset/images/000000290.jpg 02 04 2020 
+dataset/images/000000291.jpg 4 2020 07 
+dataset/images/000000292.jpg THROUGH SUCH RA
+dataset/images/000000293.jpg XCITEMEN
+dataset/images/000000294.jpg E GREA
+dataset/images/000000295.jpg NY THOUSA
+dataset/images/000000296.jpg  06 2020 02 
+dataset/images/000000297.jpg ISTORY SO
+dataset/images/000000298.jpg  05 2020
+dataset/images/000000299.jpg 22 01 2020
+dataset/images/000000300.jpg 8189 50
+dataset/images/000000301.jpg T MORE A
+dataset/images/000000302.jpg  2020 24 03
+dataset/images/000000303.jpg ERE FACT THAT 
+dataset/images/000000304.jpg 07 20
+dataset/images/000000305.jpg AM HAD BE
+dataset/images/000000306.jpg R SHE THOUGHT S
+dataset/images/000000307.jpg 538 8091 13
+dataset/images/000000308.jpg 04 2020 15 05
+dataset/images/000000309.jpg L SOM
+dataset/images/000000310.jpg 0 13 05
+dataset/images/000000311.jpg 21 08 2020 29
+dataset/images/000000312.jpg ASN T A MATTER
+dataset/images/000000313.jpg WAS TO 
+dataset/images/000000314.jpg  2020
+dataset/images/000000315.jpg 08 2020 10 07 
+dataset/images/000000316.jpg IL HE CAUG
+dataset/images/000000317.jpg  2020
+dataset/images/000000318.jpg  02 2020 10 
+dataset/images/000000319.jpg  BUT A MA
+dataset/images/000000320.jpg  03 20
+dataset/images/000000321.jpg ND HIM WAS IN T
+dataset/images/000000322.jpg 10 05 2020 05
+dataset/images/000000323.jpg 8 04 2020 
+dataset/images/000000324.jpg  91 235 
+dataset/images/000000325.jpg TWO HU
+dataset/images/000000326.jpg  2020 23 01 202
+dataset/images/000000327.jpg 3460 352
+dataset/images/000000328.jpg 11 01 202
+dataset/images/000000329.jpg 4 2020 09 0
+dataset/images/000000330.jpg 1 03 2020 23 05
+dataset/images/000000331.jpg COME IT DOESN
+dataset/images/000000332.jpg D IN HER M
+dataset/images/000000333.jpg 1 03 2020 04
+dataset/images/000000334.jpg  LOSE IT 
+dataset/images/000000335.jpg 0 24 
+dataset/images/000000336.jpg 0 05 05 2020 
+dataset/images/000000337.jpg 020 27 
+dataset/images/000000338.jpg SCREEN REMAI
+dataset/images/000000339.jpg HROUGH IT 
+dataset/images/000000340.jpg NCH AND MADE
+dataset/images/000000341.jpg 2020 13 03 202
+dataset/images/000000342.jpg 0 15 02 2020 1
+dataset/images/000000343.jpg 0 24 05
+dataset/images/000000344.jpg 16 06 2020 
+dataset/images/000000345.jpg T DAY WOULD B
+dataset/images/000000346.jpg  AS BIRD
+dataset/images/000000347.jpg 1 2020 06 03 
+dataset/images/000000348.jpg 7 7235 6428 
+dataset/images/000000349.jpg PURPO
+dataset/images/000000350.jpg 2020 12 
+dataset/images/000000351.jpg 9 07 2020 1
+dataset/images/000000352.jpg 01 9092 7949 6
+dataset/images/000000353.jpg 28 03 2020 11 0
+dataset/images/000000354.jpg W YOU TRY T
+dataset/images/000000355.jpg 6 2020 3
+dataset/images/000000356.jpg OF YEARS IN THE
+dataset/images/000000357.jpg 5 202
+dataset/images/000000358.jpg 1 1568 
+dataset/images/000000359.jpg  883 2254 336 
+dataset/images/000000360.jpg 1 2020 06 
+dataset/images/000000361.jpg ATELY SHE H
+dataset/images/000000362.jpg 2020 27
+dataset/images/000000363.jpg  05 2020 16 06 
+dataset/images/000000364.jpg 2020 07 02 20
+dataset/images/000000365.jpg 5 2020 02 02 
+dataset/images/000000366.jpg 0 07 20
+dataset/images/000000367.jpg 01 5503
+dataset/images/000000368.jpg 19 01 2020 27 
+dataset/images/000000369.jpg 03 2020 06 04
+dataset/images/000000370.jpg 2020 03 07 202
+dataset/images/000000371.jpg N FAC
+dataset/images/000000372.jpg ET THERE 
+dataset/images/000000373.jpg RTUOUSLY A
+dataset/images/000000374.jpg WOULD E
+dataset/images/000000375.jpg E AROU
+dataset/images/000000376.jpg HEN YOU
+dataset/images/000000377.jpg E IN HIS
+dataset/images/000000378.jpg 20 26 
+dataset/images/000000379.jpg 3 2020 30 05 
+dataset/images/000000380.jpg  9767
+dataset/images/000000381.jpg RING HER L
+dataset/images/000000382.jpg 4 04 2020 2
+dataset/images/000000383.jpg 0 07 04 2020
+dataset/images/000000384.jpg F PAINT
+dataset/images/000000385.jpg  8742 763 9
+dataset/images/000000386.jpg NABLE DEM
+dataset/images/000000387.jpg 03 2020 15 06 
+dataset/images/000000388.jpg TRONG ENOUGH TO
+dataset/images/000000389.jpg 2020 0
+dataset/images/000000390.jpg 020 09 01 2020 
+dataset/images/000000391.jpg GET THE HELL 
+dataset/images/000000392.jpg  05 2020 
+dataset/images/000000393.jpg  08 05 
+dataset/images/000000394.jpg ECEDED HALF 
+dataset/images/000000395.jpg 4 2020 16
+dataset/images/000000396.jpg NCE YOU RE DO
+dataset/images/000000397.jpg 8 9134
+dataset/images/000000398.jpg 8 07 20
+dataset/images/000000399.jpg 04 2020 
+dataset/images/000000400.jpg 0 10 01 2020 14
+dataset/images/000000401.jpg 1 6832 4750 26
+dataset/images/000000402.jpg 2020 06 03 202
+dataset/images/000000403.jpg  WHEN HE CAM
+dataset/images/000000404.jpg 2020 28 03 2020
+dataset/images/000000405.jpg  4112 2321 42
+dataset/images/000000406.jpg 020 04 07 2020
+dataset/images/000000407.jpg 05 06 2
+dataset/images/000000408.jpg 1 05 2
+dataset/images/000000409.jpg 13 07 2020 28 
+dataset/images/000000410.jpg 2000 Y
+dataset/images/000000411.jpg  02 2020 30 03
+dataset/images/000000412.jpg  05 2020 
+dataset/images/000000413.jpg 3 07 2020 14 06
+dataset/images/000000414.jpg  5040 3719 3
+dataset/images/000000415.jpg 2 02 
+dataset/images/000000416.jpg 2020 25 06 20
+dataset/images/000000417.jpg  GOING TO TRY
+dataset/images/000000418.jpg 2020 02 
+dataset/images/000000419.jpg T THERE WERE
+dataset/images/000000420.jpg 3 2020
+dataset/images/000000421.jpg RY TO RATION
+dataset/images/000000422.jpg 020 02 03 2020 
+dataset/images/000000423.jpg 5 788
+dataset/images/000000424.jpg 0 12 
+dataset/images/000000425.jpg GINED HE D
+dataset/images/000000426.jpg WANTED TOO WI
+dataset/images/000000427.jpg OF A 
+dataset/images/000000428.jpg 02 2020 1
+dataset/images/000000429.jpg 68 725
+dataset/images/000000430.jpg  RE DONE THAT W
+dataset/images/000000431.jpg JOBS FOR TH
+dataset/images/000000432.jpg  13 01 2020 28 
+dataset/images/000000433.jpg EED TO GENE
+dataset/images/000000434.jpg T SOMEWHERE AT
+dataset/images/000000435.jpg  WAY SH
+dataset/images/000000436.jpg 08 2020
+dataset/images/000000437.jpg 3224 3691 
+dataset/images/000000438.jpg 0 28 03 2020 1
+dataset/images/000000439.jpg  2020 13
+dataset/images/000000440.jpg 3 4717 4
+dataset/images/000000441.jpg WAY SHE 
+dataset/images/000000442.jpg 1 2020 03 0
+dataset/images/000000443.jpg 9 01 202
+dataset/images/000000444.jpg 20 21 05 20
+dataset/images/000000445.jpg 1 2020 24 05 20
+dataset/images/000000446.jpg 2020 10 08 
+dataset/images/000000447.jpg TO THE TRU
+dataset/images/000000448.jpg YOU NEED TO
+dataset/images/000000449.jpg E A SHADE
+dataset/images/000000450.jpg  2815 64
+dataset/images/000000451.jpg 06 2020 24 05 2
+dataset/images/000000452.jpg D HER U
+dataset/images/000000453.jpg 2020 18 01 20
+dataset/images/000000454.jpg 08 57
+dataset/images/000000455.jpg  A PHRASE AS IT
+dataset/images/000000456.jpg  01 2020 09 03 
+dataset/images/000000457.jpg 233 87
+dataset/images/000000458.jpg EMBER
+dataset/images/000000459.jpg  24 04
+dataset/images/000000460.jpg  AND FONDLI
+dataset/images/000000461.jpg  16 05 2020 26 
+dataset/images/000000462.jpg 20 05 04 
+dataset/images/000000463.jpg  3224 3691 9028
+dataset/images/000000464.jpg  01 2020 21 0
+dataset/images/000000465.jpg E VINE AS 
+dataset/images/000000466.jpg  2020 30 
+dataset/images/000000467.jpg E PEOPLE OF
+dataset/images/000000468.jpg  LIKE THINGS
+dataset/images/000000469.jpg 19 2911 18
+dataset/images/000000470.jpg  AND IT 
+dataset/images/000000471.jpg  01 2020
+dataset/images/000000472.jpg  YOU EXIS
+dataset/images/000000473.jpg H SEEMED T
+dataset/images/000000474.jpg HE TRUT
+dataset/images/000000475.jpg 14 08 2020 16 
+dataset/images/000000476.jpg  FROM THE
+dataset/images/000000477.jpg YOU DON T NEED 
+dataset/images/000000478.jpg 020 28 07 2
+dataset/images/000000479.jpg RE ARE THE EGY
+dataset/images/000000480.jpg 0 23 03 2020
+dataset/images/000000481.jpg 20 11 
+dataset/images/000000482.jpg 2020 19 07
+dataset/images/000000483.jpg PAIR 
+dataset/images/000000484.jpg 07 2020
+dataset/images/000000485.jpg THIS ANYMO
+dataset/images/000000486.jpg ND NIGHTS 
+dataset/images/000000487.jpg HE BIR
+dataset/images/000000488.jpg 20 11 01 2020 0
+dataset/images/000000489.jpg BOLTED SH
+dataset/images/000000490.jpg 0 11 0
+dataset/images/000000491.jpg  15 04 
+dataset/images/000000492.jpg  T EXACTLY SU
+dataset/images/000000493.jpg 20 07
+dataset/images/000000494.jpg R HE TOOK
+dataset/images/000000495.jpg  02 2020 29 
+dataset/images/000000496.jpg  2020
+dataset/images/000000497.jpg 16 04 2020 18 0
+dataset/images/000000498.jpg 0 12 07
+dataset/images/000000499.jpg 20 26 0
+dataset/images/000000500.jpg 020 25 01 
+dataset/images/000000501.jpg 2020 19 08
+dataset/images/000000502.jpg D IN THE R
+dataset/images/000000503.jpg CENDING T
+dataset/images/000000504.jpg 142 5110 7489 
+dataset/images/000000505.jpg 399 8107 4140
+dataset/images/000000506.jpg A PARANOID B
+dataset/images/000000507.jpg  11 01 202
+dataset/images/000000508.jpg 0 28 03 2020 
+dataset/images/000000509.jpg  19 02 2020
+dataset/images/000000510.jpg BODY S
+dataset/images/000000511.jpg 6 2020 21
+dataset/images/000000512.jpg 05 06 2020 20 
+dataset/images/000000513.jpg GRIZZ
+dataset/images/000000514.jpg  MAN AND AN
+dataset/images/000000515.jpg EN AFTER Y
+dataset/images/000000516.jpg E MOUNT
+dataset/images/000000517.jpg THING IN 
+dataset/images/000000518.jpg AT THE C
+dataset/images/000000519.jpg 1 2020 23 04 2
+dataset/images/000000520.jpg O BE 
+dataset/images/000000521.jpg 21 08
+dataset/images/000000522.jpg WARDL
+dataset/images/000000523.jpg  02 04 2020 15 
+dataset/images/000000524.jpg  31 03
+dataset/images/000000525.jpg 020 09 05 202
+dataset/images/000000526.jpg  8612 175 4
+dataset/images/000000527.jpg EPAIR AND
+dataset/images/000000528.jpg 84 9116
+dataset/images/000000529.jpg THING BU
+dataset/images/000000530.jpg  07 2020 31 0
+dataset/images/000000531.jpg TUOUSLY AS IT 
+dataset/images/000000532.jpg  CREATIONS OF H
+dataset/images/000000533.jpg IS OF
+dataset/images/000000534.jpg AIN I
+dataset/images/000000535.jpg  THERE AR
+dataset/images/000000536.jpg 318 862
+dataset/images/000000537.jpg  15 08 
+dataset/images/000000538.jpg 01 02 202
+dataset/images/000000539.jpg AWNED ON THEM
+dataset/images/000000540.jpg EFUL TO K
+dataset/images/000000541.jpg DAY THE SUN S W
+dataset/images/000000542.jpg HE WANTE
+dataset/images/000000543.jpg 2020 14 
+dataset/images/000000544.jpg  22 01 2020 04 
+dataset/images/000000545.jpg  ALSO PART 
+dataset/images/000000546.jpg  05 08 
+dataset/images/000000547.jpg 08 2020 10 0
+dataset/images/000000548.jpg  AVOIDIN
+dataset/images/000000549.jpg VE HER I VE 
+dataset/images/000000550.jpg 144 7123 5108 9
+dataset/images/000000551.jpg  03 202
+dataset/images/000000552.jpg 20 16 04 2
+dataset/images/000000553.jpg 020 28
+dataset/images/000000554.jpg 0 13 01 2020 
+dataset/images/000000555.jpg 2020 
+dataset/images/000000556.jpg  NAKED IN
+dataset/images/000000557.jpg 20 25 08 2
+dataset/images/000000558.jpg  29 01 2020 
+dataset/images/000000559.jpg  2319 5146 4
+dataset/images/000000560.jpg 20 22 03 2020 2
+dataset/images/000000561.jpg 2 08 2020 11 
+dataset/images/000000562.jpg ING U
+dataset/images/000000563.jpg  2020
+dataset/images/000000564.jpg  2020 17 04
+dataset/images/000000565.jpg  7654
+dataset/images/000000566.jpg 020 01 08 2020 
+dataset/images/000000567.jpg 20 25 03 2020
+dataset/images/000000568.jpg  16 07 
+dataset/images/000000569.jpg  IF YO
+dataset/images/000000570.jpg  2020 19 
+dataset/images/000000571.jpg EAR FROM YO
+dataset/images/000000572.jpg 20 24 
+dataset/images/000000573.jpg GINE THA
+dataset/images/000000574.jpg  GET DOWN T
+dataset/images/000000575.jpg NTHS THE G
+dataset/images/000000576.jpg 1 212
+dataset/images/000000577.jpg  T BECAUSE
+dataset/images/000000578.jpg  LIFE YOU 
+dataset/images/000000579.jpg 6 2020 1
+dataset/images/000000580.jpg 20 23 05 2
+dataset/images/000000581.jpg WITH THE FACT T
+dataset/images/000000582.jpg WAS TO GET THE
+dataset/images/000000583.jpg 1 05 2020 08 0
+dataset/images/000000584.jpg 0 14 08 2020 16
+dataset/images/000000585.jpg U ARE SIMPL
+dataset/images/000000586.jpg 1 2020 30
+dataset/images/000000587.jpg F HARD WOR
+dataset/images/000000588.jpg U WILL TOO THE
+dataset/images/000000589.jpg 04 2020 07 03
+dataset/images/000000590.jpg 2020 
+dataset/images/000000591.jpg 2 07 
+dataset/images/000000592.jpg 4 2020 02 04 20
+dataset/images/000000593.jpg 8 846 8332
+dataset/images/000000594.jpg  BUT IT WAS 
+dataset/images/000000595.jpg LIKE HIS
+dataset/images/000000596.jpg 013 8697 2
+dataset/images/000000597.jpg  HERSE
+dataset/images/000000598.jpg 698 9662 5091 
+dataset/images/000000599.jpg 20 23 07 
+dataset/images/000000600.jpg 07 2020
+dataset/images/000000601.jpg 020 14 01
+dataset/images/000000602.jpg  PRESERVED I
+dataset/images/000000603.jpg BE ON TIME TO
+dataset/images/000000604.jpg HERE WA
+dataset/images/000000605.jpg 5 01 
+dataset/images/000000606.jpg  CREATU
+dataset/images/000000607.jpg 1 5852 6
+dataset/images/000000608.jpg GHT HIMSELF 
+dataset/images/000000609.jpg  15 0
+dataset/images/000000610.jpg IT STILL DIDN T
+dataset/images/000000611.jpg 9 05 
+dataset/images/000000612.jpg STOOD IN FRO
+dataset/images/000000613.jpg OLLIPOP
+dataset/images/000000614.jpg 752 26
+dataset/images/000000615.jpg 4791 554
+dataset/images/000000616.jpg  05 202
+dataset/images/000000617.jpg  2020 
+dataset/images/000000618.jpg LLY SITTI
+dataset/images/000000619.jpg 9 05 20
+dataset/images/000000620.jpg 27 03 
+dataset/images/000000621.jpg 03 202
+dataset/images/000000622.jpg 04 08 
+dataset/images/000000623.jpg 06 07 202
+dataset/images/000000624.jpg 694 29
+dataset/images/000000625.jpg 9 02 2020 06 
+dataset/images/000000626.jpg 020 07 01 
+dataset/images/000000627.jpg 0 20 01 2020 0
+dataset/images/000000628.jpg  06 05 202
+dataset/images/000000629.jpg 7 2020 1
+dataset/images/000000630.jpg PLAIN THE MERE
+dataset/images/000000631.jpg 67 6980
+dataset/images/000000632.jpg 0 08 2020 
+dataset/images/000000633.jpg 3 2020
+dataset/images/000000634.jpg 2020 04 03
+dataset/images/000000635.jpg E REPAIR 
+dataset/images/000000636.jpg 04 202
+dataset/images/000000637.jpg Y WANT TO HEAR
+dataset/images/000000638.jpg  01 2020 28 0
+dataset/images/000000639.jpg OU DIDN T 
+dataset/images/000000640.jpg 8 2020 2
+dataset/images/000000641.jpg  BE MUCH 
+dataset/images/000000642.jpg  10 02 2020
+dataset/images/000000643.jpg NOUGH HE 
+dataset/images/000000644.jpg UTY OF THIS A
+dataset/images/000000645.jpg 7 01 20
+dataset/images/000000646.jpg 3 08 2020 11
+dataset/images/000000647.jpg HING DOWN 
+dataset/images/000000648.jpg 0 2378 89
+dataset/images/000000649.jpg TO A F
+dataset/images/000000650.jpg THIS ONE TIME S
+dataset/images/000000651.jpg URCHASE N
+dataset/images/000000652.jpg 0 17 02 20
+dataset/images/000000653.jpg IND MYSE
+dataset/images/000000654.jpg DOESN T HAVE A
+dataset/images/000000655.jpg  05 03 2020 
+dataset/images/000000656.jpg  2020 04 06 20
+dataset/images/000000657.jpg  HAD BEEN TRY
+dataset/images/000000658.jpg 2020 26 05 
+dataset/images/000000659.jpg IF SHE WANT
+dataset/images/000000660.jpg  TO SHO
+dataset/images/000000661.jpg 01 2020 15 04
+dataset/images/000000662.jpg NT OF ANGER
+dataset/images/000000663.jpg IME A
+dataset/images/000000664.jpg 200 3
+dataset/images/000000665.jpg LL DRIVE
+dataset/images/000000666.jpg HINGS YOU CREAT
+dataset/images/000000667.jpg  4987 4
+dataset/images/000000668.jpg 5 4356 978
+dataset/images/000000669.jpg  02 20
+dataset/images/000000670.jpg 1 2020 17
+dataset/images/000000671.jpg 2020 16 04 2
+dataset/images/000000672.jpg 0 03 03 2020
+dataset/images/000000673.jpg  07 2020 10 
+dataset/images/000000674.jpg 08 2020 27 
+dataset/images/000000675.jpg CANOPY ANTS US
+dataset/images/000000676.jpg WERE S
+dataset/images/000000677.jpg 02 04 2020 2
+dataset/images/000000678.jpg IDERED TH
+dataset/images/000000679.jpg 0 30 06 2
+dataset/images/000000680.jpg 14 03 2020 21 
+dataset/images/000000681.jpg N EVENT IN 
+dataset/images/000000682.jpg 0 750
+dataset/images/000000683.jpg  5762 96
+dataset/images/000000684.jpg NG TO SAVE IT
+dataset/images/000000685.jpg  02 2
+dataset/images/000000686.jpg 04 2020 0
+dataset/images/000000687.jpg 31 05 2020 2
+dataset/images/000000688.jpg  28 06 2020 27 
+dataset/images/000000689.jpg 0 18 04 2020 
+dataset/images/000000690.jpg  THICK AND AL
+dataset/images/000000691.jpg 8 2020 30 0
+dataset/images/000000692.jpg GALAXY
+dataset/images/000000693.jpg D BY THE 
+dataset/images/000000694.jpg 08 2020 1
+dataset/images/000000695.jpg  2020 18 
+dataset/images/000000696.jpg HEIR C
+dataset/images/000000697.jpg  FROM HAPPENI
+dataset/images/000000698.jpg 020 22 07 20
+dataset/images/000000699.jpg 5 03 2020
+dataset/images/000000700.jpg 1 2020 
+dataset/images/000000701.jpg 04 06 20
+dataset/images/000000702.jpg WAS GOIN
+dataset/images/000000703.jpg WERE CAUSED BY
+dataset/images/000000704.jpg IT WAS NO
+dataset/images/000000705.jpg  01 20
+dataset/images/000000706.jpg IT WAS L
+dataset/images/000000707.jpg  04 2020
+dataset/images/000000708.jpg  LIFE UNTIL T
+dataset/images/000000709.jpg 9 04 20
+dataset/images/000000710.jpg 043 121
+dataset/images/000000711.jpg EN HE CAME UP W
+dataset/images/000000712.jpg 20 27 04 
+dataset/images/000000713.jpg 20 15 
+dataset/images/000000714.jpg  2020 29 0
+dataset/images/000000715.jpg  LEARN 
+dataset/images/000000716.jpg LOCKED IN 
+dataset/images/000000717.jpg  CHANGED HIS 
+dataset/images/000000718.jpg  15 07 2020 2
+dataset/images/000000719.jpg  OUTSIDE 
+dataset/images/000000720.jpg  170 4258 9
+dataset/images/000000721.jpg 20 16 06 
+dataset/images/000000722.jpg  09 07 2
+dataset/images/000000723.jpg  JOBS FOR TH
+dataset/images/000000724.jpg 8 07 2020 01
+dataset/images/000000725.jpg SIZING UP THE M
+dataset/images/000000726.jpg ATIONAL
+dataset/images/000000727.jpg 212 8709 
+dataset/images/000000728.jpg 020 22 0
+dataset/images/000000729.jpg 20 07 2020 
+dataset/images/000000730.jpg  25 06 
+dataset/images/000000731.jpg DO SO THE A
+dataset/images/000000732.jpg 0 01 2020 
+dataset/images/000000733.jpg 1 01 2020 1
+dataset/images/000000734.jpg 2020 19 04
+dataset/images/000000735.jpg IT WAS QUITE
+dataset/images/000000736.jpg 5607 2227 12
+dataset/images/000000737.jpg 0 11 07 
+dataset/images/000000738.jpg 20 24 07
+dataset/images/000000739.jpg 20 29 07 
+dataset/images/000000740.jpg EVEN I
+dataset/images/000000741.jpg 5 202
+dataset/images/000000742.jpg EEP RI
+dataset/images/000000743.jpg STRENGTH TO 
+dataset/images/000000744.jpg 2020 15 05
+dataset/images/000000745.jpg 8 01 2020 06 0
+dataset/images/000000746.jpg 05 2020 12
+dataset/images/000000747.jpg W CHANGED WOR
+dataset/images/000000748.jpg 0 20 02 20
+dataset/images/000000749.jpg 01 07 2020 2
+dataset/images/000000750.jpg 020 30 07 20
+dataset/images/000000751.jpg 0 17 04 20
+dataset/images/000000752.jpg 7 9342 889
+dataset/images/000000753.jpg 0 12 06 2020 27
+dataset/images/000000754.jpg ET TENDED T
+dataset/images/000000755.jpg 15 05
+dataset/images/000000756.jpg 0 20 06 2020 31
+dataset/images/000000757.jpg 52 IF THE
+dataset/images/000000758.jpg 20 09 06 2020 
+dataset/images/000000759.jpg  IT SEEMS TO
+dataset/images/000000760.jpg  09 08 202
+dataset/images/000000761.jpg 1 01 2020 13 
+dataset/images/000000762.jpg ARRIVED E
+dataset/images/000000763.jpg D NO M
+dataset/images/000000764.jpg  FRIE
+dataset/images/000000765.jpg 102 5570 
+dataset/images/000000766.jpg  2020 1
+dataset/images/000000767.jpg 21 02 202
+dataset/images/000000768.jpg 0 31 05 2020 
+dataset/images/000000769.jpg  8210 3
+dataset/images/000000770.jpg BEEN TH
+dataset/images/000000771.jpg 20 29 
+dataset/images/000000772.jpg  ALL BUT
+dataset/images/000000773.jpg 69 9311
+dataset/images/000000774.jpg SSIBLY COULD 
+dataset/images/000000775.jpg ACK OF WOLVES T
+dataset/images/000000776.jpg 9 3292 292
+dataset/images/000000777.jpg 03 2020 26 0
+dataset/images/000000778.jpg ULD NEVER ACTU
+dataset/images/000000779.jpg 020 15 08 
+dataset/images/000000780.jpg 2020 
+dataset/images/000000781.jpg LL THAT HE HAD
+dataset/images/000000782.jpg HE DIAG
+dataset/images/000000783.jpg  WAS FOR
+dataset/images/000000784.jpg ISSOLVED INTO 
+dataset/images/000000785.jpg ERE DO 
+dataset/images/000000786.jpg 020 0
+dataset/images/000000787.jpg BUT NOT IN A DI
+dataset/images/000000788.jpg 0 26 02 2
+dataset/images/000000789.jpg 2 202
+dataset/images/000000790.jpg  05 202
+dataset/images/000000791.jpg 20 11 07 2
+dataset/images/000000792.jpg 869 1745 50
+dataset/images/000000793.jpg E COULDN T IMA
+dataset/images/000000794.jpg IDS THER
+dataset/images/000000795.jpg 2020 25 
+dataset/images/000000796.jpg E WHAT YOU WAN
+dataset/images/000000797.jpg  SOME UNFAMILI
+dataset/images/000000798.jpg 3 06 20
+dataset/images/000000799.jpg RRIBLE W
+dataset/images/000000800.jpg 2388 7477 5312 
+dataset/images/000000801.jpg  26 01
+dataset/images/000000802.jpg ILL TIME TO S
+dataset/images/000000803.jpg 06 2020 16 07 
+dataset/images/000000804.jpg 2020 06 03 2
+dataset/images/000000805.jpg NG TO SAVE
+dataset/images/000000806.jpg 73 13
+dataset/images/000000807.jpg  ADDITIONAL 
+dataset/images/000000808.jpg 12 1939
+dataset/images/000000809.jpg 02 2020
+dataset/images/000000810.jpg LE THING ONC
+dataset/images/000000811.jpg D SERVED HIM WE
+dataset/images/000000812.jpg 8 431 5783
+dataset/images/000000813.jpg 0 5581 3879 3
+dataset/images/000000814.jpg 2020 01 
+dataset/images/000000815.jpg 20 16 05
+dataset/images/000000816.jpg 085 1333 2461 
+dataset/images/000000817.jpg AS IT 
+dataset/images/000000818.jpg 0 07 07
+dataset/images/000000819.jpg BEEN SOMETH
+dataset/images/000000820.jpg 0 27 07 2
+dataset/images/000000821.jpg 86 9920 94
+dataset/images/000000822.jpg 070 2606
+dataset/images/000000823.jpg 16 7933 
+dataset/images/000000824.jpg  NOT ENOUGH TH
+dataset/images/000000825.jpg  HAD BECOME A
+dataset/images/000000826.jpg  SHE DID
+dataset/images/000000827.jpg  THE SA
+dataset/images/000000828.jpg  05 05 2020 15
+dataset/images/000000829.jpg 07 20
+dataset/images/000000830.jpg 5 202
+dataset/images/000000831.jpg 2020 15 0
+dataset/images/000000832.jpg 0 21 04 2020 
+dataset/images/000000833.jpg 2020 08 0
+dataset/images/000000834.jpg  6717
+dataset/images/000000835.jpg 2020 28 03 202
+dataset/images/000000836.jpg 20 20 03 
+dataset/images/000000837.jpg 020 02 07 20
+dataset/images/000000838.jpg  30 0
+dataset/images/000000839.jpg 549 7
+dataset/images/000000840.jpg  2292 51
+dataset/images/000000841.jpg 030 87
+dataset/images/000000842.jpg DO WITH HIS DAI
+dataset/images/000000843.jpg 28 05 202
+dataset/images/000000844.jpg 29 04 2020 19 
+dataset/images/000000845.jpg  06 08 2020 
+dataset/images/000000846.jpg Y RUN OUT GIV
+dataset/images/000000847.jpg  2020 21
+dataset/images/000000848.jpg 020 20 08 20
+dataset/images/000000849.jpg 0 15 04 2020 
+dataset/images/000000850.jpg 11 03 2
+dataset/images/000000851.jpg  HE CONT
+dataset/images/000000852.jpg UITE RECEN
+dataset/images/000000853.jpg 02 08 20
+dataset/images/000000854.jpg  31 03 2
+dataset/images/000000855.jpg DOCTOR S APPO
+dataset/images/000000856.jpg 8689 4277 15
+dataset/images/000000857.jpg T MAKE OUT EXA
+dataset/images/000000858.jpg  07 202
+dataset/images/000000859.jpg  2020 16
+dataset/images/000000860.jpg  2020 12 03 20
+dataset/images/000000861.jpg  03 202
+dataset/images/000000862.jpg 7 8670
+dataset/images/000000863.jpg 2020 29 01
+dataset/images/000000864.jpg  2020 24 
+dataset/images/000000865.jpg  2020 20 
+dataset/images/000000866.jpg 7 4657 6465
+dataset/images/000000867.jpg  26 05 
+dataset/images/000000868.jpg 4 2020 03 0
+dataset/images/000000869.jpg 20 04 04 20
+dataset/images/000000870.jpg 2020 11 
+dataset/images/000000871.jpg 7 1786 4598 
+dataset/images/000000872.jpg 0 02 08 20
+dataset/images/000000873.jpg H THE GAME
+dataset/images/000000874.jpg  SAID U
+dataset/images/000000875.jpg 3 2020 28 05 
+dataset/images/000000876.jpg  02 2
+dataset/images/000000877.jpg ERFUL IT
+dataset/images/000000878.jpg 03 2020
+dataset/images/000000879.jpg 20 19 06 2020 
+dataset/images/000000880.jpg 2 2020 10 01 2
+dataset/images/000000881.jpg AND C
+dataset/images/000000882.jpg 03 2020 31 0
+dataset/images/000000883.jpg URCHASE
+dataset/images/000000884.jpg EL THAT S
+dataset/images/000000885.jpg 2 2020
+dataset/images/000000886.jpg 5 1751 1487 3
+dataset/images/000000887.jpg  4092 9627 96
+dataset/images/000000888.jpg  17 02 2020 30
+dataset/images/000000889.jpg 02 2020 28 07
+dataset/images/000000890.jpg 6 02 2020
+dataset/images/000000891.jpg INE AS THEIR
+dataset/images/000000892.jpg  05 2020 0
+dataset/images/000000893.jpg 020 28 06 
+dataset/images/000000894.jpg 3 2020 1
+dataset/images/000000895.jpg  21 05 2
+dataset/images/000000896.jpg 020 14 06 2020 
+dataset/images/000000897.jpg NTIAL SE
+dataset/images/000000898.jpg KED UP
+dataset/images/000000899.jpg INDOW BOLTE
+dataset/images/000000900.jpg 2020 17 04 2020
+dataset/images/000000901.jpg UGE HEADS
+dataset/images/000000902.jpg 07 2020 11 0
+dataset/images/000000903.jpg  05 2020 14 04 
+dataset/images/000000904.jpg 5 1294 1662 9
+dataset/images/000000905.jpg 2020 
+dataset/images/000000906.jpg 7 07 2020 06 0
+dataset/images/000000907.jpg  DAY WOULD 
+dataset/images/000000908.jpg  05 2020 
+dataset/images/000000909.jpg O YEARS Y
+dataset/images/000000910.jpg NG TO THE CAPTI
+dataset/images/000000911.jpg 020 13 08 202
+dataset/images/000000912.jpg 20 24 07 2020 
+dataset/images/000000913.jpg CK THE TEN
+dataset/images/000000914.jpg ING AT HER BARE
+dataset/images/000000915.jpg  GIFT ITSELF S
+dataset/images/000000916.jpg VE A GRUNT OF
+dataset/images/000000917.jpg  24 06 2020 
+dataset/images/000000918.jpg 020 09 06 2020 
+dataset/images/000000919.jpg 7 202
+dataset/images/000000920.jpg HUT SHE 
+dataset/images/000000921.jpg ET WHEN SHE L
+dataset/images/000000922.jpg  01 02 2
+dataset/images/000000923.jpg  6846
+dataset/images/000000924.jpg  2020 15 
+dataset/images/000000925.jpg HAT TIME 
+dataset/images/000000926.jpg T KNOW HO
+dataset/images/000000927.jpg 2020 03 03 20
+dataset/images/000000928.jpg  2020 20 06 
+dataset/images/000000929.jpg  DEMANDS H
+dataset/images/000000930.jpg 2020 
+dataset/images/000000931.jpg  31 01 2020 
+dataset/images/000000932.jpg  SATISFIE
+dataset/images/000000933.jpg EMENT SHE SQU
+dataset/images/000000934.jpg  2020 01 
+dataset/images/000000935.jpg  GO BUT HE 
+dataset/images/000000936.jpg 8 06 2020 10 
+dataset/images/000000937.jpg AND PICKE
+dataset/images/000000938.jpg ULD BE THE
+dataset/images/000000939.jpg 20 10 02 2020 2
+dataset/images/000000940.jpg E SCRA
+dataset/images/000000941.jpg 0 29 03 2020
+dataset/images/000000942.jpg ELY N
+dataset/images/000000943.jpg  19 03 2020
+dataset/images/000000944.jpg 03 07 2020 1
+dataset/images/000000945.jpg 020 04 07 
+dataset/images/000000946.jpg 0 4211 582 3474
+dataset/images/000000947.jpg F IT W
+dataset/images/000000948.jpg ART STARTED RA
+dataset/images/000000949.jpg 0 23 06 202
+dataset/images/000000950.jpg  THAT
+dataset/images/000000951.jpg TO OPEN 
+dataset/images/000000952.jpg 20 21
+dataset/images/000000953.jpg 7 2020 25 07 
+dataset/images/000000954.jpg  INTO FULL VIE
+dataset/images/000000955.jpg EACH AND
+dataset/images/000000956.jpg 2020 09 04
+dataset/images/000000957.jpg OULD HAVE BEEN 
+dataset/images/000000958.jpg THAT OPENING IT
+dataset/images/000000959.jpg 6 9405 6060 9
+dataset/images/000000960.jpg IMPLIED O
+dataset/images/000000961.jpg 020 02 05 202
+dataset/images/000000962.jpg 2020 
+dataset/images/000000963.jpg 1 01 2020 11 0
+dataset/images/000000964.jpg RE WILLI
+dataset/images/000000965.jpg  9507 1852 5869
+dataset/images/000000966.jpg 02 2020 08 0
+dataset/images/000000967.jpg 07 20
+dataset/images/000000968.jpg ACTOR TOGETHER 
+dataset/images/000000969.jpg 06 20
+dataset/images/000000970.jpg LL THE OTHER D
+dataset/images/000000971.jpg  TO TEACH H
+dataset/images/000000972.jpg ES TO PLA
+dataset/images/000000973.jpg  SOMETHING
+dataset/images/000000974.jpg 04 2020 
+dataset/images/000000975.jpg 9751 3656 332
+dataset/images/000000976.jpg 2020 16 03 2020
+dataset/images/000000977.jpg  FOR IT 
+dataset/images/000000978.jpg 2020 0
+dataset/images/000000979.jpg HAS TH
+dataset/images/000000980.jpg OW MANY GRAINS
+dataset/images/000000981.jpg  03 2020 02 0
+dataset/images/000000982.jpg 4 03 20
+dataset/images/000000983.jpg  03 2020
+dataset/images/000000984.jpg F ANGE
+dataset/images/000000985.jpg RY MAKIN
+dataset/images/000000986.jpg 27 1315
+dataset/images/000000987.jpg 7 465 454
+dataset/images/000000988.jpg 06 2020 28 05
+dataset/images/000000989.jpg  UNDERSTA
+dataset/images/000000990.jpg 06 2020
+dataset/images/000000991.jpg 0 25 07 202
+dataset/images/000000992.jpg 20 05 02 
+dataset/images/000000993.jpg  9441 6088 864 
+dataset/images/000000994.jpg AT SHOWED THE 
+dataset/images/000000995.jpg 06 03 2020 2
+dataset/images/000000996.jpg  A FAR TO
+dataset/images/000000997.jpg 08 2020 2
+dataset/images/000000998.jpg 8 2020 14
+dataset/images/000000999.jpg HE PLANNED TO C
+dataset/images/000001000.jpg  AGO I D 
+dataset/images/000001001.jpg  08 2020 27 02 
+dataset/images/000001002.jpg  HIS HOLD
+dataset/images/000001003.jpg ROUS WON
+dataset/images/000001004.jpg ANTED 
+dataset/images/000001005.jpg 1 07 2020 15 06
+dataset/images/000001006.jpg  05 2
+dataset/images/000001007.jpg  2020 22 06 202
+dataset/images/000001008.jpg WILL UNDO
+dataset/images/000001009.jpg 06 2020 26 0
+dataset/images/000001010.jpg  01 2020 24 0
+dataset/images/000001011.jpg AND ENGULFING 
+dataset/images/000001012.jpg 20 05 2020
+dataset/images/000001013.jpg  SOMEPL
+dataset/images/000001014.jpg  05 2020 14 0
+dataset/images/000001015.jpg  2020 02 0
+dataset/images/000001016.jpg 18 03 2020 
+dataset/images/000001017.jpg 0 22 05
+dataset/images/000001018.jpg 15 03 2020 19 
+dataset/images/000001019.jpg OBVIO
+dataset/images/000001020.jpg FORGOTTEN T
+dataset/images/000001021.jpg  05 2020 22 07 
+dataset/images/000001022.jpg  2020 
+dataset/images/000001023.jpg 08 04 2020 10 
+dataset/images/000001024.jpg  2020 
+dataset/images/000001025.jpg M HAPPENIN
+dataset/images/000001026.jpg A BEAU
+dataset/images/000001027.jpg NKIND TH
+dataset/images/000001028.jpg 20 09 
+dataset/images/000001029.jpg 20 09
+dataset/images/000001030.jpg 17 01 2020 08 0
+dataset/images/000001031.jpg RACKS
+dataset/images/000001032.jpg HES OR STRIATI
+dataset/images/000001033.jpg 08 20
+dataset/images/000001034.jpg  06 2020 07 07
+dataset/images/000001035.jpg YOU OFF GUARD 
+dataset/images/000001036.jpg 20 07 0
+dataset/images/000001037.jpg  28 05 2
+dataset/images/000001038.jpg R S BLO
+dataset/images/000001039.jpg  16 07 2
+dataset/images/000001040.jpg 020 11 07 2020 
+dataset/images/000001041.jpg 01 2020 16 02 
+dataset/images/000001042.jpg OCOLATE LOL
+dataset/images/000001043.jpg W DO IT W
+dataset/images/000001044.jpg R THE SAME 
+dataset/images/000001045.jpg 2020 06 03 202
+dataset/images/000001046.jpg 4411 9961 429
+dataset/images/000001047.jpg  187 248
+dataset/images/000001048.jpg 2 2020 
+dataset/images/000001049.jpg 8 202
+dataset/images/000001050.jpg N SUPP
+dataset/images/000001051.jpg  03 20
+dataset/images/000001052.jpg 378 6796 2
+dataset/images/000001053.jpg ND THE
+dataset/images/000001054.jpg RUN O
+dataset/images/000001055.jpg 07 02
+dataset/images/000001056.jpg 204 3423 510
+dataset/images/000001057.jpg  WAS NO D
+dataset/images/000001058.jpg SATISF
+dataset/images/000001059.jpg  790 1662 7070 
+dataset/images/000001060.jpg SAYING A WOR
+dataset/images/000001061.jpg  19 04 2020 0
+dataset/images/000001062.jpg 2020 11 08 20
+dataset/images/000001063.jpg ATTITUDE A
+dataset/images/000001064.jpg N A JOURNEY THR
+dataset/images/000001065.jpg TOOK 
+dataset/images/000001066.jpg 02 2020 30 03 
+dataset/images/000001067.jpg 07 01
+dataset/images/000001068.jpg ED TO LAST Y
+dataset/images/000001069.jpg  256 9186
+dataset/images/000001070.jpg  NATI
+dataset/images/000001071.jpg 020 10 06
+dataset/images/000001072.jpg  WOULD BE 
+dataset/images/000001073.jpg AL PARKS CAN
+dataset/images/000001074.jpg HONE R
+dataset/images/000001075.jpg 2020 
+dataset/images/000001076.jpg DAY I 
+dataset/images/000001077.jpg EL TERRIBLY UNC
+dataset/images/000001078.jpg  2020 20 03
+dataset/images/000001079.jpg 2020 12 02
+dataset/images/000001080.jpg 2020 11
+dataset/images/000001081.jpg S BURNED WITH T
+dataset/images/000001082.jpg ERINGS 
+dataset/images/000001083.jpg THERE ARE
+dataset/images/000001084.jpg 9927 
+dataset/images/000001085.jpg  MOVE AT TO
+dataset/images/000001086.jpg ND HAD 
+dataset/images/000001087.jpg UESTIONS WER
+dataset/images/000001088.jpg E IS 
+dataset/images/000001089.jpg TY ONCE 
+dataset/images/000001090.jpg AND HER
+dataset/images/000001091.jpg 08 2020 26 04
+dataset/images/000001092.jpg IN A DRE
+dataset/images/000001093.jpg 24 04 2020 30 
+dataset/images/000001094.jpg LY THAT IS GE
+dataset/images/000001095.jpg E BRANCH 
+dataset/images/000001096.jpg 20 22
+dataset/images/000001097.jpg NOW A
+dataset/images/000001098.jpg 2020 06
+dataset/images/000001099.jpg  BECOME A F
+dataset/images/000001100.jpg 6 07 2020
+dataset/images/000001101.jpg 576 8218 414
+dataset/images/000001102.jpg AT SHE COU
+dataset/images/000001103.jpg  THE DOCTOR
+dataset/images/000001104.jpg  02 2020 2
+dataset/images/000001105.jpg 1350 7977 
+dataset/images/000001106.jpg 08 2020 2
+dataset/images/000001107.jpg KED THE Q
+dataset/images/000001108.jpg 5 04 2020 23 
+dataset/images/000001109.jpg 26 03 2020 11 0
+dataset/images/000001110.jpg 20 07 02
+dataset/images/000001111.jpg  1559
+dataset/images/000001112.jpg 0 02 2020 01 06
+dataset/images/000001113.jpg IT WANTED
+dataset/images/000001114.jpg 02 01 2
+dataset/images/000001115.jpg 20 11 08 
+dataset/images/000001116.jpg  09 03 20
+dataset/images/000001117.jpg MISTA
+dataset/images/000001118.jpg 020 17 
+dataset/images/000001119.jpg 63 2013 4315
+dataset/images/000001120.jpg  2020 10 06 202
+dataset/images/000001121.jpg  2294 2319 514
+dataset/images/000001122.jpg SHE COUL
+dataset/images/000001123.jpg  THE LATEST 
+dataset/images/000001124.jpg 0 17 05 2020 28
+dataset/images/000001125.jpg  THE INSIDE 
+dataset/images/000001126.jpg 3902 6029 243
+dataset/images/000001127.jpg  2020 3
+dataset/images/000001128.jpg 2020 05 04 20
+dataset/images/000001129.jpg E SITUATION
+dataset/images/000001130.jpg D NOW THAT SHE 
+dataset/images/000001131.jpg 0 03 07 202
+dataset/images/000001132.jpg OR EVEN TH
+dataset/images/000001133.jpg  HAD THE POWE
+dataset/images/000001134.jpg  5322 8444 35
+dataset/images/000001135.jpg 20 04 03 2020 1
+dataset/images/000001136.jpg  2020 30 0
+dataset/images/000001137.jpg  2020 06 06 2
+dataset/images/000001138.jpg 14 02 202
+dataset/images/000001139.jpg 020 09 05
+dataset/images/000001140.jpg AND HE K
+dataset/images/000001141.jpg E LEAST EXPECT
+dataset/images/000001142.jpg IT WAS
+dataset/images/000001143.jpg SCRATCH THE ROC
+dataset/images/000001144.jpg ME THIS WO
+dataset/images/000001145.jpg ITHOUT SAYI
+dataset/images/000001146.jpg NSES 
+dataset/images/000001147.jpg 06 2020
+dataset/images/000001148.jpg DOW LIKE A 
+dataset/images/000001149.jpg 0 09 08 
+dataset/images/000001150.jpg 7 2020
+dataset/images/000001151.jpg 2020 
+dataset/images/000001152.jpg  2020 03 08 2
+dataset/images/000001153.jpg 16 02
+dataset/images/000001154.jpg 08 2020 
+dataset/images/000001155.jpg  1006 25
+dataset/images/000001156.jpg SN T TH
+dataset/images/000001157.jpg 3462 6233
+dataset/images/000001158.jpg AS TRUE IT WASN
+dataset/images/000001159.jpg  03 08 2020
+dataset/images/000001160.jpg 2020 17 
+dataset/images/000001161.jpg 020 10 07 
+dataset/images/000001162.jpg 06 2020
+dataset/images/000001163.jpg 1 6406 7602 
+dataset/images/000001164.jpg  05 2020
+dataset/images/000001165.jpg 8 2020 
+dataset/images/000001166.jpg 2020 05 03 
+dataset/images/000001167.jpg  16 01 2020 
+dataset/images/000001168.jpg 020 1
+dataset/images/000001169.jpg 1 01 2020 11 
+dataset/images/000001170.jpg ON OFFERIN
+dataset/images/000001171.jpg AVE FORCED IT D
+dataset/images/000001172.jpg W HE D 
+dataset/images/000001173.jpg 3 2020
+dataset/images/000001174.jpg  19 02 2020 06 
+dataset/images/000001175.jpg EXPLAIN IT 
+dataset/images/000001176.jpg TS HAD BEGUN 
+dataset/images/000001177.jpg ANT TO 
+dataset/images/000001178.jpg 2020 10 01 
+dataset/images/000001179.jpg T OF HIM THA
+dataset/images/000001180.jpg 2020 04 
+dataset/images/000001181.jpg E IT WAS JUST 
+dataset/images/000001182.jpg THE TOPIC MAY
+dataset/images/000001183.jpg WEEKS WHE
+dataset/images/000001184.jpg 3 2020 31 01 
+dataset/images/000001185.jpg 0 19 02 20
+dataset/images/000001186.jpg EPAIR AND AS
+dataset/images/000001187.jpg 20 09
+dataset/images/000001188.jpg AD DONE FOR
+dataset/images/000001189.jpg 20 19 07 2020
+dataset/images/000001190.jpg  04 2020 15 
+dataset/images/000001191.jpg SE HE WANTED
+dataset/images/000001192.jpg  5883 8396 
+dataset/images/000001193.jpg 10 05 
+dataset/images/000001194.jpg E HATERS THAT S
+dataset/images/000001195.jpg  DID IT WAS 
+dataset/images/000001196.jpg 020 11 0
+dataset/images/000001197.jpg 029 86
+dataset/images/000001198.jpg MORE IN JOS
+dataset/images/000001199.jpg 483 3842 
+dataset/images/000001200.jpg 82 3474 341
+dataset/images/000001201.jpg W IT WASN T G
+dataset/images/000001202.jpg  24 01 2020
+dataset/images/000001203.jpg AMONG THE FOOT
+dataset/images/000001204.jpg SIT IN FRON
+dataset/images/000001205.jpg 6 2020 05 08
+dataset/images/000001206.jpg  2020 1
+dataset/images/000001207.jpg EVER 
+dataset/images/000001208.jpg IONS OF THE P
+dataset/images/000001209.jpg 02 03 2020 02 0
+dataset/images/000001210.jpg 29 06 2020 
+dataset/images/000001211.jpg 0 10 03 2020 2
+dataset/images/000001212.jpg  01 07 2020
+dataset/images/000001213.jpg  SCRATCHES O
+dataset/images/000001214.jpg 020 18 07 
+dataset/images/000001215.jpg VER BE
+dataset/images/000001216.jpg 5758 5051
+dataset/images/000001217.jpg ONE FOR THE PA
+dataset/images/000001218.jpg  4946
+dataset/images/000001219.jpg SHE THOUGHT 
+dataset/images/000001220.jpg HAND THE
+dataset/images/000001221.jpg SE IN THE ME
+dataset/images/000001222.jpg RETURNED THE 
+dataset/images/000001223.jpg  08 2020 16
+dataset/images/000001224.jpg  786 9920 9401
+dataset/images/000001225.jpg  2020 16 03 202
+dataset/images/000001226.jpg 3 5585 4587 
+dataset/images/000001227.jpg 2020 03 0
+dataset/images/000001228.jpg NATIVE
+dataset/images/000001229.jpg D ALTHOUGH SHE 
+dataset/images/000001230.jpg  11 01 2020 28
+dataset/images/000001231.jpg 2020 26 
+dataset/images/000001232.jpg 29 05 202
+dataset/images/000001233.jpg  2020 12 
+dataset/images/000001234.jpg OULD PREVENT IT
+dataset/images/000001235.jpg 6 01 202
+dataset/images/000001236.jpg 5 2020 26 05 
+dataset/images/000001237.jpg  COME TO L
+dataset/images/000001238.jpg HEN YO
+dataset/images/000001239.jpg 020 29 05 2020 
+dataset/images/000001240.jpg 0 11 07 2020 06
+dataset/images/000001241.jpg 1367 4497 4125 
+dataset/images/000001242.jpg 06 08 20
+dataset/images/000001243.jpg 0 04 05 20
+dataset/images/000001244.jpg ET OUT OF HIS
+dataset/images/000001245.jpg THINGS D
+dataset/images/000001246.jpg  ABSOLUTELY NO 
+dataset/images/000001247.jpg TER IT HAD AR
+dataset/images/000001248.jpg  7490 
+dataset/images/000001249.jpg 2020 
+dataset/images/000001250.jpg DIDN T APPEAR 
+dataset/images/000001251.jpg  ANTS
+dataset/images/000001252.jpg  UNWR
+dataset/images/000001253.jpg OING TO 
+dataset/images/000001254.jpg HE PHR
+dataset/images/000001255.jpg 40 7937 6542 7
+dataset/images/000001256.jpg  PHON
+dataset/images/000001257.jpg 8840 1067 37
+dataset/images/000001258.jpg 3 07 2020 
+dataset/images/000001259.jpg ES A TANG
+dataset/images/000001260.jpg 05 2020
+dataset/images/000001261.jpg CREEN TA
+dataset/images/000001262.jpg  88 5376 4207 3
+dataset/images/000001263.jpg D LONG AFT
+dataset/images/000001264.jpg 03 2020
+dataset/images/000001265.jpg  2020 02 
+dataset/images/000001266.jpg FUL BUT ALL SH
+dataset/images/000001267.jpg BEGIN HE HAD 
+dataset/images/000001268.jpg 54 4350 
+dataset/images/000001269.jpg IS IT S ALWAYS 
+dataset/images/000001270.jpg 24 07 202
+dataset/images/000001271.jpg  THIS DROP
+dataset/images/000001272.jpg 6 2020 23 
+dataset/images/000001273.jpg Y THEY ARGUE WH
+dataset/images/000001274.jpg TER BY THE 
+dataset/images/000001275.jpg 0 06 2020 
+dataset/images/000001276.jpg  BIG ONE CRASHE
+dataset/images/000001277.jpg 05 2020 02
+dataset/images/000001278.jpg AILED TO 
+dataset/images/000001279.jpg 020 03 06 2020 
+dataset/images/000001280.jpg 20 22 07 2020 2
+dataset/images/000001281.jpg 3 07 2020 18 03
+dataset/images/000001282.jpg  01 2020 11 0
+dataset/images/000001283.jpg S PRIME
+dataset/images/000001284.jpg 2020 03 
+dataset/images/000001285.jpg 0 5498 421
+dataset/images/000001286.jpg 04 2020 17 
+dataset/images/000001287.jpg  3393 4320
+dataset/images/000001288.jpg 020 24 07 2020
+dataset/images/000001289.jpg NCE SHE ALREAD
+dataset/images/000001290.jpg PRIVA
+dataset/images/000001291.jpg 1 2020 20 05 2
+dataset/images/000001292.jpg MISS T
+dataset/images/000001293.jpg  2020
+dataset/images/000001294.jpg HAT SHE WA
+dataset/images/000001295.jpg 020 1
+dataset/images/000001296.jpg  SO THAT S
+dataset/images/000001297.jpg 020 26 
+dataset/images/000001298.jpg 0 29 07 2020 
+dataset/images/000001299.jpg 3 2020 17 0
+dataset/images/000001300.jpg  16 03 202
+dataset/images/000001301.jpg  06 2020 07
+dataset/images/000001302.jpg 07 20
+dataset/images/000001303.jpg 6 05 2
+dataset/images/000001304.jpg HE WAS A
+dataset/images/000001305.jpg O IN FACT SO
+dataset/images/000001306.jpg 20 30 07 2
+dataset/images/000001307.jpg 8 414
+dataset/images/000001308.jpg  WITH HIS DEVI
+dataset/images/000001309.jpg  06 2020 29 01 
+dataset/images/000001310.jpg ED INTO
+dataset/images/000001311.jpg 4 05 2020 23 07
+dataset/images/000001312.jpg 020 21 03 
+dataset/images/000001313.jpg 020 26 01 2
+dataset/images/000001314.jpg BACK IN
+dataset/images/000001315.jpg AND CRAGS OF 
+dataset/images/000001316.jpg 20 27 03 2020 1
+dataset/images/000001317.jpg H HAD HELD TH
+dataset/images/000001318.jpg 0 28 03 20
+dataset/images/000001319.jpg 10 85 9153 1445
+dataset/images/000001320.jpg 2820 1434 
+dataset/images/000001321.jpg 5 2020 07 0
+dataset/images/000001322.jpg 20 19 07 202
+dataset/images/000001323.jpg 02 03 2020 07
+dataset/images/000001324.jpg  19 07 202
+dataset/images/000001325.jpg  05 06 2020
+dataset/images/000001326.jpg 20 30 
+dataset/images/000001327.jpg 05 01 2020 
+dataset/images/000001328.jpg  OF IT A
+dataset/images/000001329.jpg  06 2020
+dataset/images/000001330.jpg ESE QUE
+dataset/images/000001331.jpg 7308 8103 785
+dataset/images/000001332.jpg T TODAY COMPARE
+dataset/images/000001333.jpg 0 02 04 2020 2
+dataset/images/000001334.jpg  AS T
+dataset/images/000001335.jpg 20 21 05 
+dataset/images/000001336.jpg 4263 1433 8628 
+dataset/images/000001337.jpg 2020 0
+dataset/images/000001338.jpg 020 17 02 
+dataset/images/000001339.jpg 0 05 20
+dataset/images/000001340.jpg IS PROJEC
+dataset/images/000001341.jpg  1660 5801 
+dataset/images/000001342.jpg TLE AND TA
+dataset/images/000001343.jpg 05 2020 09 
+dataset/images/000001344.jpg 2 2446 9936 628
+dataset/images/000001345.jpg K ACTO
+dataset/images/000001346.jpg 20 07 03
+dataset/images/000001347.jpg 6 02 2020 2
+dataset/images/000001348.jpg  6982 202
+dataset/images/000001349.jpg 04 05 20
+dataset/images/000001350.jpg 20 07 04 2020 1
+dataset/images/000001351.jpg 4 02 20
+dataset/images/000001352.jpg HERE IT W
+dataset/images/000001353.jpg THOSE A
+dataset/images/000001354.jpg  DAY I
+dataset/images/000001355.jpg 1 2020 26 02 2
+dataset/images/000001356.jpg 2020 02 08 
+dataset/images/000001357.jpg Y COU
+dataset/images/000001358.jpg 04 2020 29 0
+dataset/images/000001359.jpg  02 2020 06 0
+dataset/images/000001360.jpg R PART OF H
+dataset/images/000001361.jpg  OPTIO
+dataset/images/000001362.jpg  06 2020 
+dataset/images/000001363.jpg 0 22 05 2020 1
+dataset/images/000001364.jpg 0 15 01 
+dataset/images/000001365.jpg ED HOW MANY
+dataset/images/000001366.jpg THEIR FI
+dataset/images/000001367.jpg 2020 02 05
+dataset/images/000001368.jpg 0 03 03
+dataset/images/000001369.jpg OUS TH
+dataset/images/000001370.jpg 4140 12
+dataset/images/000001371.jpg 20 16 0
+dataset/images/000001372.jpg SALVAGE THE
+dataset/images/000001373.jpg 01 2020 1
+dataset/images/000001374.jpg T SHE UN
+dataset/images/000001375.jpg  2020 27 0
+dataset/images/000001376.jpg  HE HAD NO 
+dataset/images/000001377.jpg BEGAN TO MELT 
+dataset/images/000001378.jpg 5 2020
+dataset/images/000001379.jpg  5614 858 8638
+dataset/images/000001380.jpg 20 26 07 202
+dataset/images/000001381.jpg 0 06 08 2020 04
+dataset/images/000001382.jpg  05 06 20
+dataset/images/000001383.jpg  WITH 
+dataset/images/000001384.jpg 6 2020 15 0
+dataset/images/000001385.jpg E TOP 
+dataset/images/000001386.jpg  MIGHT NEED
+dataset/images/000001387.jpg 458 1949 7637 
+dataset/images/000001388.jpg S ABOUT AL
+dataset/images/000001389.jpg 283 4193 
+dataset/images/000001390.jpg 01 08
+dataset/images/000001391.jpg 1 9925 2641 93
+dataset/images/000001392.jpg 2 2020 0
+dataset/images/000001393.jpg  02 2020 12 
+dataset/images/000001394.jpg  23 03 202
+dataset/images/000001395.jpg  08 20
+dataset/images/000001396.jpg OF HER CO
+dataset/images/000001397.jpg  2020 24 03 202
+dataset/images/000001398.jpg  09 01
+dataset/images/000001399.jpg 3 270
+dataset/images/000001400.jpg  25 06 2020 14 
+dataset/images/000001401.jpg 8 2020
+dataset/images/000001402.jpg 2020 09 02 202
+dataset/images/000001403.jpg 4706 4996 731
+dataset/images/000001404.jpg  TOGETHER C
+dataset/images/000001405.jpg RACED
+dataset/images/000001406.jpg URCHA
+dataset/images/000001407.jpg PROMISED HE
+dataset/images/000001408.jpg  BACK TO T
+dataset/images/000001409.jpg EXACTLY AS MEAN
+dataset/images/000001410.jpg WELL THUS FAR
+dataset/images/000001411.jpg 21 02
+dataset/images/000001412.jpg 8 2020
+dataset/images/000001413.jpg ST NIGHT IT W
+dataset/images/000001414.jpg IFETIME S
+dataset/images/000001415.jpg 0 10 
+dataset/images/000001416.jpg 0 06 01 20
+dataset/images/000001417.jpg 9767 7500 854
+dataset/images/000001418.jpg INNING THE LOT
+dataset/images/000001419.jpg 2020 07 01 202
+dataset/images/000001420.jpg ORWARD
+dataset/images/000001421.jpg  11 05 2020 
+dataset/images/000001422.jpg  YOU KI
+dataset/images/000001423.jpg SE THEIR 
+dataset/images/000001424.jpg CREATIONS OF
+dataset/images/000001425.jpg 020 30 01 202
+dataset/images/000001426.jpg HE FLU OR 
+dataset/images/000001427.jpg  05 2020 17 
+dataset/images/000001428.jpg  08 2020 07 01 
+dataset/images/000001429.jpg T WOR
+dataset/images/000001430.jpg  GIVING IT AS
+dataset/images/000001431.jpg  2020 15 05 20
+dataset/images/000001432.jpg NED FOR IT
+dataset/images/000001433.jpg ENSIVE THAN T
+dataset/images/000001434.jpg  02 2
+dataset/images/000001435.jpg  2020 21 05 2
+dataset/images/000001436.jpg  14 01 2020 
+dataset/images/000001437.jpg  HOURS HE 
+dataset/images/000001438.jpg 2020 
+dataset/images/000001439.jpg  IN THE ROO
+dataset/images/000001440.jpg 599 97
+dataset/images/000001441.jpg  07 2020
+dataset/images/000001442.jpg  20 03 2020 0
+dataset/images/000001443.jpg 3 6368 7
+dataset/images/000001444.jpg TIME TO SAL
+dataset/images/000001445.jpg  6377 1858 50
+dataset/images/000001446.jpg  24 02 20
+dataset/images/000001447.jpg AUGHT
+dataset/images/000001448.jpg  06 05 20
+dataset/images/000001449.jpg  02 2020
+dataset/images/000001450.jpg  7245 461
+dataset/images/000001451.jpg  03 20
+dataset/images/000001452.jpg AY THE
+dataset/images/000001453.jpg TO BE MADE
+dataset/images/000001454.jpg 2020 19 
+dataset/images/000001455.jpg 18 03
+dataset/images/000001456.jpg  02 2
+dataset/images/000001457.jpg  14 06 
+dataset/images/000001458.jpg  30 07
+dataset/images/000001459.jpg IT SHE HA
+dataset/images/000001460.jpg 1 03 2020
+dataset/images/000001461.jpg KED UP THE HA
+dataset/images/000001462.jpg CONTORTIONS TH
+dataset/images/000001463.jpg 3 07 2020 08
+dataset/images/000001464.jpg 0 09 02 2020 
+dataset/images/000001465.jpg 0 24 05 20
+dataset/images/000001466.jpg RED TO YE
+dataset/images/000001467.jpg  06 202
+dataset/images/000001468.jpg N HIM LIFE
+dataset/images/000001469.jpg 20 17
+dataset/images/000001470.jpg 20 05 05 2020 
+dataset/images/000001471.jpg  WAS THERE WAS 
+dataset/images/000001472.jpg 2020 
+dataset/images/000001473.jpg 020 03 02 2020
+dataset/images/000001474.jpg E WAS NO DENYIN
+dataset/images/000001475.jpg ES WITHOU
+dataset/images/000001476.jpg 020 09 04 2
+dataset/images/000001477.jpg 8 03 202
+dataset/images/000001478.jpg O LAST YEAR S
+dataset/images/000001479.jpg  2020 03 
+dataset/images/000001480.jpg 0 04 04 202
+dataset/images/000001481.jpg 04 2020 17 
+dataset/images/000001482.jpg E WAS FO
+dataset/images/000001483.jpg THAT THINGS DID
+dataset/images/000001484.jpg CAN DO ANYWA
+dataset/images/000001485.jpg  UNDER
+dataset/images/000001486.jpg  3118 7356 428
+dataset/images/000001487.jpg 6 03 2020
+dataset/images/000001488.jpg THIS IS IMP
+dataset/images/000001489.jpg 968 156
+dataset/images/000001490.jpg  2020 15
+dataset/images/000001491.jpg S OF THOUSAND
+dataset/images/000001492.jpg  01 2020 14 0
+dataset/images/000001493.jpg  18 04 2020
+dataset/images/000001494.jpg AS GON
+dataset/images/000001495.jpg HIM R
+dataset/images/000001496.jpg D FONDLING
+dataset/images/000001497.jpg 20 14 04 2020 
+dataset/images/000001498.jpg 07 2020 27 07 
+dataset/images/000001499.jpg  01 2020 
+dataset/images/000001500.jpg 3666 
+dataset/images/000001501.jpg 5 2020 09 06 
+dataset/images/000001502.jpg 6 03 2020 3
+dataset/images/000001503.jpg 07 2020
+dataset/images/000001504.jpg D SHE D KNOW 
+dataset/images/000001505.jpg  2020 27 05 20
+dataset/images/000001506.jpg NT OF HE
+dataset/images/000001507.jpg 18 07 2020 19 0
+dataset/images/000001508.jpg D COULDN 
+dataset/images/000001509.jpg 9 03 2020 29
+dataset/images/000001510.jpg T SHE
+dataset/images/000001511.jpg 2020 01 0
+dataset/images/000001512.jpg HAT WENDY W
+dataset/images/000001513.jpg  23 04 2020
+dataset/images/000001514.jpg D MY FL
+dataset/images/000001515.jpg C REAL
+dataset/images/000001516.jpg OF SECRET
+dataset/images/000001517.jpg 05 20
+dataset/images/000001518.jpg  18 05 
+dataset/images/000001519.jpg TO PROVE BU
+dataset/images/000001520.jpg IDE DOWN B
+dataset/images/000001521.jpg TO BE REMEMBER
+dataset/images/000001522.jpg  6666 9863 51
+dataset/images/000001523.jpg ARS AGO H
+dataset/images/000001524.jpg 08 2020 14 01
+dataset/images/000001525.jpg  T HAVE TO WO
+dataset/images/000001526.jpg 020 22 02 202
+dataset/images/000001527.jpg ER DAY IT 
+dataset/images/000001528.jpg ULD EVER BE AB
+dataset/images/000001529.jpg IDN T UNDERS
+dataset/images/000001530.jpg G THA
+dataset/images/000001531.jpg EN SHE L
+dataset/images/000001532.jpg 2020 24
+dataset/images/000001533.jpg L TO KEEP
+dataset/images/000001534.jpg IKE A
+dataset/images/000001535.jpg  7985 7350 5425
+dataset/images/000001536.jpg  2020 17 03 2
+dataset/images/000001537.jpg 03 202
+dataset/images/000001538.jpg  TO FRE
+dataset/images/000001539.jpg 3 2020 06 05 20
+dataset/images/000001540.jpg IF YOU RE 
+dataset/images/000001541.jpg INUTES IT HA
+dataset/images/000001542.jpg  AND A
+dataset/images/000001543.jpg 23 01 2020 12
+dataset/images/000001544.jpg 3 07 2020 
+dataset/images/000001545.jpg  AND EVERYTH
+dataset/images/000001546.jpg 060 4777 744
+dataset/images/000001547.jpg THE BEST WAY 
+dataset/images/000001548.jpg 0 07 08 2020 16
+dataset/images/000001549.jpg ND IT 
+dataset/images/000001550.jpg 7 2545 589 
+dataset/images/000001551.jpg 0 29 0
+dataset/images/000001552.jpg  TIME AND
+dataset/images/000001553.jpg 2 05 2020 06 0
+dataset/images/000001554.jpg  7070 341 8644
+dataset/images/000001555.jpg 2020 24
+dataset/images/000001556.jpg 2 50 5983 
+dataset/images/000001557.jpg 8 2020 03 
+dataset/images/000001558.jpg 0 12 03 2020 
+dataset/images/000001559.jpg ER HIS BREATH 
+dataset/images/000001560.jpg ERFECT CONE EAC
+dataset/images/000001561.jpg 2020 28
+dataset/images/000001562.jpg 020 18 
+dataset/images/000001563.jpg 020 27 06 2020 
+dataset/images/000001564.jpg IME SO
+dataset/images/000001565.jpg 8 01 2020 14
+dataset/images/000001566.jpg NG TH
+dataset/images/000001567.jpg 7 2020 18 07 
+dataset/images/000001568.jpg 02 2020 08 05 
+dataset/images/000001569.jpg 01 2020 16 0
+dataset/images/000001570.jpg ATTER SHE 
+dataset/images/000001571.jpg WED TH
+dataset/images/000001572.jpg 4207 3515 7399 
+dataset/images/000001573.jpg 5136 3974 2044 
+dataset/images/000001574.jpg  2020 05
+dataset/images/000001575.jpg 047 5241 2098 9
+dataset/images/000001576.jpg CH PRES
+dataset/images/000001577.jpg 2020 26 03 202
+dataset/images/000001578.jpg  01 2020 29 04
+dataset/images/000001579.jpg 3 03 2020
+dataset/images/000001580.jpg ITH HER I DO
+dataset/images/000001581.jpg DELUDE HIMSE
+dataset/images/000001582.jpg  RE LIVI
+dataset/images/000001583.jpg 01 2020 16 02 2
+dataset/images/000001584.jpg 06 2020 31 0
+dataset/images/000001585.jpg E HER REPENT
+dataset/images/000001586.jpg 20 20 02 20
+dataset/images/000001587.jpg THAT SHE KNEW 
+dataset/images/000001588.jpg 6 9271 4519 531
+dataset/images/000001589.jpg 576 947 3014 14
+dataset/images/000001590.jpg ATISFI
+dataset/images/000001591.jpg OULDN T SHE G
+dataset/images/000001592.jpg 0 01 2020 08 03
+dataset/images/000001593.jpg 020 14 0
+dataset/images/000001594.jpg 07 05 2020 
+dataset/images/000001595.jpg D WITH 
+dataset/images/000001596.jpg  2020 
+dataset/images/000001597.jpg 2020 1
+dataset/images/000001598.jpg  HE DIDN T WAN
+dataset/images/000001599.jpg 6 07 2020 07 01
+dataset/images/000001600.jpg  HE S
+dataset/images/000001601.jpg NG MINUTES DAVI
+dataset/images/000001602.jpg 020 26
+dataset/images/000001603.jpg  2020 03
+dataset/images/000001604.jpg  19 07 
+dataset/images/000001605.jpg 2020 08 07 2020
+dataset/images/000001606.jpg T ON T
+dataset/images/000001607.jpg NDERED HO
+dataset/images/000001608.jpg  2868 6892 
+dataset/images/000001609.jpg S OF THE AMER
+dataset/images/000001610.jpg E YOU 
+dataset/images/000001611.jpg 25 03 2020 02 0
+dataset/images/000001612.jpg ATTENTION DUE
+dataset/images/000001613.jpg 0 19 08 2
+dataset/images/000001614.jpg 855 8
+dataset/images/000001615.jpg HAT S
+dataset/images/000001616.jpg ORE IND
+dataset/images/000001617.jpg 0 01 
+dataset/images/000001618.jpg ER GET THR
+dataset/images/000001619.jpg PLISHM
+dataset/images/000001620.jpg  08 07 2020 0
+dataset/images/000001621.jpg ME SHE WASN
+dataset/images/000001622.jpg  2020 13
+dataset/images/000001623.jpg T HE HAD AND EV
+dataset/images/000001624.jpg 2 2020 2
+dataset/images/000001625.jpg 020 0
+dataset/images/000001626.jpg 794 5961 
+dataset/images/000001627.jpg TUALLY GIV
+dataset/images/000001628.jpg 05 202
+dataset/images/000001629.jpg  5637 455 9
+dataset/images/000001630.jpg M WAITING IT W
+dataset/images/000001631.jpg WORK HAR
+dataset/images/000001632.jpg AT NONE OF US 
+dataset/images/000001633.jpg 20 07 
+dataset/images/000001634.jpg 08 2020 1
+dataset/images/000001635.jpg 0 08 
+dataset/images/000001636.jpg T WAS T
+dataset/images/000001637.jpg N T MAKE ANY
+dataset/images/000001638.jpg 20 09 06 2020 2
+dataset/images/000001639.jpg 1 2020
+dataset/images/000001640.jpg 0 05 08 2
+dataset/images/000001641.jpg 990 5434 85
+dataset/images/000001642.jpg G AND
+dataset/images/000001643.jpg FORM AS 
+dataset/images/000001644.jpg  02 202
+dataset/images/000001645.jpg E DAY
+dataset/images/000001646.jpg 020 01 03 202
+dataset/images/000001647.jpg  TOPIC MA
+dataset/images/000001648.jpg U RE LIKELY N
+dataset/images/000001649.jpg  LET IT HAP
+dataset/images/000001650.jpg 25 05 2020 06 
+dataset/images/000001651.jpg 1263 6093 186
+dataset/images/000001652.jpg 07 07 2020 11 
+dataset/images/000001653.jpg 0 25 08 
+dataset/images/000001654.jpg 2 05 2020 27
+dataset/images/000001655.jpg 0 18 03 2020 1
+dataset/images/000001656.jpg 6 03 2
+dataset/images/000001657.jpg  14 05 20
+dataset/images/000001658.jpg 01 2020
+dataset/images/000001659.jpg  A SLOWER FR
+dataset/images/000001660.jpg BURKE MO
+dataset/images/000001661.jpg  EXPEN
+dataset/images/000001662.jpg 05 20
+dataset/images/000001663.jpg  07 20
+dataset/images/000001664.jpg 7 05 202
+dataset/images/000001665.jpg  08 05
+dataset/images/000001666.jpg 2020 04 08 20
+dataset/images/000001667.jpg RED FOR
+dataset/images/000001668.jpg 2020 06 0
+dataset/images/000001669.jpg 24 07 2020 2
+dataset/images/000001670.jpg 23 8529 9062 3
+dataset/images/000001671.jpg D HE 
+dataset/images/000001672.jpg 20 14 08 202
+dataset/images/000001673.jpg 03 01 2
+dataset/images/000001674.jpg 30 03 202
+dataset/images/000001675.jpg 8 2020 3
+dataset/images/000001676.jpg 4 2020 17
+dataset/images/000001677.jpg  07 2020 21 0
+dataset/images/000001678.jpg ST A BURGER WHY
+dataset/images/000001679.jpg 2020 13 0
+dataset/images/000001680.jpg GET ON THE
+dataset/images/000001681.jpg  2020 15 0
+dataset/images/000001682.jpg LY REFERENT
+dataset/images/000001683.jpg  2020 17 01 
+dataset/images/000001684.jpg AT SH
+dataset/images/000001685.jpg 20 04 05 2020 2
+dataset/images/000001686.jpg 2020 
+dataset/images/000001687.jpg 8 2020 17 
+dataset/images/000001688.jpg 2020 22 
+dataset/images/000001689.jpg ERTAIN DEATH HA
+dataset/images/000001690.jpg 5 03 2020 15 0
+dataset/images/000001691.jpg FESTIVAL
+dataset/images/000001692.jpg CKED 
+dataset/images/000001693.jpg 05 2020 0
+dataset/images/000001694.jpg CK RODE OVE
+dataset/images/000001695.jpg 3 2020 24 04 
+dataset/images/000001696.jpg 02 02 2020
+dataset/images/000001697.jpg 0 17 0
+dataset/images/000001698.jpg  2020 01 0
+dataset/images/000001699.jpg LS WITH 
+dataset/images/000001700.jpg  PROBABLY 
+dataset/images/000001701.jpg 24 07 2020 26 0
+dataset/images/000001702.jpg 23 03 2020 07
+dataset/images/000001703.jpg NDOM PARAGR
+dataset/images/000001704.jpg 29 2224 8212 8
+dataset/images/000001705.jpg 0 15 01 202
+dataset/images/000001706.jpg 54 1393
+dataset/images/000001707.jpg WAS IN
+dataset/images/000001708.jpg  2020 05 07 2
+dataset/images/000001709.jpg  21 06 2020 30
+dataset/images/000001710.jpg UALLY
+dataset/images/000001711.jpg 20 15 03 2020
+dataset/images/000001712.jpg  2020 15 0
+dataset/images/000001713.jpg 0 29 01 2020 0
+dataset/images/000001714.jpg  08 2020 1
+dataset/images/000001715.jpg REPAIR
+dataset/images/000001716.jpg  7054 2813 555
+dataset/images/000001717.jpg 06 2020 31 07 2
+dataset/images/000001718.jpg 0 30 03 
+dataset/images/000001719.jpg 760 314
+dataset/images/000001720.jpg  2020 13 0
+dataset/images/000001721.jpg OUND OUT YES
+dataset/images/000001722.jpg 08 02 2020
+dataset/images/000001723.jpg 04 2020 24 
+dataset/images/000001724.jpg  04 2020 0
+dataset/images/000001725.jpg 2 202
+dataset/images/000001726.jpg T THE
+dataset/images/000001727.jpg ERENT OR THE
+dataset/images/000001728.jpg 0 06 03 2020 18
+dataset/images/000001729.jpg  2020 08 0
+dataset/images/000001730.jpg NDS SHE D PU
+dataset/images/000001731.jpg MOUNTA
+dataset/images/000001732.jpg  13 01 202
+dataset/images/000001733.jpg 04 2020 27 
+dataset/images/000001734.jpg  07 20
+dataset/images/000001735.jpg IM WELL THUS FA
+dataset/images/000001736.jpg  HAD DONE
+dataset/images/000001737.jpg  2020 05
+dataset/images/000001738.jpg 4059 5
+dataset/images/000001739.jpg  SURE
+dataset/images/000001740.jpg 0 02 04 
+dataset/images/000001741.jpg 2020 19 02 2
+dataset/images/000001742.jpg AUGHT HIMSELF A
+dataset/images/000001743.jpg  2020 16 07 202
+dataset/images/000001744.jpg  08 2020 0
+dataset/images/000001745.jpg 6 03 2020
+dataset/images/000001746.jpg AR AND EIGHTY S
+dataset/images/000001747.jpg  2020 30 06 2
+dataset/images/000001748.jpg 2 2020 17 02 20
+dataset/images/000001749.jpg 3 7829 
+dataset/images/000001750.jpg  07 202
+dataset/images/000001751.jpg 02 2020 20
+dataset/images/000001752.jpg  PONY GLASS 
+dataset/images/000001753.jpg MEANT TO BE DO
+dataset/images/000001754.jpg 5 2020 17 
+dataset/images/000001755.jpg MENT LATER 
+dataset/images/000001756.jpg AN ICE
+dataset/images/000001757.jpg 6 2020 27 
+dataset/images/000001758.jpg  01 2020 14 08
+dataset/images/000001759.jpg TY ONC
+dataset/images/000001760.jpg 6 2020 27 03 20
+dataset/images/000001761.jpg 6855 569
+dataset/images/000001762.jpg 2020 09 06 202
+dataset/images/000001763.jpg 2 8828
+dataset/images/000001764.jpg S DAVE W
+dataset/images/000001765.jpg 04 2020 17 0
+dataset/images/000001766.jpg 2020 21 07 20
+dataset/images/000001767.jpg 24 631 7517 5
+dataset/images/000001768.jpg 3935 2954 437 
+dataset/images/000001769.jpg  01 2020 26 03 
+dataset/images/000001770.jpg  07 202
+dataset/images/000001771.jpg 020 02 02 2020
+dataset/images/000001772.jpg 04 20
+dataset/images/000001773.jpg R THE PAST W
+dataset/images/000001774.jpg 2020 15 05 202
+dataset/images/000001775.jpg  MOUNTAIN
+dataset/images/000001776.jpg  06 2020 02 05 
+dataset/images/000001777.jpg 11 03 2
+dataset/images/000001778.jpg  AT HER B
+dataset/images/000001779.jpg ANS IT WAN
+dataset/images/000001780.jpg ED TO BE SO
+dataset/images/000001781.jpg NOW HOW I KNO
+dataset/images/000001782.jpg 2 2020 08 05 2
+dataset/images/000001783.jpg 1 01 
+dataset/images/000001784.jpg 9 03 2020 
+dataset/images/000001785.jpg OR MOR
+dataset/images/000001786.jpg  2020 09 08 202
+dataset/images/000001787.jpg 20 14 08 
+dataset/images/000001788.jpg 4 07 20
+dataset/images/000001789.jpg 8 08 20
+dataset/images/000001790.jpg 07 2020 23 0
+dataset/images/000001791.jpg G TO TEL
+dataset/images/000001792.jpg 06 03 2020 
+dataset/images/000001793.jpg  THE GENERATE B
+dataset/images/000001794.jpg  2020 13
+dataset/images/000001795.jpg 06 04 2020
+dataset/images/000001796.jpg MILIAR IT WAS 
+dataset/images/000001797.jpg 1 2020 0
+dataset/images/000001798.jpg BOUT 
+dataset/images/000001799.jpg  2020 14 08
+dataset/images/000001800.jpg 15 02 2020 27 
+dataset/images/000001801.jpg  06 2020 22 05
+dataset/images/000001802.jpg 8 07 2020 02 0
+dataset/images/000001803.jpg S DAD HAD
+dataset/images/000001804.jpg 19 03 
+dataset/images/000001805.jpg 2159 9334 7029 
+dataset/images/000001806.jpg 301 6451 5
+dataset/images/000001807.jpg N THOUGH GREG
+dataset/images/000001808.jpg  LOVE YOU GIVE
+dataset/images/000001809.jpg  2020 27
+dataset/images/000001810.jpg ORNER 
+dataset/images/000001811.jpg  03 07 2
+dataset/images/000001812.jpg 0 03 2020 
+dataset/images/000001813.jpg HER AND HER UN
+dataset/images/000001814.jpg 31 8139 7848 22
+dataset/images/000001815.jpg ECIDE IF IT 
+dataset/images/000001816.jpg  2020
+dataset/images/000001817.jpg 3 06 2020 24 
+dataset/images/000001818.jpg MENT 
+dataset/images/000001819.jpg 20 29 01 2020 1
+dataset/images/000001820.jpg  08 2020 11 0
+dataset/images/000001821.jpg A CONCERNING D
+dataset/images/000001822.jpg 08 2020
+dataset/images/000001823.jpg  03 202
+dataset/images/000001824.jpg 20 02 06 
+dataset/images/000001825.jpg  2020 25 0
+dataset/images/000001826.jpg  2020 23 04 20
+dataset/images/000001827.jpg DISCOV
+dataset/images/000001828.jpg 02 2020 06
+dataset/images/000001829.jpg 2020 28 0
+dataset/images/000001830.jpg 2020 
+dataset/images/000001831.jpg TOTALLY OU
+dataset/images/000001832.jpg 8486 810
+dataset/images/000001833.jpg  MEAN
+dataset/images/000001834.jpg 20 21 
+dataset/images/000001835.jpg 62 6803 4337 
+dataset/images/000001836.jpg 13 02 2
+dataset/images/000001837.jpg 0 09 07 2
+dataset/images/000001838.jpg  23 07 2020 
+dataset/images/000001839.jpg T SEE ANOT
+dataset/images/000001840.jpg OF HISTORY IT 
+dataset/images/000001841.jpg 20 07 05 202
+dataset/images/000001842.jpg 0 23 04 2
+dataset/images/000001843.jpg 0 25 01 2020
+dataset/images/000001844.jpg 20 23 03
+dataset/images/000001845.jpg 28 05 202
+dataset/images/000001846.jpg AL ONE DOLLAR
+dataset/images/000001847.jpg  2020 06 0
+dataset/images/000001848.jpg 8724 
+dataset/images/000001849.jpg FUL HE 
+dataset/images/000001850.jpg OLDEST BUILDI
+dataset/images/000001851.jpg N YOU BUY GIFT
+dataset/images/000001852.jpg  GET 
+dataset/images/000001853.jpg NOT FOR THE
+dataset/images/000001854.jpg 02 2020 09 08
+dataset/images/000001855.jpg 6 3588 
+dataset/images/000001856.jpg  23 02 2020 3
+dataset/images/000001857.jpg BT THAT TH
+dataset/images/000001858.jpg PSET HE 
+dataset/images/000001859.jpg 19 01 2020 03
+dataset/images/000001860.jpg E STAR
+dataset/images/000001861.jpg 0 01 2020 
+dataset/images/000001862.jpg 09 07 2020 15 0
+dataset/images/000001863.jpg 846 271
+dataset/images/000001864.jpg 7 3865 9
+dataset/images/000001865.jpg 0 06 
+dataset/images/000001866.jpg  2020 05 
+dataset/images/000001867.jpg 6 07 
+dataset/images/000001868.jpg GETTING
+dataset/images/000001869.jpg  ALWAYS BE
+dataset/images/000001870.jpg  03 2020 11 
+dataset/images/000001871.jpg  01 02 20
+dataset/images/000001872.jpg  1788 40
+dataset/images/000001873.jpg 2020 0
+dataset/images/000001874.jpg  SINCE SOMEONE
+dataset/images/000001875.jpg  THINGS
+dataset/images/000001876.jpg  WAS 
+dataset/images/000001877.jpg 0 29 04 202
+dataset/images/000001878.jpg 7 07 202
+dataset/images/000001879.jpg  GOAL H
+dataset/images/000001880.jpg 9 5147 7418 8
+dataset/images/000001881.jpg 0 09 05 2020
+dataset/images/000001882.jpg ST FRIEN
+dataset/images/000001883.jpg 20 11 03 2020 1
+dataset/images/000001884.jpg 020 20 
+dataset/images/000001885.jpg 0 20 05 20
+dataset/images/000001886.jpg  01 20
+dataset/images/000001887.jpg 471 5301 5428 4
+dataset/images/000001888.jpg 8 202
+dataset/images/000001889.jpg  08 02 2020 0
+dataset/images/000001890.jpg R WHERE IT HAD 
+dataset/images/000001891.jpg 8 2020 25 01 
+dataset/images/000001892.jpg 2020 25 06 202
+dataset/images/000001893.jpg  2020 16 0
+dataset/images/000001894.jpg 01 202
+dataset/images/000001895.jpg 80 4751 335
+dataset/images/000001896.jpg SS HER SOUL
+dataset/images/000001897.jpg 4 2020 06 01 2
+dataset/images/000001898.jpg  04 2020 1
+dataset/images/000001899.jpg ALL HER H
+dataset/images/000001900.jpg CEPT FOR 
+dataset/images/000001901.jpg TAIN INTO TH
+dataset/images/000001902.jpg 9 4219 8223 
+dataset/images/000001903.jpg 06 08 2020 04
+dataset/images/000001904.jpg 0 29 02 2020
+dataset/images/000001905.jpg  3974 46
+dataset/images/000001906.jpg K ACT
+dataset/images/000001907.jpg 020 19 03 2
+dataset/images/000001908.jpg  2944
+dataset/images/000001909.jpg 03 2020 20 07 
+dataset/images/000001910.jpg 2 08 2020
+dataset/images/000001911.jpg  01 2
+dataset/images/000001912.jpg 3 2020 10
+dataset/images/000001913.jpg  07 202
+dataset/images/000001914.jpg 2020 29
+dataset/images/000001915.jpg  THE D
+dataset/images/000001916.jpg  07 2020
+dataset/images/000001917.jpg SUPPOSED TO BE
+dataset/images/000001918.jpg HIKER S
+dataset/images/000001919.jpg 28 01 2020 1
+dataset/images/000001920.jpg  7694
+dataset/images/000001921.jpg 20 10 03 2020
+dataset/images/000001922.jpg  05 2020 30 06 
+dataset/images/000001923.jpg 8 06 2020
+dataset/images/000001924.jpg  YOU K
+dataset/images/000001925.jpg  01 20
+dataset/images/000001926.jpg T WAS
+dataset/images/000001927.jpg 0 27 06
+dataset/images/000001928.jpg IFE SHE 
+dataset/images/000001929.jpg MANY OF T
+dataset/images/000001930.jpg 7140 876
+dataset/images/000001931.jpg HAT THIS WA
+dataset/images/000001932.jpg 1 2020 13 07 2
+dataset/images/000001933.jpg 6 2020 2
+dataset/images/000001934.jpg 05 20
+dataset/images/000001935.jpg  THE P
+dataset/images/000001936.jpg PLETELY 
+dataset/images/000001937.jpg 1 03 2020 1
+dataset/images/000001938.jpg LAY WH
+dataset/images/000001939.jpg  THE BAY A
+dataset/images/000001940.jpg 61 152
+dataset/images/000001941.jpg EATH AT
+dataset/images/000001942.jpg IME SO
+dataset/images/000001943.jpg  4507 
+dataset/images/000001944.jpg 2020 04 03 20
+dataset/images/000001945.jpg O TEAC
+dataset/images/000001946.jpg 01 2020 08
+dataset/images/000001947.jpg 0 30 0
+dataset/images/000001948.jpg 7 2020 02 
+dataset/images/000001949.jpg FFEE TA
+dataset/images/000001950.jpg LD EVER GET 
+dataset/images/000001951.jpg ARE ASK SHE
+dataset/images/000001952.jpg 0 11 06 
+dataset/images/000001953.jpg 3 2020
+dataset/images/000001954.jpg 20 06 07 2020 
+dataset/images/000001955.jpg 6 2020
+dataset/images/000001956.jpg 6 04 2020 0
+dataset/images/000001957.jpg 03 2020 12 07 
+dataset/images/000001958.jpg  6388 7150 32
+dataset/images/000001959.jpg 0 01 
+dataset/images/000001960.jpg 20 17 02 
+dataset/images/000001961.jpg 0 21 06 
+dataset/images/000001962.jpg 8 08 2
+dataset/images/000001963.jpg 65 9836 3934 31
+dataset/images/000001964.jpg 2 06 2020 
+dataset/images/000001965.jpg  07 0
+dataset/images/000001966.jpg  10 04 2020
+dataset/images/000001967.jpg  2020 
+dataset/images/000001968.jpg SE TO CHECK THE
+dataset/images/000001969.jpg  08 2020 14
+dataset/images/000001970.jpg 2020 10 04 202
+dataset/images/000001971.jpg 2 5183 6734 4
+dataset/images/000001972.jpg WARDLY UPB
+dataset/images/000001973.jpg ED AT THE S
+dataset/images/000001974.jpg  AND WHEN SHE
+dataset/images/000001975.jpg 2020 
+dataset/images/000001976.jpg 411 99
+dataset/images/000001977.jpg 2 07 2020 27 0
+dataset/images/000001978.jpg 6 04 2020 30 0
+dataset/images/000001979.jpg  3933 15
+dataset/images/000001980.jpg 0 01 2020 19 04
+dataset/images/000001981.jpg 5 05 2020 26 01
+dataset/images/000001982.jpg HREE YEARS OLD
+dataset/images/000001983.jpg 020 26
+dataset/images/000001984.jpg  5469 5506
+dataset/images/000001985.jpg 020 05 08 202
+dataset/images/000001986.jpg 20 21 07 2020 1
+dataset/images/000001987.jpg 9 04 2020 
+dataset/images/000001988.jpg BEYOND TH
+dataset/images/000001989.jpg  11 01 20
+dataset/images/000001990.jpg NT TO DO IN LI
+dataset/images/000001991.jpg IT AND FONDLING
+dataset/images/000001992.jpg  2020 09 05 20
+dataset/images/000001993.jpg 0 18 06 20
+dataset/images/000001994.jpg  DARKNESS AND
+dataset/images/000001995.jpg N SOME UNF
+dataset/images/000001996.jpg 0 10 04
+dataset/images/000001997.jpg  06 2020 11 01 
+dataset/images/000001998.jpg 6144 9085 1
+dataset/images/000001999.jpg  01 2020 03 
+dataset/images/000002000.jpg 020 29 04 2020
+dataset/images/000002001.jpg  08 2020 05
+dataset/images/000002002.jpg 020 24 01 20
+dataset/images/000002003.jpg  14 08 2020 1
+dataset/images/000002004.jpg HING IN TH
+dataset/images/000002005.jpg  26 04 202
+dataset/images/000002006.jpg  AND A
+dataset/images/000002007.jpg 01 69
+dataset/images/000002008.jpg  WITH T
+dataset/images/000002009.jpg 2 2020
+dataset/images/000002010.jpg IS HEART STAR
+dataset/images/000002011.jpg 2020 17 02 
+dataset/images/000002012.jpg N EVEN THOUG
+dataset/images/000002013.jpg 2020 24 07 202
+dataset/images/000002014.jpg HERE AND YET 
+dataset/images/000002015.jpg 6 01 2020 01 
+dataset/images/000002016.jpg  31 05 
+dataset/images/000002017.jpg 0 12 07
+dataset/images/000002018.jpg 20 10 01 2
+dataset/images/000002019.jpg  3428 8392 296
+dataset/images/000002020.jpg ET HE ALREADY K
+dataset/images/000002021.jpg  HE WAS SMART
+dataset/images/000002022.jpg 36 7533 8030 
+dataset/images/000002023.jpg 6 08 2020 
+dataset/images/000002024.jpg  2020 22 02 
+dataset/images/000002025.jpg 20 22 03 
+dataset/images/000002026.jpg 2 2020 0
+dataset/images/000002027.jpg 0 24 
+dataset/images/000002028.jpg 0 28 0
+dataset/images/000002029.jpg HE WAS
+dataset/images/000002030.jpg NT TY
+dataset/images/000002031.jpg S FOR 
+dataset/images/000002032.jpg 15 06 20
+dataset/images/000002033.jpg NPOINT WHAT I
+dataset/images/000002034.jpg 0 23 02 20
+dataset/images/000002035.jpg  22 05 2020
+dataset/images/000002036.jpg  8869 1745 5
+dataset/images/000002037.jpg  ORDERED EVE
+dataset/images/000002038.jpg 7 2020
+dataset/images/000002039.jpg THAT TINGLY FEE
+dataset/images/000002040.jpg 7 1766 8162 6
+dataset/images/000002041.jpg 02 2020 03 08 2
+dataset/images/000002042.jpg ESIDENT OF T
+dataset/images/000002043.jpg 7 03 202
+dataset/images/000002044.jpg  I REALLY
+dataset/images/000002045.jpg R CREAT
+dataset/images/000002046.jpg 20 01
+dataset/images/000002047.jpg MICHA
+dataset/images/000002048.jpg LL ANOTHE
+dataset/images/000002049.jpg RRY THE
+dataset/images/000002050.jpg 0 29 02 202
+dataset/images/000002051.jpg 0 09 01 202
+dataset/images/000002052.jpg  SHE HAD 
+dataset/images/000002053.jpg OING TO BE S
+dataset/images/000002054.jpg 20 24 06 2
+dataset/images/000002055.jpg 20 01 06 
+dataset/images/000002056.jpg 0 19 
+dataset/images/000002057.jpg 0 09 04 2020 1
+dataset/images/000002058.jpg  9488 9811 521
+dataset/images/000002059.jpg 7 2020 2
+dataset/images/000002060.jpg UNKNO
+dataset/images/000002061.jpg 0 15 08 2020 18
+dataset/images/000002062.jpg 6 01 2020 
+dataset/images/000002063.jpg KEY WAS
+dataset/images/000002064.jpg  9055 31
+dataset/images/000002065.jpg 0 07 0
+dataset/images/000002066.jpg SAVE IT
+dataset/images/000002067.jpg  BE THE LAST 
+dataset/images/000002068.jpg WAS A NO WI
+dataset/images/000002069.jpg  THE ROA
+dataset/images/000002070.jpg DE FEELING THA
+dataset/images/000002071.jpg ANYTHING AT A
+dataset/images/000002072.jpg  19 02 202
+dataset/images/000002073.jpg 20 11 0
+dataset/images/000002074.jpg  01 20
+dataset/images/000002075.jpg 277 262
+dataset/images/000002076.jpg 20 09 02 20
+dataset/images/000002077.jpg 50 3554 
+dataset/images/000002078.jpg HE CU
+dataset/images/000002079.jpg 1 04 2020 09 0
+dataset/images/000002080.jpg 02 20
+dataset/images/000002081.jpg OM PARAGRAPH AN
+dataset/images/000002082.jpg 020 18 03 20
+dataset/images/000002083.jpg 2020 28 01 20
+dataset/images/000002084.jpg 8 9507
+dataset/images/000002085.jpg 8 202
+dataset/images/000002086.jpg 0 14 
+dataset/images/000002087.jpg 2020 19 
+dataset/images/000002088.jpg  05 02 20
+dataset/images/000002089.jpg D BRIEFLY IN
+dataset/images/000002090.jpg O YESTERDAY
+dataset/images/000002091.jpg 19 05 202
+dataset/images/000002092.jpg 2020 2
+dataset/images/000002093.jpg  HAD DREA
+dataset/images/000002094.jpg LP TOMORR
+dataset/images/000002095.jpg 20 09 07 2020
+dataset/images/000002096.jpg 9043 
+dataset/images/000002097.jpg O IN FACT S
+dataset/images/000002098.jpg 11 07 20
+dataset/images/000002099.jpg 2020 21 06 2
+dataset/images/000002100.jpg 19 08 2020 1
+dataset/images/000002101.jpg 6676 73
+dataset/images/000002102.jpg 395 5093
+dataset/images/000002103.jpg ORE AT EASE 
+dataset/images/000002104.jpg  3943 1185
+dataset/images/000002105.jpg  15 04 20
+dataset/images/000002106.jpg ANDFU
+dataset/images/000002107.jpg  DEPRE
+dataset/images/000002108.jpg AT IN THE
+dataset/images/000002109.jpg HE DARKNES
+dataset/images/000002110.jpg 3 06 2020 30 
+dataset/images/000002111.jpg 2020 04 0
+dataset/images/000002112.jpg 9 3095 3325 941
+dataset/images/000002113.jpg 05 2020
+dataset/images/000002114.jpg 192 7277 2621
+dataset/images/000002115.jpg HMENT EXCE
+dataset/images/000002116.jpg VES STOPPE
+dataset/images/000002117.jpg  12 04 2020 13 
+dataset/images/000002118.jpg  24 05 2020 
+dataset/images/000002119.jpg R DAY EVEN WHE
+dataset/images/000002120.jpg 2020 22 0
+dataset/images/000002121.jpg 0 11 04 2020
+dataset/images/000002122.jpg RYING 
+dataset/images/000002123.jpg 20 06 04
+dataset/images/000002124.jpg O TOP DEPEN
+dataset/images/000002125.jpg  TO THE PATH W
+dataset/images/000002126.jpg  WAS THE
+dataset/images/000002127.jpg BE SATISF
+dataset/images/000002128.jpg  12 03 202
+dataset/images/000002129.jpg GER IT WAS T
+dataset/images/000002130.jpg  ZAPHOD S GIRL
+dataset/images/000002131.jpg ROSS TH
+dataset/images/000002132.jpg 20 30 06 2020
+dataset/images/000002133.jpg 0 15 05 202
+dataset/images/000002134.jpg VEN WHEN SHE
+dataset/images/000002135.jpg  2020 05 03
+dataset/images/000002136.jpg  2020 2
+dataset/images/000002137.jpg 0 11 03 2020 28
+dataset/images/000002138.jpg THE SA
+dataset/images/000002139.jpg  THAT WAS EDI
+dataset/images/000002140.jpg S BREA
+dataset/images/000002141.jpg 20 25 05
+dataset/images/000002142.jpg Y SOMET
+dataset/images/000002143.jpg  01 2
+dataset/images/000002144.jpg HEN HE CAME
+dataset/images/000002145.jpg  24 03
+dataset/images/000002146.jpg T THAT
+dataset/images/000002147.jpg 195 1347 8488 
+dataset/images/000002148.jpg 020 16 0
+dataset/images/000002149.jpg  1350 7977 23
+dataset/images/000002150.jpg G THAT THING
+dataset/images/000002151.jpg 2020 14 04
+dataset/images/000002152.jpg 0 23 04 2
+dataset/images/000002153.jpg 15 07 2
+dataset/images/000002154.jpg 16 04 2020
+dataset/images/000002155.jpg 04 04
+dataset/images/000002156.jpg  08 07 20
+dataset/images/000002157.jpg T OF IT AND T
+dataset/images/000002158.jpg 12 2318 6257 7
+dataset/images/000002159.jpg 719 352
+dataset/images/000002160.jpg 0 10 02
+dataset/images/000002161.jpg 03 2020 21 05
+dataset/images/000002162.jpg 8 2020 11
+dataset/images/000002163.jpg DIDN T TEL
+dataset/images/000002164.jpg 20 17 06 2020 2
+dataset/images/000002165.jpg 0 20 01 2020 05
+dataset/images/000002166.jpg  26 04 2020 23
+dataset/images/000002167.jpg WORKED 
+dataset/images/000002168.jpg ND COULD NOT F
+dataset/images/000002169.jpg 1 8599 2803 117
+dataset/images/000002170.jpg ANIMAL ITSELF
+dataset/images/000002171.jpg  02 08 2020
+dataset/images/000002172.jpg 8 2020 16 0
+dataset/images/000002173.jpg P OF THE
+dataset/images/000002174.jpg 20 09
+dataset/images/000002175.jpg 01 2020 2
+dataset/images/000002176.jpg LL SAID AND 
+dataset/images/000002177.jpg 450 11
+dataset/images/000002178.jpg  AFTER THIS D
+dataset/images/000002179.jpg  06 2020 22 03
+dataset/images/000002180.jpg NG TO THE EST
+dataset/images/000002181.jpg HAD D
+dataset/images/000002182.jpg 44 74 4000 
+dataset/images/000002183.jpg  28 02
+dataset/images/000002184.jpg 14 06 2020 21 0
+dataset/images/000002185.jpg  2020 02
+dataset/images/000002186.jpg  06 2
+dataset/images/000002187.jpg ARS AN
+dataset/images/000002188.jpg  BUY GIFT
+dataset/images/000002189.jpg  4607 4074 
+dataset/images/000002190.jpg HE HITCHH
+dataset/images/000002191.jpg 8 2020 15 
+dataset/images/000002192.jpg  DIDN T WANT T
+dataset/images/000002193.jpg 22 442 3991 
+dataset/images/000002194.jpg 07 06 2020 19
+dataset/images/000002195.jpg  2154 7124 
+dataset/images/000002196.jpg E ARE DIFFERENT
+dataset/images/000002197.jpg  THAT IS IF WE
+dataset/images/000002198.jpg 27 03 2020 1
+dataset/images/000002199.jpg PTIVATING BY R
+dataset/images/000002200.jpg 5 2020 17 04 20
+dataset/images/000002201.jpg  2868 
+dataset/images/000002202.jpg WITH IT FOR LO
+dataset/images/000002203.jpg  2020 24 0
+dataset/images/000002204.jpg 3 04 2020 21
+dataset/images/000002205.jpg  20 02 2
+dataset/images/000002206.jpg 2020 
+dataset/images/000002207.jpg 0 9365 170 3
+dataset/images/000002208.jpg E CAN DOU
+dataset/images/000002209.jpg 8 2658 4468 12
+dataset/images/000002210.jpg E THE CAB ARRI
+dataset/images/000002211.jpg A CERTA
+dataset/images/000002212.jpg O USE MY WILL 
+dataset/images/000002213.jpg 03 06 2020
+dataset/images/000002214.jpg 1275 3194
+dataset/images/000002215.jpg 0 03 
+dataset/images/000002216.jpg  01 01 2
+dataset/images/000002217.jpg DN T SHE GIVE
+dataset/images/000002218.jpg  2020 2
+dataset/images/000002219.jpg  6447 651
+dataset/images/000002220.jpg IT WHEN IT REC
+dataset/images/000002221.jpg TO IMPRES
+dataset/images/000002222.jpg D TO C
+dataset/images/000002223.jpg 020 2
+dataset/images/000002224.jpg 3 3026 6855 569
+dataset/images/000002225.jpg 060 4777 7448
+dataset/images/000002226.jpg 2 07 2020
+dataset/images/000002227.jpg  07 2
+dataset/images/000002228.jpg 4 2020 19
+dataset/images/000002229.jpg NAKED I
+dataset/images/000002230.jpg  03 20
+dataset/images/000002231.jpg 2020 03 03 202
+dataset/images/000002232.jpg 020 05 02 202
+dataset/images/000002233.jpg  BACKGRO
+dataset/images/000002234.jpg  2020 23 03 
+dataset/images/000002235.jpg 4 2020 0
+dataset/images/000002236.jpg 26 367 2111 94
+dataset/images/000002237.jpg 3 04 2020 19 
+dataset/images/000002238.jpg CONSEQUENCES BU
+dataset/images/000002239.jpg 20 25 03 2020
+dataset/images/000002240.jpg 21 632
+dataset/images/000002241.jpg  01 2020 11 07
+dataset/images/000002242.jpg R THE DRINK
+dataset/images/000002243.jpg 020 01 0
+dataset/images/000002244.jpg 20 20
+dataset/images/000002245.jpg WONDERED
+dataset/images/000002246.jpg LY PHONE BIL
+dataset/images/000002247.jpg  08 2020 06
+dataset/images/000002248.jpg  MINUTE A
+dataset/images/000002249.jpg 25 03 2
+dataset/images/000002250.jpg 20 03
+dataset/images/000002251.jpg  10 06 
+dataset/images/000002252.jpg OF SECRETS S
+dataset/images/000002253.jpg E MOVEMENT SHE
+dataset/images/000002254.jpg T ROLE MODEL
+dataset/images/000002255.jpg 2020 10 08
+dataset/images/000002256.jpg AND COULD NO
+dataset/images/000002257.jpg 2020 12 07 2020
+dataset/images/000002258.jpg 0 23 05
+dataset/images/000002259.jpg OF COFFEE HE 
+dataset/images/000002260.jpg 01 2020 
+dataset/images/000002261.jpg 020 21 08 20
+dataset/images/000002262.jpg 991 1
+dataset/images/000002263.jpg 4 04 2020 
+dataset/images/000002264.jpg AT WAS WHEN
+dataset/images/000002265.jpg 2020 06 08
+dataset/images/000002266.jpg 20 04 08 
+dataset/images/000002267.jpg 05 2020 10 05 2
+dataset/images/000002268.jpg  4460 9924
+dataset/images/000002269.jpg ANOID BRI
+dataset/images/000002270.jpg 07 4074 991
+dataset/images/000002271.jpg NTS AND HAD
+dataset/images/000002272.jpg WATCH AS TH
+dataset/images/000002273.jpg 2020 16 03 202
+dataset/images/000002274.jpg LACED TH
+dataset/images/000002275.jpg D TO SP
+dataset/images/000002276.jpg  07 0
+dataset/images/000002277.jpg H AND 
+dataset/images/000002278.jpg 09 06 2020 
+dataset/images/000002279.jpg  02 07 
+dataset/images/000002280.jpg 731 8540 3908 6
+dataset/images/000002281.jpg  2020 1
+dataset/images/000002282.jpg OUT TH
+dataset/images/000002283.jpg 20 19 
+dataset/images/000002284.jpg 08 2020 14 0
+dataset/images/000002285.jpg 08 07 2020 1
+dataset/images/000002286.jpg 03 2020 08 03 
+dataset/images/000002287.jpg 0 9937 512
+dataset/images/000002288.jpg  EYES ON HI
+dataset/images/000002289.jpg  SHOW YOU THAT
+dataset/images/000002290.jpg 3 5014 8005 144
+dataset/images/000002291.jpg THE OTHER DRO
+dataset/images/000002292.jpg  14 01 20
+dataset/images/000002293.jpg ON OF BEING NAK
+dataset/images/000002294.jpg 6 03 20
+dataset/images/000002295.jpg N THE F
+dataset/images/000002296.jpg 773 73 1253 53
+dataset/images/000002297.jpg  QUESTI
+dataset/images/000002298.jpg 20 07 07 2020
+dataset/images/000002299.jpg  19 01 2020 3
+dataset/images/000002300.jpg 03 2020 1
+dataset/images/000002301.jpg 20 11 02 
+dataset/images/000002302.jpg THOUT
+dataset/images/000002303.jpg T TO LAND HER
+dataset/images/000002304.jpg 2020 10 06 20
+dataset/images/000002305.jpg 0 19 0
+dataset/images/000002306.jpg  02 2020 
+dataset/images/000002307.jpg 1 2020 13
+dataset/images/000002308.jpg 0 22 0
+dataset/images/000002309.jpg G ORDER SHE WA
+dataset/images/000002310.jpg 20 09 07
+dataset/images/000002311.jpg 2 01 
+dataset/images/000002312.jpg 2020 25 01
+dataset/images/000002313.jpg  07 2020 19 0
+dataset/images/000002314.jpg 04 2020 19 0
+dataset/images/000002315.jpg NSTEAD O
+dataset/images/000002316.jpg 18 05 20
+dataset/images/000002317.jpg  2020 15 06
+dataset/images/000002318.jpg 6 03 2020 2
+dataset/images/000002319.jpg 8898 
+dataset/images/000002320.jpg 020 30 06 2020
+dataset/images/000002321.jpg 20 21
+dataset/images/000002322.jpg HAVE FO
+dataset/images/000002323.jpg A REALIT
+dataset/images/000002324.jpg NOUGH TH
+dataset/images/000002325.jpg  2020 30 03 20
+dataset/images/000002326.jpg 02 2020 17 0
+dataset/images/000002327.jpg  24 04
+dataset/images/000002328.jpg 20 05
+dataset/images/000002329.jpg CE THERE AND
+dataset/images/000002330.jpg ETTING YOU KILL
+dataset/images/000002331.jpg 0 13 02 2020 3
+dataset/images/000002332.jpg RE PROFESS
+dataset/images/000002333.jpg 4611 5279 720
+dataset/images/000002334.jpg N A HUNDRED I
+dataset/images/000002335.jpg 4 3362 6
+dataset/images/000002336.jpg  2020 
+dataset/images/000002337.jpg DIDN T UN
+dataset/images/000002338.jpg 483 4765 5
+dataset/images/000002339.jpg  27 01 2020 26
+dataset/images/000002340.jpg E CHOICE OF
+dataset/images/000002341.jpg 2 04 2020 2
+dataset/images/000002342.jpg 4 202
+dataset/images/000002343.jpg  06 2020 20 04 
+dataset/images/000002344.jpg 2020 2
+dataset/images/000002345.jpg RS OF 
+dataset/images/000002346.jpg E CONTINUED L
+dataset/images/000002347.jpg 6 9441 60
+dataset/images/000002348.jpg WASN T TH
+dataset/images/000002349.jpg GIFT IT
+dataset/images/000002350.jpg  DIDN T LIKE T
+dataset/images/000002351.jpg N THAT T
+dataset/images/000002352.jpg 29 02 2020 
+dataset/images/000002353.jpg 29 8616 16
+dataset/images/000002354.jpg 6 07 202
+dataset/images/000002355.jpg 0 02 2
+dataset/images/000002356.jpg  6030 8327 459
+dataset/images/000002357.jpg EA OF
+dataset/images/000002358.jpg 1 2020 17 01 20
+dataset/images/000002359.jpg  2020 15 
+dataset/images/000002360.jpg  01 2020 16 07 
+dataset/images/000002361.jpg  2020 
+dataset/images/000002362.jpg  FREEW
+dataset/images/000002363.jpg UNDERSTAND 
+dataset/images/000002364.jpg 14 01 2020 15
+dataset/images/000002365.jpg HUNDREDS OF Y
+dataset/images/000002366.jpg ERE THEY E
+dataset/images/000002367.jpg  SOMETHING HOR
+dataset/images/000002368.jpg 8 02 20
+dataset/images/000002369.jpg  LIED
+dataset/images/000002370.jpg 20 07 04 2
+dataset/images/000002371.jpg ICATI
+dataset/images/000002372.jpg 2020 24 02 20
+dataset/images/000002373.jpg 8 6303 2773 10
+dataset/images/000002374.jpg  BOTH THE SPO
+dataset/images/000002375.jpg 654 8483 
+dataset/images/000002376.jpg 14 03 2020 29 
+dataset/images/000002377.jpg D NOT ANTIC
+dataset/images/000002378.jpg 0 15 01
+dataset/images/000002379.jpg 0 04 20
+dataset/images/000002380.jpg ELY VIEW OF T
+dataset/images/000002381.jpg 4003 2659 5088
+dataset/images/000002382.jpg 03 2020 11 
+dataset/images/000002383.jpg 2020 20 0
+dataset/images/000002384.jpg OWLY DOWN T
+dataset/images/000002385.jpg  3903 5358 2
+dataset/images/000002386.jpg  LEAVES A T
+dataset/images/000002387.jpg MES IT S SIMPLY
+dataset/images/000002388.jpg  31 05 2
+dataset/images/000002389.jpg  2020 18 04 20
+dataset/images/000002390.jpg 0 YEARS
+dataset/images/000002391.jpg  2020
+dataset/images/000002392.jpg E CAR AN
+dataset/images/000002393.jpg 3 01 2020 3
+dataset/images/000002394.jpg BEGAN A JOURN
+dataset/images/000002395.jpg 3 02 202
+dataset/images/000002396.jpg 020 04 04 2020
+dataset/images/000002397.jpg AY CO
+dataset/images/000002398.jpg ITH THAT 
+dataset/images/000002399.jpg  22 04 2020
+dataset/images/000002400.jpg 9 02 20
+dataset/images/000002401.jpg LAR AND EIGHTY 
+dataset/images/000002402.jpg BOUT A MILE AW
+dataset/images/000002403.jpg  PANIC AND THE
+dataset/images/000002404.jpg 9045 539 7066 
+dataset/images/000002405.jpg  GENERAT
+dataset/images/000002406.jpg 88 40
+dataset/images/000002407.jpg HOM ARTHUR T
+dataset/images/000002408.jpg 020 17 0
+dataset/images/000002409.jpg 2020 01 08 202
+dataset/images/000002410.jpg FORE WE H
+dataset/images/000002411.jpg 19 05 2
+dataset/images/000002412.jpg 7 2020 
+dataset/images/000002413.jpg 07 2020
+dataset/images/000002414.jpg 89 4944 3280
+dataset/images/000002415.jpg 20 03 0
+dataset/images/000002416.jpg 2020 29 06 202
+dataset/images/000002417.jpg 03 2020 28 05
+dataset/images/000002418.jpg 20 08 01 20
+dataset/images/000002419.jpg  02 2020 01 05 
+dataset/images/000002420.jpg 5 01 20
+dataset/images/000002421.jpg  HE WONDE
+dataset/images/000002422.jpg 8 2020 28 07 2
+dataset/images/000002423.jpg 0 07 2020 
+dataset/images/000002424.jpg 020 15 03 2020
+dataset/images/000002425.jpg  WASN
+dataset/images/000002426.jpg 5 03 202
+dataset/images/000002427.jpg 4 2020 20 07 2
+dataset/images/000002428.jpg ENTUALLY BE DI
+dataset/images/000002429.jpg 77 7136 3103 
+dataset/images/000002430.jpg 07 2020 05 0
+dataset/images/000002431.jpg GHT THAT 
+dataset/images/000002432.jpg ER CREATING CO
+dataset/images/000002433.jpg 51 9925 26
+dataset/images/000002434.jpg 07 202
+dataset/images/000002435.jpg 20 17 03 2
+dataset/images/000002436.jpg 020 17
+dataset/images/000002437.jpg  T MAK
+dataset/images/000002438.jpg 020 16 
+dataset/images/000002439.jpg  HE ALSO K
+dataset/images/000002440.jpg 2 2020
+dataset/images/000002441.jpg 08 02 202
+dataset/images/000002442.jpg  18 03 2
+dataset/images/000002443.jpg  4775 3
+dataset/images/000002444.jpg TIL HE C
+dataset/images/000002445.jpg THAT CREATES 
+dataset/images/000002446.jpg 34 2530 1202 99
+dataset/images/000002447.jpg  10 07 
+dataset/images/000002448.jpg UATION
+dataset/images/000002449.jpg R WAS 
+dataset/images/000002450.jpg 0 31 05 
+dataset/images/000002451.jpg UP A HANDFUL
+dataset/images/000002452.jpg 16 08 
+dataset/images/000002453.jpg 20 01 06 202
+dataset/images/000002454.jpg 0 26 
+dataset/images/000002455.jpg 192 4
+dataset/images/000002456.jpg 8218 4143
+dataset/images/000002457.jpg 2020 05 02 2020
+dataset/images/000002458.jpg  COSTS THAT 
+dataset/images/000002459.jpg 02 202
+dataset/images/000002460.jpg  2020 05
+dataset/images/000002461.jpg  STRIPS
+dataset/images/000002462.jpg E IT WASN T A M
+dataset/images/000002463.jpg N IT I GUESS
+dataset/images/000002464.jpg 0 25 04
+dataset/images/000002465.jpg 29 07 2020 24 
+dataset/images/000002466.jpg 19 08 2020 3
+dataset/images/000002467.jpg EXPLAI
+dataset/images/000002468.jpg 2020 18 05
+dataset/images/000002469.jpg 20 15 03 2020 1
+dataset/images/000002470.jpg BOUT T
+dataset/images/000002471.jpg 020 17 0
+dataset/images/000002472.jpg  8577 7
+dataset/images/000002473.jpg  08 08 2020 12 
+dataset/images/000002474.jpg F THE B
+dataset/images/000002475.jpg  06 20
+dataset/images/000002476.jpg 2020 20 
+dataset/images/000002477.jpg 313 3666 8
+dataset/images/000002478.jpg 20 12 
+dataset/images/000002479.jpg 16 06 
+dataset/images/000002480.jpg 0 18 0
+dataset/images/000002481.jpg  19 07 2
+dataset/images/000002482.jpg 49 61 5196 6
+dataset/images/000002483.jpg 3 2020 10 0
+dataset/images/000002484.jpg HE DAR
+dataset/images/000002485.jpg 2020 30 
+dataset/images/000002486.jpg 20 13 04 2
+dataset/images/000002487.jpg  TO BE ABL
+dataset/images/000002488.jpg 0 15 06 
+dataset/images/000002489.jpg 09 03 2
+dataset/images/000002490.jpg 1 2020
+dataset/images/000002491.jpg 020 08 04 2020 
+dataset/images/000002492.jpg E A MILL
+dataset/images/000002493.jpg 0 06 
+dataset/images/000002494.jpg 9 1070 2606
+dataset/images/000002495.jpg MES THAT COME 
+dataset/images/000002496.jpg 982 875
+dataset/images/000002497.jpg  08 2020 26
+dataset/images/000002498.jpg EEN TWENTY L
+dataset/images/000002499.jpg 4 06 2
+dataset/images/000002500.jpg 5 03 2020 
+dataset/images/000002501.jpg AT MEANT TO B
+dataset/images/000002502.jpg COMPARED TO LAS
+dataset/images/000002503.jpg DISCUSSION WO
+dataset/images/000002504.jpg 3 3842 889
+dataset/images/000002505.jpg 158 613 
+dataset/images/000002506.jpg 15 04 2020 06 
+dataset/images/000002507.jpg 2020 01 0
+dataset/images/000002508.jpg E WITH 
+dataset/images/000002509.jpg 20 27 04 2020
+dataset/images/000002510.jpg R DAY IT WAS 
+dataset/images/000002511.jpg 06 08 2020 30 
+dataset/images/000002512.jpg  CONTRADICTOR
+dataset/images/000002513.jpg HERE THAT S
+dataset/images/000002514.jpg 6 01 20
+dataset/images/000002515.jpg 04 202
+dataset/images/000002516.jpg  30 04 20
+dataset/images/000002517.jpg 4 08 202
+dataset/images/000002518.jpg WOULD 
+dataset/images/000002519.jpg  2020 05 03
+dataset/images/000002520.jpg 20 25 08 20
+dataset/images/000002521.jpg  03 20
+dataset/images/000002522.jpg 3 2020 07
+dataset/images/000002523.jpg  TITLE
+dataset/images/000002524.jpg 0 26 07 20
+dataset/images/000002525.jpg AT FAT
+dataset/images/000002526.jpg 4 2020 2
+dataset/images/000002527.jpg 0 17 01 2020
+dataset/images/000002528.jpg  ANOT
+dataset/images/000002529.jpg 05 08 20
+dataset/images/000002530.jpg 3 2020 0
+dataset/images/000002531.jpg 3 2020 07
+dataset/images/000002532.jpg 29 06 2020 24
+dataset/images/000002533.jpg 022 9872
+dataset/images/000002534.jpg 1 2020 11 03
+dataset/images/000002535.jpg ROWNISH LIQU
+dataset/images/000002536.jpg 2020 04 08
+dataset/images/000002537.jpg 07 20
+dataset/images/000002538.jpg 0 29 06 2020 
+dataset/images/000002539.jpg  CREPT 
+dataset/images/000002540.jpg 2 05 2020
+dataset/images/000002541.jpg 20 10 04 2020
+dataset/images/000002542.jpg S TEN AND TH
+dataset/images/000002543.jpg 8 8824 4910 2
+dataset/images/000002544.jpg  03 2020 0
+dataset/images/000002545.jpg 020 21 
+dataset/images/000002546.jpg 8 7875 7058
+dataset/images/000002547.jpg HE CORRECT 
+dataset/images/000002548.jpg 08 2020 0
+dataset/images/000002549.jpg 6712 3228
+dataset/images/000002550.jpg  02 2020 02 05
+dataset/images/000002551.jpg 6 1036 
+dataset/images/000002552.jpg 0 18 08 2
+dataset/images/000002553.jpg 05 2020 08 0
+dataset/images/000002554.jpg 616 329
+dataset/images/000002555.jpg  4117 991
+dataset/images/000002556.jpg 2020 13
+dataset/images/000002557.jpg  09 04 2
+dataset/images/000002558.jpg 05 2020 18 06
+dataset/images/000002559.jpg 2020 
+dataset/images/000002560.jpg 3 2020 07
+dataset/images/000002561.jpg  SUNK D
+dataset/images/000002562.jpg RISTINE AN
+dataset/images/000002563.jpg 2020 01 08 202
+dataset/images/000002564.jpg D IF SH
+dataset/images/000002565.jpg 628 1
+dataset/images/000002566.jpg 5752 2353
+dataset/images/000002567.jpg ATE WHICH HAD 
+dataset/images/000002568.jpg PREPARED WAS IT
+dataset/images/000002569.jpg 2020 12 01 2
+dataset/images/000002570.jpg ON THE DESK NEX
+dataset/images/000002571.jpg 05 2020
+dataset/images/000002572.jpg 4 01 2
+dataset/images/000002573.jpg W TITLES TO PL
+dataset/images/000002574.jpg 0 28 04 2020 
+dataset/images/000002575.jpg 6258 9
+dataset/images/000002576.jpg 0 11 0
+dataset/images/000002577.jpg  NOTHING B
+dataset/images/000002578.jpg ED YOU 
+dataset/images/000002579.jpg 5 7090 181
+dataset/images/000002580.jpg UDED 
+dataset/images/000002581.jpg  21 07 2020
+dataset/images/000002582.jpg 46 760
+dataset/images/000002583.jpg THAT SIMPLY
+dataset/images/000002584.jpg 24 02 2020
+dataset/images/000002585.jpg  2020 
+dataset/images/000002586.jpg  2513 750
+dataset/images/000002587.jpg HE SL
+dataset/images/000002588.jpg OOKING UPON H
+dataset/images/000002589.jpg  2020
+dataset/images/000002590.jpg 03 2020
+dataset/images/000002591.jpg D THE WORK OF
+dataset/images/000002592.jpg 06 6163 9350 
+dataset/images/000002593.jpg M DURI
+dataset/images/000002594.jpg UALLY PU
+dataset/images/000002595.jpg WANTED TO 
+dataset/images/000002596.jpg 2020 25 04 202
+dataset/images/000002597.jpg 5 202
+dataset/images/000002598.jpg F HOW 
+dataset/images/000002599.jpg 9 05 2
+dataset/images/000002600.jpg ER DROPLET
+dataset/images/000002601.jpg  07 07 2
+dataset/images/000002602.jpg  03 06 2020 12 
+dataset/images/000002603.jpg 27 02 2020 22
+dataset/images/000002604.jpg 641 938
+dataset/images/000002605.jpg NT THE TRUTH
+dataset/images/000002606.jpg 2020 0
+dataset/images/000002607.jpg  14 08 2020
+dataset/images/000002608.jpg 792 5
+dataset/images/000002609.jpg GER UN
+dataset/images/000002610.jpg RE IS A
+dataset/images/000002611.jpg 87 326 8600 93
+dataset/images/000002612.jpg 04 2020 11 06 2
+dataset/images/000002613.jpg 3 2584 6443 409
+dataset/images/000002614.jpg TED TO LET I
+dataset/images/000002615.jpg MAKE IT HAP
+dataset/images/000002616.jpg 110 7489 9554
+dataset/images/000002617.jpg 0 05 02 202
+dataset/images/000002618.jpg 01 2020 09
+dataset/images/000002619.jpg 2020 19 07 20
+dataset/images/000002620.jpg 03 03 2020 2
+dataset/images/000002621.jpg  HOW LONG SH
+dataset/images/000002622.jpg 2359 95
+dataset/images/000002623.jpg 88 5519 8
+dataset/images/000002624.jpg OPIC M
+dataset/images/000002625.jpg 20 12 05 202
+dataset/images/000002626.jpg  2020 08 
+dataset/images/000002627.jpg  22 01 2020 07 
+dataset/images/000002628.jpg 7 02 2020 27 
+dataset/images/000002629.jpg 28 05 2020 
+dataset/images/000002630.jpg EAL THAT HE HAD
+dataset/images/000002631.jpg 40 4020 
+dataset/images/000002632.jpg 2 2353 839
+dataset/images/000002633.jpg 01 05 2020 25 
+dataset/images/000002634.jpg  HE SOU
+dataset/images/000002635.jpg  GET 
+dataset/images/000002636.jpg OF TH
+dataset/images/000002637.jpg 2020 15 0
+dataset/images/000002638.jpg HIRE PROFES
+dataset/images/000002639.jpg 0 31 03 2020
+dataset/images/000002640.jpg  2020 24 07 
+dataset/images/000002641.jpg ULES TO LI
+dataset/images/000002642.jpg TELY CHANGED H
+dataset/images/000002643.jpg 1 2020 
+dataset/images/000002644.jpg 2 2020 16 02 20
+dataset/images/000002645.jpg GETTING 
+dataset/images/000002646.jpg TTING THEM BUT
+dataset/images/000002647.jpg 02 2020 03 05 
+dataset/images/000002648.jpg EMANDS HE JUST
+dataset/images/000002649.jpg 2020 20 04 
+dataset/images/000002650.jpg  21 02 2020 1
+dataset/images/000002651.jpg 20 21
+dataset/images/000002652.jpg 2020 04 
+dataset/images/000002653.jpg 976 10 3
+dataset/images/000002654.jpg 1 5852
+dataset/images/000002655.jpg E THEY MU
+dataset/images/000002656.jpg 3 2020 01 06
+dataset/images/000002657.jpg ING UNDER YOUR 
+dataset/images/000002658.jpg 2020 02 0
+dataset/images/000002659.jpg 7 02 2
+dataset/images/000002660.jpg 3 2020 27 02 2
+dataset/images/000002661.jpg Y UPBRAIDING
+dataset/images/000002662.jpg  01 2
+dataset/images/000002663.jpg MORE AND SHE 
+dataset/images/000002664.jpg  2020
+dataset/images/000002665.jpg ND WA
+dataset/images/000002666.jpg MES THAT COME 
+dataset/images/000002667.jpg LESS THAN W
+dataset/images/000002668.jpg UP GETTING
+dataset/images/000002669.jpg 020 10 07 2
+dataset/images/000002670.jpg  4701
+dataset/images/000002671.jpg  8614 2
+dataset/images/000002672.jpg 0 6205 
+dataset/images/000002673.jpg  27 07 20
+dataset/images/000002674.jpg 01 2020 12 02
+dataset/images/000002675.jpg  23 07
+dataset/images/000002676.jpg  2020 2
+dataset/images/000002677.jpg  POINT WA
+dataset/images/000002678.jpg 020 02 
+dataset/images/000002679.jpg 0 25 01 2020 2
+dataset/images/000002680.jpg AN DECI
+dataset/images/000002681.jpg  HE HAD LOST H
+dataset/images/000002682.jpg  2020 2
+dataset/images/000002683.jpg LL AND SI
+dataset/images/000002684.jpg TO DOUBLE C
+dataset/images/000002685.jpg SN T QUITE YE
+dataset/images/000002686.jpg  THERE I WIL
+dataset/images/000002687.jpg  16 02 2020
+dataset/images/000002688.jpg 65 129
+dataset/images/000002689.jpg  2020 06 0
+dataset/images/000002690.jpg  OTHER ODOR
+dataset/images/000002691.jpg 562 2950 8065 9
+dataset/images/000002692.jpg 020 24 05 20
+dataset/images/000002693.jpg  05 2020 01 0
+dataset/images/000002694.jpg  08 2020 
+dataset/images/000002695.jpg SUGGEST D
+dataset/images/000002696.jpg  27 03 2020 16
+dataset/images/000002697.jpg  TO BE PLAYE
+dataset/images/000002698.jpg DERSTAND THAT
+dataset/images/000002699.jpg D THERE WAS
+dataset/images/000002700.jpg 989 7679 8235
+dataset/images/000002701.jpg 020 13 
+dataset/images/000002702.jpg 08 202
+dataset/images/000002703.jpg  09 07 202
+dataset/images/000002704.jpg 0 18 07
+dataset/images/000002705.jpg 2020 15 04 202
+dataset/images/000002706.jpg LE IN THE 
+dataset/images/000002707.jpg THE CIRCUMS
+dataset/images/000002708.jpg  2020 13 07 
+dataset/images/000002709.jpg 8 8520 4570 95
+dataset/images/000002710.jpg NOW THAT 
+dataset/images/000002711.jpg  2020 
+dataset/images/000002712.jpg 49 8417 2642
+dataset/images/000002713.jpg 210 87
+dataset/images/000002714.jpg 70 5513 4711 5
+dataset/images/000002715.jpg 02 2020 
+dataset/images/000002716.jpg 0 14 05
+dataset/images/000002717.jpg  2020 1
+dataset/images/000002718.jpg E ABLE TO EXPL
+dataset/images/000002719.jpg 04 2020 08 02
+dataset/images/000002720.jpg  ALSO PLUCKED 
+dataset/images/000002721.jpg 13 04 2020
+dataset/images/000002722.jpg 20 13 03 202
+dataset/images/000002723.jpg 2020 03 07 2
+dataset/images/000002724.jpg QUITE
+dataset/images/000002725.jpg  SPECIFIC
+dataset/images/000002726.jpg ING AND WATCH
+dataset/images/000002727.jpg  25 01 2020 
+dataset/images/000002728.jpg  05 04 20
+dataset/images/000002729.jpg 0 06 2020 
+dataset/images/000002730.jpg 923 6
+dataset/images/000002731.jpg 8 2020 29 05 
+dataset/images/000002732.jpg 05 2020 14 04 2
+dataset/images/000002733.jpg ST MEAL AND 
+dataset/images/000002734.jpg 020 25 06 
+dataset/images/000002735.jpg  OF A N
+dataset/images/000002736.jpg 020 17 03
+dataset/images/000002737.jpg  9919 588
+dataset/images/000002738.jpg 562 2950 8065 
+dataset/images/000002739.jpg 1 5984 
+dataset/images/000002740.jpg WHAT HE WA
+dataset/images/000002741.jpg SOMETIMES I J
+dataset/images/000002742.jpg REG HAD
+dataset/images/000002743.jpg 8 2020 08 02 20
+dataset/images/000002744.jpg  DOLLAR 
+dataset/images/000002745.jpg 0 14 07 202
+dataset/images/000002746.jpg KE A SHADOW L
+dataset/images/000002747.jpg 020 03 
+dataset/images/000002748.jpg  03 2020 05 08 
+dataset/images/000002749.jpg  SOMET
+dataset/images/000002750.jpg 020 31 07 202
+dataset/images/000002751.jpg 07 2020 20
+dataset/images/000002752.jpg ANYTHING B
+dataset/images/000002753.jpg 05 2020 04 
+dataset/images/000002754.jpg  15 01 2020
+dataset/images/000002755.jpg 65 32
+dataset/images/000002756.jpg  WONDER OF OUR 
+dataset/images/000002757.jpg HIS HEAR
+dataset/images/000002758.jpg 20 19
+dataset/images/000002759.jpg 9 291
+dataset/images/000002760.jpg NG SHE HAD EVE
+dataset/images/000002761.jpg 5 05 2020 
+dataset/images/000002762.jpg 6 2020 02 06 20
+dataset/images/000002763.jpg  2530 1202 991
+dataset/images/000002764.jpg 783 9166 1401 
+dataset/images/000002765.jpg  23 03
+dataset/images/000002766.jpg  04 2
+dataset/images/000002767.jpg 020 31 05 2
+dataset/images/000002768.jpg 2020 10 04 20
+dataset/images/000002769.jpg HER FACE
+dataset/images/000002770.jpg  9617 2857 
+dataset/images/000002771.jpg 194 3950 5324 3
+dataset/images/000002772.jpg  21 04 2020
+dataset/images/000002773.jpg 08 2020 30 01
+dataset/images/000002774.jpg  FROM HAPPENI
+dataset/images/000002775.jpg 3 07 2020 29 06
+dataset/images/000002776.jpg 020 01 06 20
+dataset/images/000002777.jpg  20 05 2020 21
+dataset/images/000002778.jpg 5 202
+dataset/images/000002779.jpg EN AFTER YOU
+dataset/images/000002780.jpg  14 01 202
+dataset/images/000002781.jpg HE WERE
+dataset/images/000002782.jpg 07 2020 07 07 
+dataset/images/000002783.jpg 0 09 07 2020 04
+dataset/images/000002784.jpg 020 14 06 2020
+dataset/images/000002785.jpg  UNDERPINNIN
+dataset/images/000002786.jpg Y AND MAKE SEN
+dataset/images/000002787.jpg  2020 25 05 2
+dataset/images/000002788.jpg 0 11 01 202
+dataset/images/000002789.jpg  DEAD OF HE
+dataset/images/000002790.jpg 4262 9919 58
+dataset/images/000002791.jpg TO TRY AND S
+dataset/images/000002792.jpg  GO HE LATC
+dataset/images/000002793.jpg  IT S SIM
+dataset/images/000002794.jpg SOMETIMES 
+dataset/images/000002795.jpg ETTER TO IGNOR
+dataset/images/000002796.jpg 0 01 
+dataset/images/000002797.jpg 4519 53
+dataset/images/000002798.jpg LD ON 
+dataset/images/000002799.jpg O BE HER LAST T
+dataset/images/000002800.jpg 2323 4384 5634 
+dataset/images/000002801.jpg 8 03 2020 11 0
+dataset/images/000002802.jpg 12 1973
+dataset/images/000002803.jpg  AS THE WAV
+dataset/images/000002804.jpg 6 05 202
+dataset/images/000002805.jpg 3739 6969
+dataset/images/000002806.jpg 5 2020 26 06
+dataset/images/000002807.jpg  13 03 
+dataset/images/000002808.jpg 200 2223
+dataset/images/000002809.jpg 715 6529 362
+dataset/images/000002810.jpg NEW THE
+dataset/images/000002811.jpg 1 4083 5
+dataset/images/000002812.jpg 0 25 06
+dataset/images/000002813.jpg 020 03 04 
+dataset/images/000002814.jpg  9617 2
+dataset/images/000002815.jpg 0 18 04 2020 07
+dataset/images/000002816.jpg  THE OUT
+dataset/images/000002817.jpg 8 02 2020 19
+dataset/images/000002818.jpg  ANYTHI
+dataset/images/000002819.jpg ES PENNI
+dataset/images/000002820.jpg COULD
+dataset/images/000002821.jpg 17 07 2
+dataset/images/000002822.jpg 2020 30 07
+dataset/images/000002823.jpg 20 15 01 20
+dataset/images/000002824.jpg  OFF GUA
+dataset/images/000002825.jpg 9932 
+dataset/images/000002826.jpg T WAS 
+dataset/images/000002827.jpg  08 2020 25
+dataset/images/000002828.jpg LY GU
+dataset/images/000002829.jpg 67 455 
+dataset/images/000002830.jpg 5 948 8747 50
+dataset/images/000002831.jpg  2020 10 04
+dataset/images/000002832.jpg  04 01 202
+dataset/images/000002833.jpg  UP OR 
+dataset/images/000002834.jpg  2020 01 05 2
+dataset/images/000002835.jpg 0 9249 4183 
+dataset/images/000002836.jpg IN SITUATIO
+dataset/images/000002837.jpg 9 05 
+dataset/images/000002838.jpg 03 2020 07 01 
+dataset/images/000002839.jpg 0 14 06 202
+dataset/images/000002840.jpg 7 05 
+dataset/images/000002841.jpg ELL WHETHER
+dataset/images/000002842.jpg 20 27 01 2
+dataset/images/000002843.jpg 2020 05 
+dataset/images/000002844.jpg 0 30 04 2020 21
+dataset/images/000002845.jpg 2 05 2
+dataset/images/000002846.jpg 20 30
+dataset/images/000002847.jpg ISCOVERED HUN
+dataset/images/000002848.jpg D THAT CAN BE 
+dataset/images/000002849.jpg TYPE OF 
+dataset/images/000002850.jpg  2020 22 02 2
+dataset/images/000002851.jpg 83 4193 909
+dataset/images/000002852.jpg  PROCESS 
+dataset/images/000002853.jpg 0 19 07 20
+dataset/images/000002854.jpg S FIFT
+dataset/images/000002855.jpg 0 03 03 2020 
+dataset/images/000002856.jpg TH A VAGUE ANGU
+dataset/images/000002857.jpg 4 06 
+dataset/images/000002858.jpg ITH THE SIL
+dataset/images/000002859.jpg MISS THE MEA
+dataset/images/000002860.jpg OUGH TO OVERCO
+dataset/images/000002861.jpg 2 2020 02 
+dataset/images/000002862.jpg  30 07 2020
+dataset/images/000002863.jpg 020 08 05 
+dataset/images/000002864.jpg 5 2020 26 
+dataset/images/000002865.jpg MERRY OVER HER
+dataset/images/000002866.jpg  04 2020 04 07
+dataset/images/000002867.jpg PLY B
+dataset/images/000002868.jpg 08 2020 21 0
+dataset/images/000002869.jpg 7 2020 23 02 20
+dataset/images/000002870.jpg  2669 5
+dataset/images/000002871.jpg  HAD B
+dataset/images/000002872.jpg  3034 6716 5318
+dataset/images/000002873.jpg 08 2020 01 06 
+dataset/images/000002874.jpg NDERED HOW
+dataset/images/000002875.jpg 5 03 2020 04 
+dataset/images/000002876.jpg D BEEN FOR OVER
+dataset/images/000002877.jpg PECIAL ABOUT TH
+dataset/images/000002878.jpg 0 29 04 2
+dataset/images/000002879.jpg 2 08 
+dataset/images/000002880.jpg 2 06 2020 20 08
+dataset/images/000002881.jpg 07 2020 21 02 2
+dataset/images/000002882.jpg N WINNING THE 
+dataset/images/000002883.jpg 431 2469 9
+dataset/images/000002884.jpg 5 05 2020 0
+dataset/images/000002885.jpg BT BUT THE RES
+dataset/images/000002886.jpg 3 06 2020 2
+dataset/images/000002887.jpg 20 23 01 2020 2
+dataset/images/000002888.jpg  COULD END U
+dataset/images/000002889.jpg 5 2020 26 03 2
+dataset/images/000002890.jpg ER EXHAU
+dataset/images/000002891.jpg SN T HE
+dataset/images/000002892.jpg 2020 23 0
+dataset/images/000002893.jpg D ITS HOR
+dataset/images/000002894.jpg 502 2666 1377 
+dataset/images/000002895.jpg WELL AND THA
+dataset/images/000002896.jpg 6 2020 01 02 20
+dataset/images/000002897.jpg TO DROP 
+dataset/images/000002898.jpg 19 01 2020
+dataset/images/000002899.jpg ER LIFE 
+dataset/images/000002900.jpg 020 10
+dataset/images/000002901.jpg NG SPECIAL A
+dataset/images/000002902.jpg  WENT THR
+dataset/images/000002903.jpg ISN T T
+dataset/images/000002904.jpg  01 2020 08 
+dataset/images/000002905.jpg 620 3785 5
+dataset/images/000002906.jpg 020 27 04 20
+dataset/images/000002907.jpg D SEE THAT WAS 
+dataset/images/000002908.jpg 20 15
+dataset/images/000002909.jpg OULD 
+dataset/images/000002910.jpg 20 24
+dataset/images/000002911.jpg 2 02 20
+dataset/images/000002912.jpg 0 05 07 202
+dataset/images/000002913.jpg 08 20
+dataset/images/000002914.jpg T ENOUGH 
+dataset/images/000002915.jpg 20 20 01 2020 2
+dataset/images/000002916.jpg AME WOU
+dataset/images/000002917.jpg  02 2020 13 01 
+dataset/images/000002918.jpg IPATED 
+dataset/images/000002919.jpg  9531 884
+dataset/images/000002920.jpg  05 2020
+dataset/images/000002921.jpg 2020 23 05 20
+dataset/images/000002922.jpg 6 2020 
+dataset/images/000002923.jpg E HE CON
+dataset/images/000002924.jpg 020 24 05 2
+dataset/images/000002925.jpg 20 24 07 2020 
+dataset/images/000002926.jpg IES W
+dataset/images/000002927.jpg  02 2020 04 0
+dataset/images/000002928.jpg KS OVER WHI
+dataset/images/000002929.jpg NDERSTA
+dataset/images/000002930.jpg 2020 0
+dataset/images/000002931.jpg EN CENTS A
+dataset/images/000002932.jpg 02 2020 08
+dataset/images/000002933.jpg 26 05 
+dataset/images/000002934.jpg  9427 1071 19
+dataset/images/000002935.jpg 6 2020 
+dataset/images/000002936.jpg MITTING 
+dataset/images/000002937.jpg  YEARS
+dataset/images/000002938.jpg 9 6870 
+dataset/images/000002939.jpg ON THE 
+dataset/images/000002940.jpg REFECT A R
+dataset/images/000002941.jpg  2665 2868 689
+dataset/images/000002942.jpg THE T
+dataset/images/000002943.jpg 03 2020 30 0
+dataset/images/000002944.jpg URE THE DARK
+dataset/images/000002945.jpg  14 01 
+dataset/images/000002946.jpg ND HIM
+dataset/images/000002947.jpg 22 01 2020 0
+dataset/images/000002948.jpg T EXACTLY W
+dataset/images/000002949.jpg  03 2
+dataset/images/000002950.jpg 67 8515 265
+dataset/images/000002951.jpg THE MORE E
+dataset/images/000002952.jpg NG AND IT
+dataset/images/000002953.jpg 020 05 
+dataset/images/000002954.jpg ST WAS
+dataset/images/000002955.jpg IT WOULD BE THE
+dataset/images/000002956.jpg 0 27 0
+dataset/images/000002957.jpg 0 04 0
+dataset/images/000002958.jpg 366 21
+dataset/images/000002959.jpg 0 16 06 20
+dataset/images/000002960.jpg 2020 28 0
+dataset/images/000002961.jpg TORY SO
+dataset/images/000002962.jpg  2058 909
+dataset/images/000002963.jpg  1157 93
+dataset/images/000002964.jpg 207 6
+dataset/images/000002965.jpg O TEACH H
+dataset/images/000002966.jpg SO KNEW
+dataset/images/000002967.jpg 2 202
+dataset/images/000002968.jpg  AND HE HAD
+dataset/images/000002969.jpg D NOW D
+dataset/images/000002970.jpg  HOLD BACK GIV
+dataset/images/000002971.jpg 1 02 2020 
+dataset/images/000002972.jpg 4 08 20
+dataset/images/000002973.jpg  03 01 
+dataset/images/000002974.jpg BUT THAT S 
+dataset/images/000002975.jpg R EAT BLUE FO
+dataset/images/000002976.jpg  HAD DAMA
+dataset/images/000002977.jpg 0 16 05 2020 
+dataset/images/000002978.jpg LVES THA
+dataset/images/000002979.jpg BLANK SCREE
+dataset/images/000002980.jpg EGAN TO TAKE
+dataset/images/000002981.jpg 020 03 05 2020 
+dataset/images/000002982.jpg  06 2
+dataset/images/000002983.jpg 0 8302 1811 
+dataset/images/000002984.jpg N RECOG
+dataset/images/000002985.jpg 30 06 202
+dataset/images/000002986.jpg 020 12 05 
+dataset/images/000002987.jpg EMENT SH
+dataset/images/000002988.jpg E THE MORE EX
+dataset/images/000002989.jpg ND BEG
+dataset/images/000002990.jpg 020 22 08 2020
+dataset/images/000002991.jpg ASN T EVEN
+dataset/images/000002992.jpg 020 24 02 2020 
+dataset/images/000002993.jpg HEY ARGUE WH
+dataset/images/000002994.jpg 0 10 08 2020 
+dataset/images/000002995.jpg  2020 13 08 
+dataset/images/000002996.jpg ONY GLASS 
+dataset/images/000002997.jpg 04 2020 25
+dataset/images/000002998.jpg COULDN T LET 
+dataset/images/000002999.jpg  02 01 2

@@ -89,16 +89,17 @@ class SimpleTextColorCfg(TextColorCfg):
     Randomly use mean value of background image
     """
 
-    alpha: Tuple[int, int] = (150, 255)
+    alpha: Tuple[int, int] = (170, 255)
 
     def get_color(self, bg_img: PILImage) -> Tuple[int, int, int, int]:
         np_img = np.array(bg_img)
         mean = np.mean(np_img)
 
         alpha = np.random.randint(*self.alpha)
-        r = np.random.randint(0, int(mean * 0.4))
-        g = np.random.randint(0, int(mean * 0.4))
-        b = np.random.randint(0, int(mean * 0.4))
+        r = np.random.randint(0, int(mean * 0.7))
+        g = np.random.randint(0, int(mean * 0.7))
+        b = np.random.randint(0, int(mean * 0.7))
+        
         text_color = (r, g, b, alpha)
 
         return text_color
