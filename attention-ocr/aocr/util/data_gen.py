@@ -17,10 +17,10 @@ except AttributeError:
 
 
 class DataGen(object):
-    GO_ID = 1
-    EOS_ID = 2
-    IMAGE_HEIGHT = 32
-    CHARMAP = ['', '', '', '"', "'"] + list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,\"\'.<>/?;:[]{}!@#$%^&*()-=+\|` ")
+    self.GO_ID = 1
+    self.EOS_ID = 2
+    self.IMAGE_HEIGHT = 32
+    self.CHARMAP = ['', '', ''] + list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,\"\'.<>/?;:[]{}!@#$%^&*()-=+\|`")
 
     @staticmethod
     def set_full_ascii_charmap():
@@ -87,7 +87,8 @@ class DataGen(object):
             lex = lex.decode('iso-8859-1')
 
         assert len(lex) < self.bucket_specs[-1][1]
-
+        # print(lex)
+        self.CHARMAP.append(' ')
         return np.array(
             [self.GO_ID] + [self.CHARMAP.index(char) for char in lex] + [self.EOS_ID],
             dtype=np.int32)
