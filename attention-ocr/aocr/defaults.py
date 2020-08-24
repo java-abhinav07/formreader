@@ -13,7 +13,7 @@ class Config(object):
 
     # I/O
     NEW_DATASET_PATH = './dataset.tfrecords'
-    DATA_PATH = './data.tfrecords'
+    DATA_PATH = '/content/drive/My Drive/IITB_Assignment/datasets/training.tfrecords'
     MODEL_DIR = './checkpoints'
     LOG_PATH = 'aocr.log'
     OUTPUT_DIR = './results'
