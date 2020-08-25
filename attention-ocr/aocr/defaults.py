@@ -1,7 +1,7 @@
 """
 Default parameters.
 """
-
+from datetime import datetime
 
 class Config(object):
     """
@@ -11,11 +11,13 @@ class Config(object):
     GPU_ID = 0
     VISUALIZE = False
 
+    time = datetime.now()
+
     # I/O
     NEW_DATASET_PATH = './dataset.tfrecords'
     DATA_PATH = '/content/drive/My Drive/IITB_Assignment/datasets/training.tfrecords'
-    MODEL_DIR = './checkpoints'
-    LOG_PATH = 'aocr.log'
+    MODEL_DIR = f'./checkpoints_modified_{time}'
+    LOG_PATH = f'aocr_modified_{time}.log'
     OUTPUT_DIR = './results'
     STEPS_PER_CHECKPOINT = 100
     EXPORT_FORMAT = 'savedmodel'
