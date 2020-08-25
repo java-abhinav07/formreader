@@ -47,7 +47,7 @@ class Config(object):
 
     MAX_WIDTH = 480
     MAX_HEIGHT = 32
-    MAX_PREDICTION = 17
+    MAX_PREDICTION = 50
 
     USE_DISTANCE = True
 
