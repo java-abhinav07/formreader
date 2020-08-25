@@ -95,12 +95,12 @@ class SimpleTextColorCfg(TextColorCfg):
         np_img = np.array(bg_img)
         mean = np.mean(np_img)
 
-        alpha = np.random.randint(*self.alpha)
-        r = np.random.randint(0, int(mean * 0.7))
-        g = np.random.randint(0, int(mean * 0.7))
-        b = np.random.randint(0, int(mean * 0.7))
+        # alpha = np.random.randint(*self.alpha)
+        # r = np.random.randint(0, int(mean * 0.7))
+        # g = np.random.randint(0, int(mean * 0.7))
+        # b = np.random.randint(0, int(mean * 0.7))
 
-        text_color = (r, g, b, alpha)
+        text_color = (0, 0, 0, alpha)
 
         return text_color
 

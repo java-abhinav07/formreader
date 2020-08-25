@@ -24,13 +24,13 @@ TEXT_DIR = DATA_DIR / "text"
 font_cfg = dict(
     font_dir=FONT_DIR,
     font_list_file=FONT_LIST_DIR / "font_list.txt",
-    font_size=(18, 21),
+    font_size=(16, 18),
 )
 
 perspective_transform = NormPerspectiveTransformCfg(20, 20, 1.5)
 
 ocr_data = GeneratorCfg(
-    num_image=60000,
+    num_image=6,
     save_dir=OUT_DIR,
     render_cfg=RenderCfg(
         bg_dir=BG_DIR,

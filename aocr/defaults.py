@@ -18,7 +18,9 @@ class Config(object):
     NEW_DATASET_PATH = "./dataset.tfrecords"
     DATA_PATH = "/content/drive/My\ Drive/IITB_Assignment/datasets/alphanumeric_AZ09/training.tfrecords"
     # MODEL_DIR = f"./checkpoints_{time}"
-    MODEL_DIR = "/content/drive/My Drive/IITB_Assignment/checkpoints_2020-08-25 13:11:09.078080"
+    MODEL_DIR = (
+        "/content/drive/My Drive/IITB_Assignment/checkpoints_2020-08-25 13:11:09.078080"
+    )
     LOG_PATH = f"aocr_{time}.log"
     OUTPUT_DIR = "./results"
     STEPS_PER_CHECKPOINT = 100
