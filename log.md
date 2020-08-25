@@ -31,3 +31,4 @@ This file contains daily logs of work done in a sequential manner. For example, 
     1. Added testing, training logs
     1. Added result samples + visualizations
     1. Train-Test distribution was same, need public dataset to evaluate properly
+    1. Starting to implement modified aocr 
