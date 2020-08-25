@@ -13,7 +13,7 @@ from text_renderer.layout.extra_text_line import ExtraTextLineLayout
 
 
 CURRENT_DIR = Path(os.path.abspath(os.path.dirname(__file__)))
-OUT_DIR = "/home/abhinavjava/Projects/IITB_Assignment/dataset/alphanumeric_AZ09/"
+OUT_DIR = "/home/abhinavjava/Projects/IITB_Assignment/dataset/realistic_alpha/"
 DATA_DIR = CURRENT_DIR
 BG_DIR = DATA_DIR / "bg"
 CHAR_DIR = DATA_DIR / "char"
@@ -24,13 +24,13 @@ TEXT_DIR = DATA_DIR / "text"
 font_cfg = dict(
     font_dir=FONT_DIR,
     font_list_file=FONT_LIST_DIR / "font_list.txt",
-    font_size=(16, 18),
+    font_size=(22, 24),
 )
 
 perspective_transform = NormPerspectiveTransformCfg(20, 20, 1.5)
 
 ocr_data = GeneratorCfg(
-    num_image=6,
+    num_image=60000,
     save_dir=OUT_DIR,
     render_cfg=RenderCfg(
         bg_dir=BG_DIR,
@@ -40,14 +40,14 @@ ocr_data = GeneratorCfg(
                 text_paths=[TEXT_DIR / "eng_caps.txt"],  # TEXT_DIR / "chn_text.txt",
                 filter_by_chars=True,
                 chars_file=CHAR_DIR / "eng_AZ09.txt",
-                length=(5, 16),
-                char_spacing=(0.25, 0.26),
+                length=(5, 25),
+                char_spacing=(0.35, 0.36),
                 **font_cfg
             ),
         ),
         # lighting conditions handled by backgrounds
         # handwritten fonts used
-        corpus_effects=Effects([Line(1), DropoutRand(0.05), Padding(0.8)]),
+        corpus_effects=Effects([Line(1), DropoutRand(0.020), Padding(1)]),
     ),
 )
 

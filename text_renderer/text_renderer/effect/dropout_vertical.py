@@ -8,7 +8,7 @@ from .base_effect import Effect
 
 
 class DropoutVertical(Effect):
-    def __init__(self, p=0.5, num_line=50):
+    def __init__(self, p=0.5, num_line=10):
         """
 
         Parameters

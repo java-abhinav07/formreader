@@ -71,31 +71,43 @@ def draw_text_on_bg(
 
     c_x = 0
     c_y = 0
-    colors = ["#000", "#A9A9A9", "#808080"]
+    colors = ["#000", "#808080"]
     c_color = np.random.choice(np.array(colors))
-
-
-    stack = []
-
 
     y_offset = font_text.offset[1]
     for i, c in enumerate(font_text.text):
-        
-        xo = c_x - (char_spacings[i]//2)
-        yo = c_y - offset - int(np.random.randint(3, 4))
 
+        xo = c_x - (char_spacings[i] // 2)
+        yo = c_y - y_offset
+
+        y1 = c_y + height + y_offset
         x1 = xo + chars_size[i][0] + char_spacings[i]
-        y1 = c_y + height + int(np.random.randint(3, 4))
+        # print(xo, yo, x1, y1)
 
         # draw a box around text
-        draw.rectangle(
-            [xo, yo, x1, y1], outline=c_color, width=1
+        draw.rectangle((xo, yo, x1, y1), outline="#000", width=1, fill=None)
+
+        # draw random background text
+        r = np.random.choice(np.array(["D", "M", "Y", ""]))
+        draw.text(
+            (c_x, c_y - y_offset),
+            str(r),
+            fill=(60, 60, 60, 30),
+            font=font_text.font,
+            stroke_width=1,
         )
 
-        draw.text((c_x, c_y - y_offset), c, fill=text_color, font=font_text.font)
+        draw.text(
+            (c_x, c_y - y_offset),
+            c,
+            fill=text_color,
+            font=font_text.font,
+            stroke_fill="#000",
+        )
+
         c_x += chars_size[i][0] + char_spacings[i]
         # text_mask.show()
-
+    
     return text_mask
 
 
