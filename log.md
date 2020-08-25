@@ -20,6 +20,12 @@ This file contains daily logs of work done in a sequential manner. For example, 
     1. 50k images generated
     1. Started working on tfrecords for attention-net (target start training by 24th)
     1. Fixing training errors
+    1. Fixed training errors, started training: loss 0.001 after 30k steps
+    1. Fixing dataset: only alphanumeric (acc to problem statement)
+1. 25/08/2020
+    1. Preparing dataset again
+    1. Colab useage limit exceeded
+    1. 
 
     
 
