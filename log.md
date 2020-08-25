@@ -25,7 +25,7 @@ This file contains daily logs of work done in a sequential manner. For example, 
 1. 25/08/2020
     1. Preparing dataset again
     1. Colab useage limit exceeded
-    1. 
+    1. Made new branch for testing the modified aocr: need to train both!
 
     
 
