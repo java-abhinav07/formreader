@@ -27,3 +27,7 @@ This file contains daily logs of work done in a sequential manner. For example, 
     1. Colab useage limit exceeded
     1. Made new branch for testing the modified aocr: need to train both!
     1. Training the aocr completed, onto testing the best model 
+    1. Testing of best model complete!
+    1. Added testing, training logs
+    1. Added result samples + visualizations
+    1. Train-Test distribution was same, need public dataset to evaluate properly
