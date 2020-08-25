@@ -31,7 +31,7 @@ class Config(object):
     FULL_ASCII = False
 
     # Optimization
-    NUM_EPOCH = 300
+    NUM_EPOCH = 100
     BATCH_SIZE = 64
     INITIAL_LEARNING_RATE = 1.0
 
@@ -47,7 +47,7 @@ class Config(object):
     TARGET_VOCAB_SIZE = 37  # 0: PADDING, 1: GO, 2: EOS, >2: 0-9, a-z
     CHANNELS = 1  # number of color channels from source image (1 = grayscale, 3 = rgb)
 
-    MAX_WIDTH = 480
+    MAX_WIDTH = 360
     MAX_HEIGHT = 32
     MAX_PREDICTION = 50
 

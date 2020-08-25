@@ -33,4 +33,7 @@ This file contains daily logs of work done in a sequential manner. For example, 
     1. Train-Test distribution was same, need public dataset to evaluate properly
     1. Starting to implement modified aocr 
 1. 26/08/2020
-    1. The results indicate that the network is unable to generalize and the dataset used for training is not desirable
+    1. The results indicate that the network is unable to generalize on assignment data and the dataset used for training is not desirable
+    1. The network performs well on my testdata (97% acc)
+    1. Made more realistic data
+    1. Training again
