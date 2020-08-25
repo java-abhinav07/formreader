@@ -11,9 +11,19 @@ import numpy as np
 from PIL import Image
 
 
-def visualize_attention(filename, output_dir, attentions, pred, pad_width,
-                        pad_height, threshold=1, normalize=False,
-                        binarize=True, ground=None, flag=None):
+def visualize_attention(
+    filename,
+    output_dir,
+    attentions,
+    pred,
+    pad_width,
+    pad_height,
+    threshold=1,
+    normalize=False,
+    binarize=True,
+    ground=None,
+    flag=None,
+):
     """Visualize the focus of the attention mechanism on an image.
 
     Parameters
@@ -46,66 +56,82 @@ def visualize_attention(filename, output_dir, attentions, pred, pad_width,
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     if flag is None:
-        filestring = 'predict-{}'.format(str(pred))
+        filestring = "predict-{}".format(str(pred))
         idx = 2
         while filestring in os.listdir(output_dir):
-            filestring = 'predict-{}-{}'.format(str(pred), idx)
+            filestring = "predict-{}-{}".format(str(pred), idx)
             idx += 1
         out_dir = output_dir
     elif flag:
         filestring = os.path.splitext(os.path.basename(filename))[0]
-        out_dir = os.path.join(output_dir, 'incorrect')
+        out_dir = os.path.join(output_dir, "incorrect")
     else:
         filestring = os.path.splitext(os.path.basename(filename))[0]
-        out_dir = os.path.join(output_dir, 'correct')
-    out_dir = os.path.join(out_dir, filestring.replace('/', '_'))
+        out_dir = os.path.join(output_dir, "correct")
+    out_dir = os.path.join(out_dir, filestring.replace("/", "_"))
 
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
 
-    with open(os.path.join(out_dir, 'word.txt'), 'w') as fword:
-        fword.write(pred + '\n')
+    with open(os.path.join(out_dir, "word.txt"), "w") as fword:
+        fword.write(pred + "\n")
         if ground is not None:
             fword.write(ground)
 
         if isinstance(filename, str):
-            img_file = open(filename, 'rb')
+            img_file = open(filename, "rb")
             img = Image.open(img_file)
         else:
             img = Image.open(BytesIO(filename))
 
         # Get image sequence with attention applied.
         img_data = np.asarray(img, dtype=np.uint8)
-        img_out_frames, _ = map_attentions(img_data,
-                                           attentions,
-                                           pred,
-                                           pad_width,
-                                           pad_height,
-                                           threshold=threshold,
-                                           normalize=normalize,
-                                           binarize=binarize)
+        img_out_frames, _ = map_attentions(
+            img_data,
+            attentions,
+            pred,
+            pad_width,
+            pad_height,
+            threshold=threshold,
+            normalize=normalize,
+            binarize=binarize,
+        )
 
         # Create initial image frame.
         img_out_init = (img_data * 0.3).astype(np.uint8)
         img_out_init = Image.fromarray(img_out_init)
-        img_out_init = img_out_init.convert('RGB')
+        img_out_init = img_out_init.convert("RGB")
 
         # Assemble animation frames.
         img_out_frames = [img_out_init] + img_out_frames
 
         # Save cropped and animated images.
-        output_animation = os.path.join(out_dir, 'image.gif')
+        output_animation = os.path.join(out_dir, "image.gif")
 
-        img_out_frames[0].save(output_animation, format='gif', save_all=True, loop=999,
-                               duration=500, append_images=img_out_frames[1:])
+        img_out_frames[0].save(
+            output_animation,
+            format="gif",
+            save_all=True,
+            loop=999,
+            duration=500,
+            append_images=img_out_frames[1:],
+        )
 
         if isinstance(filename, str):
             img_file.close()
         img.close()
 
 
-def map_attentions(img_data, attentions, pred, pad_width, pad_height,
-                   threshold=1, normalize=False, binarize=True):
+def map_attentions(
+    img_data,
+    attentions,
+    pred,
+    pad_width,
+    pad_height,
+    threshold=1,
+    normalize=False,
+    binarize=True,
+):
     """Map the attentions to the image."""
     img_out_agg = np.zeros(img_data.shape)
     img_out_frames = []
@@ -137,7 +163,7 @@ def map_attentions(img_data, attentions, pred, pad_width, pad_height,
 
         # Map attention to fixed value.
         if normalize:
-            attention *= (1.0 / attention.max())
+            attention *= 1.0 / attention.max()
             if binarize:
                 attention[attention < threshold] = 0
         elif binarize:
@@ -147,8 +173,12 @@ def map_attentions(img_data, attentions, pred, pad_width, pad_height,
         # Resize attention to the image size, cropping padded regions.
         attention = Image.fromarray(attention)
         attention = attention.resize(
-            (int(pad_width*width_resize_ratio), int(pad_height*height_resize_ratio)),
-            Image.NEAREST)
+            (
+                int(pad_width * width_resize_ratio),
+                int(pad_height * height_resize_ratio),
+            ),
+            Image.NEAREST,
+        )
         attention = attention.crop((0, 0, width, height))
         attention = np.asarray(attention)
 
@@ -159,7 +189,7 @@ def map_attentions(img_data, attentions, pred, pad_width, pad_height,
         # Update the image frame with attended region(s).
         img_out_i = (img_data * np.maximum(attention, 0.3)).astype(np.uint8)
         img_out_i = Image.fromarray(img_out_i)
-        img_out_i = img_out_i.convert('RGB')
+        img_out_i = img_out_i.convert("RGB")
 
         # Add animation frame to list.
         img_out_frames.append(img_out_i)

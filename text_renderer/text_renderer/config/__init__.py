@@ -99,7 +99,7 @@ class SimpleTextColorCfg(TextColorCfg):
         r = np.random.randint(0, int(mean * 0.7))
         g = np.random.randint(0, int(mean * 0.7))
         b = np.random.randint(0, int(mean * 0.7))
-        
+
         text_color = (r, g, b, alpha)
 
         return text_color

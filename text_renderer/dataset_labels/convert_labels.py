@@ -17,14 +17,14 @@ test_json = json.dumps(test_dict)
 
 with open("annotations-training.txt", "w") as f:
     for key, val in train_dict.items():
-        f.write("dataset/images/"+key+".jpg")
+        f.write("dataset/images/" + key + ".jpg")
         f.write(" ")
         f.write(val)
         f.write("\n")
 
 with open("annotations-testing.txt", "w") as f:
     for key, val in test_dict.items():
-        f.write("dataset/images/"+key+".jpg")
+        f.write("dataset/images/" + key + ".jpg")
         f.write(" ")
         f.write(val)
         f.write("\n")

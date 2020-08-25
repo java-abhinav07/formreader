@@ -60,7 +60,7 @@ from __future__ import print_function
 
 # We disable pylint because we need python3 compatibility.
 from six.moves import xrange  # pylint: disable=redefined-builtin
-from six.moves import zip     # pylint: disable=redefined-builtin
+from six.moves import zip  # pylint: disable=redefined-builtin
 
 import tensorflow as tf
 
@@ -74,11 +74,11 @@ try:
 except AttributeError:
     # pylint: disable=protected-access,no-name-in-module
     from tensorflow.contrib.rnn.python.ops import core_rnn_cell
+
     linear = core_rnn_cell._linear
 
 
-def _extract_argmax_and_embed(embedding, output_projection=None,
-                              update_embedding=True):
+def _extract_argmax_and_embed(embedding, output_projection=None, update_embedding=True):
     """Get a loop_function that extracts the previous symbol and embeds it.
 
     Args:
@@ -91,10 +91,10 @@ def _extract_argmax_and_embed(embedding, output_projection=None,
     Returns:
         A loop function.
     """
+
     def loop_function(prev, _):
         if output_projection is not None:
-            prev = tf.nn.xw_plus_b(prev,
-                                   output_projection[0], output_projection[1])
+            prev = tf.nn.xw_plus_b(prev, output_projection[0], output_projection[1])
         prev_symbol = tf.argmax(prev, 1)
         # Note that gradients will not propagate through the second parameter of
         # embedding_lookup.
@@ -102,13 +102,23 @@ def _extract_argmax_and_embed(embedding, output_projection=None,
         if not update_embedding:
             emb_prev = tf.stop_gradient(emb_prev)
         return emb_prev
+
     return loop_function
 
 
-def attention_decoder(decoder_inputs, initial_state, attention_states, cell,
-                      output_size=None, num_heads=1, loop_function=None,
-                      dtype=tf.float32, scope=None,
-                      initial_state_attention=False, attn_num_hidden=128):
+def attention_decoder(
+    decoder_inputs,
+    initial_state,
+    attention_states,
+    cell,
+    output_size=None,
+    num_heads=1,
+    loop_function=None,
+    dtype=tf.float32,
+    scope=None,
+    initial_state_attention=False,
+    attn_num_hidden=128,
+):
     """RNN decoder with attention for the sequence-to-sequence model.
 
     In this context "attention" means that, during decoding, the RNN can look up
@@ -161,15 +171,17 @@ def attention_decoder(decoder_inputs, initial_state, attention_states, cell,
             of attention_states are not set.
     """
     # MODIFIED ADD START
-    assert num_heads == 1, 'We only consider the case where num_heads=1!'
+    assert num_heads == 1, "We only consider the case where num_heads=1!"
     # MODIFIED ADD END
     if not decoder_inputs:
         raise ValueError("Must provide at least 1 input to attention decoder.")
     if num_heads < 1:
         raise ValueError("With less than 1 heads, use a non-attention decoder.")
     if not attention_states.get_shape()[1:2].is_fully_defined():
-        raise ValueError("Shape[1] and [2] of attention_states must be known: %s"
-                         % attention_states.get_shape())
+        raise ValueError(
+            "Shape[1] and [2] of attention_states must be known: %s"
+            % attention_states.get_shape()
+        )
     if output_size is None:
         output_size = cell.output_size
 
@@ -184,11 +196,9 @@ def attention_decoder(decoder_inputs, initial_state, attention_states, cell,
         v = []
         attention_vec_size = attn_size  # Size of query vectors for attention.
         for a in xrange(num_heads):
-            k = tf.get_variable("AttnW_%d" % a,
-                                [1, 1, attn_size, attention_vec_size])
+            k = tf.get_variable("AttnW_%d" % a, [1, 1, attn_size, attention_vec_size])
             hidden_features.append(tf.nn.conv2d(hidden, k, [1, 1, 1, 1], "SAME"))
-            v.append(tf.get_variable("AttnV_%d" % a,
-                                     [attention_vec_size]))
+            v.append(tf.get_variable("AttnV_%d" % a, [attention_vec_size]))
 
         state = initial_state
 
@@ -210,8 +220,7 @@ def attention_decoder(decoder_inputs, initial_state, attention_states, cell,
                     # a = tf.Print(a, [a], message="a: ",summarize=30)
                     # Now calculate the attention-weighted vector d.
                     d = tf.reduce_sum(
-                        tf.reshape(a, [-1, attn_length, 1, 1]) * hidden,
-                        [1, 2]
+                        tf.reshape(a, [-1, attn_length, 1, 1]) * hidden, [1, 2]
                     )
                     ds.append(tf.reshape(d, [-1, attn_size]))
             # MODIFIED DELETED return ds
@@ -225,8 +234,7 @@ def attention_decoder(decoder_inputs, initial_state, attention_states, cell,
         # MODIFIED ADD END
         prev = None
         batch_attn_size = tf.stack([batch_size, attn_size])
-        attns = [tf.zeros(batch_attn_size, dtype=dtype)
-                 for _ in xrange(num_heads)]
+        attns = [tf.zeros(batch_attn_size, dtype=dtype) for _ in xrange(num_heads)]
         for a in attns:  # Ensure the second shape of attention vectors is set.
             a.set_shape([None, attn_size])
         if initial_state_attention:
@@ -251,8 +259,7 @@ def attention_decoder(decoder_inputs, initial_state, attention_states, cell,
             cell_output, state = cell(x, state)
             # Run the attention mechanism.
             if i == 0 and initial_state_attention:
-                with tf.variable_scope(tf.get_variable_scope(),
-                                       reuse=True):
+                with tf.variable_scope(tf.get_variable_scope(), reuse=True):
                     # MODIFIED DELETED attns = attention(state)
                     # MODIFIED ADD START
                     attns, attn_weights = attention(state)
@@ -276,14 +283,23 @@ def attention_decoder(decoder_inputs, initial_state, attention_states, cell,
     # MODIFIED ADD END
 
 
-def embedding_attention_decoder(decoder_inputs, initial_state, attention_states,
-                                cell, num_symbols, embedding_size, num_heads=1,
-                                output_size=None, output_projection=None,
-                                feed_previous=False,
-                                update_embedding_for_previous=True,
-                                dtype=tf.float32, scope=None,
-                                initial_state_attention=False,
-                                attn_num_hidden=128):
+def embedding_attention_decoder(
+    decoder_inputs,
+    initial_state,
+    attention_states,
+    cell,
+    num_symbols,
+    embedding_size,
+    num_heads=1,
+    output_size=None,
+    output_projection=None,
+    feed_previous=False,
+    update_embedding_for_previous=True,
+    dtype=tf.float32,
+    scope=None,
+    initial_state_attention=False,
+    attn_num_hidden=128,
+):
     """RNN decoder with embedding and attention and a pure-decoding option.
 
     Args:
@@ -336,22 +352,36 @@ def embedding_attention_decoder(decoder_inputs, initial_state, attention_states,
 
     with tf.variable_scope(scope or "embedding_attention_decoder"):
         with tf.device("/cpu:0"):
-            embedding = tf.get_variable("embedding",
-                                        [num_symbols, embedding_size])
-        loop_function = _extract_argmax_and_embed(
-            embedding, output_projection,
-            update_embedding_for_previous) if feed_previous else None
-        emb_inp = [
-            tf.nn.embedding_lookup(embedding, i) for i in decoder_inputs]
+            embedding = tf.get_variable("embedding", [num_symbols, embedding_size])
+        loop_function = (
+            _extract_argmax_and_embed(
+                embedding, output_projection, update_embedding_for_previous
+            )
+            if feed_previous
+            else None
+        )
+        emb_inp = [tf.nn.embedding_lookup(embedding, i) for i in decoder_inputs]
         return attention_decoder(
-            emb_inp, initial_state, attention_states, cell, output_size=output_size,
-            num_heads=num_heads, loop_function=loop_function,
-            initial_state_attention=initial_state_attention, attn_num_hidden=attn_num_hidden)
+            emb_inp,
+            initial_state,
+            attention_states,
+            cell,
+            output_size=output_size,
+            num_heads=num_heads,
+            loop_function=loop_function,
+            initial_state_attention=initial_state_attention,
+            attn_num_hidden=attn_num_hidden,
+        )
 
 
-def sequence_loss_by_example(logits, targets, weights,
-                             average_across_timesteps=True,
-                             softmax_loss_function=None, name=None):
+def sequence_loss_by_example(
+    logits,
+    targets,
+    weights,
+    average_across_timesteps=True,
+    softmax_loss_function=None,
+    name=None,
+):
     """Weighted cross-entropy loss for a sequence of logits (per example).
 
     Args:
@@ -371,10 +401,11 @@ def sequence_loss_by_example(logits, targets, weights,
         ValueError: If len(logits) is different from len(targets) or len(weights).
     """
     if len(targets) != len(logits) or len(weights) != len(logits):
-        raise ValueError("Lengths of logits, weights, and targets must be the same "
-                         "%d, %d, %d." % (len(logits), len(weights), len(targets)))
-    with tf.name_scope(name, "sequence_loss_by_example",
-                       logits + targets + weights):
+        raise ValueError(
+            "Lengths of logits, weights, and targets must be the same "
+            "%d, %d, %d." % (len(logits), len(weights), len(targets))
+        )
+    with tf.name_scope(name, "sequence_loss_by_example", logits + targets + weights):
         log_perp_list = []
         for logit, target, weight in zip(logits, targets, weights):
             if softmax_loss_function is None:
@@ -383,7 +414,8 @@ def sequence_loss_by_example(logits, targets, weights,
                 # violates our general scalar strictness policy.
                 target = tf.reshape(target, [-1])
                 crossent = tf.nn.sparse_softmax_cross_entropy_with_logits(
-                    logits=logit, labels=target)
+                    logits=logit, labels=target
+                )
             else:
                 crossent = softmax_loss_function(logits=logit, labels=target)
             log_perp_list.append(crossent * weight)
@@ -395,9 +427,15 @@ def sequence_loss_by_example(logits, targets, weights,
     return log_perps
 
 
-def sequence_loss(logits, targets, weights,
-                  average_across_timesteps=True, average_across_batch=True,
-                  softmax_loss_function=None, name=None):
+def sequence_loss(
+    logits,
+    targets,
+    weights,
+    average_across_timesteps=True,
+    average_across_batch=True,
+    softmax_loss_function=None,
+    name=None,
+):
     """Weighted cross-entropy loss for a sequence of logits, batch-collapsed.
 
     Args:
@@ -418,10 +456,15 @@ def sequence_loss(logits, targets, weights,
         ValueError: If len(logits) is different from len(targets) or len(weights).
     """
     with tf.name_scope(name, "sequence_loss", logits + targets + weights):
-        cost = tf.reduce_sum(sequence_loss_by_example(
-            logits, targets, weights,
-            average_across_timesteps=average_across_timesteps,
-            softmax_loss_function=softmax_loss_function))
+        cost = tf.reduce_sum(
+            sequence_loss_by_example(
+                logits,
+                targets,
+                weights,
+                average_across_timesteps=average_across_timesteps,
+                softmax_loss_function=softmax_loss_function,
+            )
+        )
         if average_across_batch:
             batch_size = tf.shape(targets[0])[0]
             return cost / tf.cast(batch_size, tf.float32)
@@ -429,9 +472,17 @@ def sequence_loss(logits, targets, weights,
         return cost
 
 
-def model_with_buckets(encoder_inputs_tensor, decoder_inputs, targets, weights,
-                       buckets, seq2seq, softmax_loss_function=None,
-                       per_example_loss=False, name=None):
+def model_with_buckets(
+    encoder_inputs_tensor,
+    decoder_inputs,
+    targets,
+    weights,
+    buckets,
+    seq2seq,
+    softmax_loss_function=None,
+    per_example_loss=False,
+    name=None,
+):
     """Create a sequence-to-sequence model with support for bucketing.
 
     The seq2seq argument is a function that defines a sequence-to-sequence model,
@@ -465,30 +516,44 @@ def model_with_buckets(encoder_inputs_tensor, decoder_inputs, targets, weights,
             than the largest (last) bucket.
     """
     if len(targets) < buckets[-1][1]:
-        raise ValueError("Length of targets (%d) must be at least that of last"
-                         "bucket (%d)." % (len(targets), buckets[-1][1]))
+        raise ValueError(
+            "Length of targets (%d) must be at least that of last"
+            "bucket (%d)." % (len(targets), buckets[-1][1])
+        )
     if len(weights) < buckets[-1][1]:
-        raise ValueError("Length of weights (%d) must be at least that of last"
-                         "bucket (%d)." % (len(weights), buckets[-1][1]))
+        raise ValueError(
+            "Length of weights (%d) must be at least that of last"
+            "bucket (%d)." % (len(weights), buckets[-1][1])
+        )
 
     all_inputs = [encoder_inputs_tensor] + decoder_inputs + targets + weights
     with tf.name_scope(name, "model_with_buckets", all_inputs):
         with tf.variable_scope(tf.get_variable_scope(), reuse=None):
             bucket = buckets[0]
             encoder_inputs = tf.split(encoder_inputs_tensor, bucket[0], 0)
-            encoder_inputs = [tf.squeeze(inp, squeeze_dims=[0]) for inp in encoder_inputs]
-            bucket_outputs, attention_weights_history = seq2seq(encoder_inputs[:int(bucket[0])],
-                                                                decoder_inputs[:int(bucket[1])],
-                                                                int(bucket[0]))
+            encoder_inputs = [
+                tf.squeeze(inp, squeeze_dims=[0]) for inp in encoder_inputs
+            ]
+            bucket_outputs, attention_weights_history = seq2seq(
+                encoder_inputs[: int(bucket[0])],
+                decoder_inputs[: int(bucket[1])],
+                int(bucket[0]),
+            )
             if per_example_loss:
                 loss = sequence_loss_by_example(
-                    bucket_outputs, targets[:int(bucket[1])], weights[:int(bucket[1])],
+                    bucket_outputs,
+                    targets[: int(bucket[1])],
+                    weights[: int(bucket[1])],
                     average_across_timesteps=True,
-                    softmax_loss_function=softmax_loss_function)
+                    softmax_loss_function=softmax_loss_function,
+                )
             else:
                 loss = sequence_loss(
-                    bucket_outputs, targets[:int(bucket[1])], weights[:int(bucket[1])],
+                    bucket_outputs,
+                    targets[: int(bucket[1])],
+                    weights[: int(bucket[1])],
                     average_across_timesteps=True,
-                    softmax_loss_function=softmax_loss_function)
+                    softmax_loss_function=softmax_loss_function,
+                )
 
     return bucket_outputs, loss, attention_weights_history

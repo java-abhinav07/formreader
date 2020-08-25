@@ -3,6 +3,7 @@ Default parameters.
 """
 from datetime import datetime
 
+
 class Config(object):
     """
     Default config (see __main__.py or README for documentation).
@@ -14,14 +15,14 @@ class Config(object):
     time = datetime.now()
 
     # I/O
-    NEW_DATASET_PATH = './dataset.tfrecords'
-    DATA_PATH = '/content/drive/My\ Drive/IITB_Assignment/datasets/alphanumeric_AZ09/training.tfrecords'
-    MODEL_DIR = f'./checkpoints_{time}'
-    LOG_PATH = f'aocr_{time}.log'
-    OUTPUT_DIR = './results'
+    NEW_DATASET_PATH = "./dataset.tfrecords"
+    DATA_PATH = "/content/drive/My\ Drive/IITB_Assignment/datasets/alphanumeric_AZ09/training.tfrecords"
+    MODEL_DIR = f"./checkpoints_{time}"
+    LOG_PATH = f"aocr_{time}.log"
+    OUTPUT_DIR = "./results"
     STEPS_PER_CHECKPOINT = 100
-    EXPORT_FORMAT = 'savedmodel'
-    EXPORT_PATH = 'exported'
+    EXPORT_FORMAT = "savedmodel"
+    EXPORT_PATH = "exported"
     FORCE_UPPERCASE = True
     SAVE_FILENAME = False
     FULL_ASCII = False
