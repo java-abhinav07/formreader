@@ -10,7 +10,7 @@ class Config(object):
     """
 
     GPU_ID = 0
-    VISUALIZE = True
+    VISUALIZE = False
 
     time = datetime.now()
 
