@@ -264,9 +264,10 @@ class Model(object):
 
         self.saver_all = tf.train.Saver(tf.all_variables())
         self.checkpoint_path = os.path.join(self.model_dir, "model.ckpt-10600")
-        print("chk path:", self.checkpoint_path)
 
         ckpt = tf.train.get_checkpoint_state(model_dir)
+        print("ckpt:", ckpt)
+
         if ckpt and load_model:
             # pylint: disable=no-member
             logging.info("Reading model parameters from %s", ckpt.model_checkpoint_path)
