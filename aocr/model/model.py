@@ -263,7 +263,8 @@ class Model(object):
                     )
 
         self.saver_all = tf.train.Saver(tf.all_variables())
-        self.checkpoint_path = os.path.join(self.model_dir, "model.ckpt")
+        self.checkpoint_path = os.path.join(self.model_dir, "model.ckpt-10600")
+        print("chk path:", self.checkpoint_path)
 
         ckpt = tf.train.get_checkpoint_state(model_dir)
         if ckpt and load_model:
