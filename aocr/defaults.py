@@ -16,11 +16,11 @@ class Config(object):
 
     # I/O
     NEW_DATASET_PATH = "./dataset.tfrecords"
-    DATA_PATH = "/content/drive/My\ Drive/IITB_Assignment/datasets/ds0/training.tfrecords"
-    MODEL_DIR = f"./checkpoints_{time}"
-    # MODEL_DIR = (
-    #     "/content/drive/My Drive/IITB_Assignment/checkpoints_2020-08-26 18:59:40.964779"
-    # )
+    DATA_PATH = "/content/drive/My\ Drive/IITB_Assignment/checkpoints_2020-08-26 23:29:15.806049"
+    # MODEL_DIR = f"./checkpoints_{time}"
+    MODEL_DIR = (
+        ""
+    )
     LOG_PATH = f"aocr_{time}.log"
     OUTPUT_DIR = "/content/drive/My\ Drive/IITB_Assignment/results"
     STEPS_PER_CHECKPOINT = 500
