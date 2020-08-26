@@ -22,7 +22,7 @@ class Config(object):
         "/content/checkpoints_2020-08-25 23:30:15.962659"
     )
     LOG_PATH = f"aocr_{time}.log"
-    OUTPUT_DIR = "./results"
+    OUTPUT_DIR = "/content/drive/My\ Drive/IITB_Assignment/results"
     STEPS_PER_CHECKPOINT = 100
     EXPORT_FORMAT = "savedmodel"
     EXPORT_PATH = "exported"
