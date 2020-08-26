@@ -8,8 +8,8 @@ with open("/home/abhinavjava/Projects/IITB_Assignment/dataset/final_realistic/la
     # num_samples = data["num_samples"]
     label_dict = data["labels"]
 
-train_dict = dict(list(label_dict.items())[len(label_dict) // 20 :])
-test_dict = dict(list(label_dict.items())[: len(label_dict) // 20])
+train_dict = dict(list(label_dict.items())[len(label_dict) // 25 :])
+test_dict = dict(list(label_dict.items())[: len(label_dict) // 25])
 
 
 train_json = json.dumps(train_dict)
