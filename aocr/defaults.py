@@ -31,7 +31,7 @@ class Config(object):
     FULL_ASCII = False
 
     # Optimization
-    NUM_EPOCH = 32
+    NUM_EPOCH = 20
     BATCH_SIZE = 32
     INITIAL_LEARNING_RATE = 1.0
 
