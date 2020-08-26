@@ -17,7 +17,7 @@ test_json = json.dumps(test_dict)
 
 with open("annotations-training.txt", "w") as f:
     for key, val in train_dict.items():
-        f.write("realistic_alpha/images/" + key + ".jpg")
+        f.write("final_realistic/images/" + key + ".jpg")
         f.write(" ")
         f.write(val)
         f.write("\n")
