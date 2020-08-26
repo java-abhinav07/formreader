@@ -10,17 +10,17 @@ class Config(object):
     """
 
     GPU_ID = 0
-    VISUALIZE = False
+    VISUALIZE = True
 
     time = datetime.now()
 
     # I/O
     NEW_DATASET_PATH = "./dataset.tfrecords"
     DATA_PATH = "/content/drive/My\ Drive/IITB_Assignment/datasets/final_realistic/training.tfrecords"
-    MODEL_DIR = f"./checkpoints_{time}"
-    # MODEL_DIR = (
-    #     "/content/drive/My Drive/IITB_Assignment/results/realistic_alpha/checkpoints_2020-08-25 23:30:15.962659"
-    # )
+    # MODEL_DIR = f"./checkpoints_{time}"
+    MODEL_DIR = (
+        "/content/drive/My Drive/IITB_Assignment/results/final_realistic/checkpoints_2020-08-26 04:54:11.171702"
+    )
     LOG_PATH = f"aocr_{time}.log"
     OUTPUT_DIR = "/content/drive/My\ Drive/IITB_Assignment/results"
     STEPS_PER_CHECKPOINT = 100
