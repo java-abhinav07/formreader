@@ -23,7 +23,7 @@ class Config(object):
     )
     LOG_PATH = f"aocr_{time}.log"
     OUTPUT_DIR = "/content/drive/My\ Drive/IITB_Assignment/results"
-    STEPS_PER_CHECKPOINT = 100
+    STEPS_PER_CHECKPOINT = 500
     EXPORT_FORMAT = "savedmodel"
     EXPORT_PATH = "exported"
     FORCE_UPPERCASE = True
@@ -31,8 +31,8 @@ class Config(object):
     FULL_ASCII = False
 
     # Optimization
-    NUM_EPOCH = 20
-    BATCH_SIZE = 32
+    NUM_EPOCH = 16
+    BATCH_SIZE = 64
     INITIAL_LEARNING_RATE = 1.0
 
     # Network parameters
@@ -47,8 +47,8 @@ class Config(object):
     TARGET_VOCAB_SIZE = 37  # 0: PADDING, 1: GO, 2: EOS, >2: 0-9, a-z
     CHANNELS = 1  # number of color channels from source image (1 = grayscale, 3 = rgb)
 
-    MAX_WIDTH = 360
-    MAX_HEIGHT = 32
+    MAX_WIDTH = 1000 # images with higher width will be discarded!!! --> fix now
+    MAX_HEIGHT = 200
     MAX_PREDICTION = 50
 
     USE_DISTANCE = True
