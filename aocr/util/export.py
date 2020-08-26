@@ -20,15 +20,22 @@ class Exporter(object):
                 self.model.sess,
                 ["serve"],
                 signature_def_map={
-                    'serving_default': tf.saved_model.signature_def_utils.predict_signature_def(
-                        {'input': freezing_graph.get_tensor_by_name('input_image_as_bytes:0')},
+                    "serving_default": tf.saved_model.signature_def_utils.predict_signature_def(
                         {
-                            'output': freezing_graph.get_tensor_by_name('prediction:0'),
-                            'probability': freezing_graph.get_tensor_by_name('probability:0')
-                        }
+                            "input": freezing_graph.get_tensor_by_name(
+                                "input_image_as_bytes:0"
+                            )
+                        },
+                        {
+                            "output": freezing_graph.get_tensor_by_name("prediction:0"),
+                            "probability": freezing_graph.get_tensor_by_name(
+                                "probability:0"
+                            ),
+                        },
                     ),
                 },
-                clear_devices=True)
+                clear_devices=True,
+            )
 
             builder.save()
 
@@ -44,10 +51,10 @@ class Exporter(object):
             output_graph_def = tf.graph_util.convert_variables_to_constants(
                 self.model.sess,
                 self.model.sess.graph.as_graph_def(),
-                ['prediction', 'probability'],
+                ["prediction", "probability"],
             )
 
-            with tf.gfile.GFile(path + '/frozen_graph.pb', "wb") as outfile:
+            with tf.gfile.GFile(path + "/frozen_graph.pb", "wb") as outfile:
                 outfile.write(output_graph_def.SerializeToString())
 
-            logging.info("Exported as %s", path + '/frozen_graph.pb')
+            logging.info("Exported as %s", path + "/frozen_graph.pb")

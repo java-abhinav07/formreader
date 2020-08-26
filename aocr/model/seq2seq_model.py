@@ -40,16 +40,20 @@ class Seq2SeqModel(object):
       http://arxiv.org/abs/1412.2007
     """
 
-    def __init__(self, encoder_masks, encoder_inputs_tensor,
-                 decoder_inputs,
-                 target_weights,
-                 target_vocab_size,
-                 buckets,
-                 target_embedding_size,
-                 attn_num_layers,
-                 attn_num_hidden,
-                 forward_only,
-                 use_gru):
+    def __init__(
+        self,
+        encoder_masks,
+        encoder_inputs_tensor,
+        decoder_inputs,
+        target_weights,
+        target_vocab_size,
+        buckets,
+        target_embedding_size,
+        attn_num_layers,
+        attn_num_hidden,
+        forward_only,
+        use_gru,
+    ):
         """Create the model.
 
         Args:
@@ -102,20 +106,34 @@ class Seq2SeqModel(object):
                 num_hidden, forget_bias=0.0, state_is_tuple=False
             )
 
-            (pre_encoder_inputs,
-             output_state_fw,
-             output_state_bw) = tf.contrib.rnn.static_bidirectional_rnn(
-                 lstm_fw_cell, lstm_bw_cell, lstm_inputs,
-                 initial_state_fw=None, initial_state_bw=None,
-                 dtype=tf.float32, sequence_length=None, scope=None)
+            (
+                pre_encoder_inputs,
+                output_state_fw,
+                output_state_bw,
+            ) = tf.contrib.rnn.static_bidirectional_rnn(
+                lstm_fw_cell,
+                lstm_bw_cell,
+                lstm_inputs,
+                initial_state_fw=None,
+                initial_state_bw=None,
+                dtype=tf.float32,
+                sequence_length=None,
+                scope=None,
+            )
 
-            encoder_inputs = [e*f for e, f in zip(pre_encoder_inputs, encoder_masks[:seq_length])]
-            top_states = [tf.reshape(e, [-1, 1, num_hidden*2])
-                          for e in encoder_inputs]
+            encoder_inputs = [
+                e * f for e, f in zip(pre_encoder_inputs, encoder_masks[:seq_length])
+            ]
+            top_states = [
+                tf.reshape(e, [-1, 1, num_hidden * 2]) for e in encoder_inputs
+            ]
             attention_states = tf.concat(top_states, 1)
             initial_state = tf.concat(axis=1, values=[output_state_fw, output_state_bw])
             outputs, _, attention_weights_history = embedding_attention_decoder(
-                decoder_inputs, initial_state, attention_states, cell,
+                decoder_inputs,
+                initial_state,
+                attention_states,
+                cell,
                 num_symbols=target_vocab_size,
                 embedding_size=target_embedding_size,
                 num_heads=1,
@@ -123,25 +141,37 @@ class Seq2SeqModel(object):
                 output_projection=None,
                 feed_previous=do_decode,
                 initial_state_attention=False,
-                attn_num_hidden=attn_num_hidden)
+                attn_num_hidden=attn_num_hidden,
+            )
             return outputs, attention_weights_history
 
         # Our targets are decoder inputs shifted by one.
-        targets = [decoder_inputs[i + 1]
-                   for i in xrange(len(decoder_inputs) - 1)]
+        targets = [decoder_inputs[i + 1] for i in xrange(len(decoder_inputs) - 1)]
 
-        softmax_loss_function = None  # default to tf.nn.sparse_softmax_cross_entropy_with_logits
+        softmax_loss_function = (
+            None  # default to tf.nn.sparse_softmax_cross_entropy_with_logits
+        )
 
         # Training outputs and losses.
         if forward_only:
             self.output, self.loss, self.attention_weights_history = model_with_buckets(
-                encoder_inputs_tensor, decoder_inputs, targets,
-                self.target_weights, buckets, lambda x, y, z: seq2seq_f(x, y, z, True),
-                softmax_loss_function=softmax_loss_function)
+                encoder_inputs_tensor,
+                decoder_inputs,
+                targets,
+                self.target_weights,
+                buckets,
+                lambda x, y, z: seq2seq_f(x, y, z, True),
+                softmax_loss_function=softmax_loss_function,
+            )
         else:
             self.output, self.loss, self.attention_weights_history = model_with_buckets(
-                encoder_inputs_tensor, decoder_inputs, targets,
-                self.target_weights, buckets, lambda x, y, z: seq2seq_f(x, y, z, False),
-                softmax_loss_function=softmax_loss_function)
+                encoder_inputs_tensor,
+                decoder_inputs,
+                targets,
+                self.target_weights,
+                buckets,
+                lambda x, y, z: seq2seq_f(x, y, z, False),
+                softmax_loss_function=softmax_loss_function,
+            )
 
         self.attentions = self.attention_weights_history

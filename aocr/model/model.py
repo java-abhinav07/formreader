@@ -21,74 +21,78 @@ from ..util.visualizations import visualize_attention
 
 
 class Model(object):
-    def __init__(self,
-                 phase,
-                 visualize,
-                 output_dir,
-                 batch_size,
-                 initial_learning_rate,
-                 steps_per_checkpoint,
-                 model_dir,
-                 target_embedding_size,
-                 attn_num_hidden,
-                 attn_num_layers,
-                 clip_gradients,
-                 max_gradient_norm,
-                 session,
-                 load_model,
-                 gpu_id,
-                 use_gru,
-                 use_distance=True,
-                 max_image_width=160,
-                 max_image_height=60,
-                 max_prediction_length=8,
-                 channels=1,
-                 reg_val=0):
+    def __init__(
+        self,
+        phase,
+        visualize,
+        output_dir,
+        batch_size,
+        initial_learning_rate,
+        steps_per_checkpoint,
+        model_dir,
+        target_embedding_size,
+        attn_num_hidden,
+        attn_num_layers,
+        clip_gradients,
+        max_gradient_norm,
+        session,
+        load_model,
+        gpu_id,
+        use_gru,
+        use_distance=True,
+        max_image_width=160,
+        max_image_height=60,
+        max_prediction_length=8,
+        channels=1,
+        reg_val=0,
+    ):
 
         self.use_distance = use_distance
 
         # We need resized width, not the actual width
-        max_resized_width = 1. * max_image_width / max_image_height * DataGen.IMAGE_HEIGHT
+        max_resized_width = (
+            1.0 * max_image_width / max_image_height * DataGen.IMAGE_HEIGHT
+        )
 
         self.max_original_width = max_image_width
         self.max_width = int(math.ceil(max_resized_width))
 
-        self.encoder_size = int(math.ceil(1. * self.max_width / 4))
+        self.encoder_size = int(math.ceil(1.0 * self.max_width / 4))
         self.decoder_size = max_prediction_length + 2
         self.buckets = [(self.encoder_size, self.decoder_size)]
 
         if gpu_id >= 0:
-            device_id = '/gpu:' + str(gpu_id)
+            device_id = "/gpu:" + str(gpu_id)
         else:
-            device_id = '/cpu:0'
+            device_id = "/cpu:0"
         self.device_id = device_id
 
         if not os.path.exists(model_dir):
             os.makedirs(model_dir)
 
-        if phase == 'test':
+        if phase == "test":
             batch_size = 1
 
-        logging.info('phase: %s', phase)
-        logging.info('model_dir: %s', model_dir)
-        logging.info('load_model: %s', load_model)
-        logging.info('output_dir: %s', output_dir)
-        logging.info('steps_per_checkpoint: %d', steps_per_checkpoint)
-        logging.info('batch_size: %d', batch_size)
-        logging.info('learning_rate: %f', initial_learning_rate)
-        logging.info('reg_val: %d', reg_val)
-        logging.info('max_gradient_norm: %f', max_gradient_norm)
-        logging.info('clip_gradients: %s', clip_gradients)
-        logging.info('max_image_width %f', max_image_width)
-        logging.info('max_prediction_length %f', max_prediction_length)
-        logging.info('channels: %d', channels)
-        logging.info('target_embedding_size: %f', target_embedding_size)
-        logging.info('attn_num_hidden: %d', attn_num_hidden)
-        logging.info('attn_num_layers: %d', attn_num_layers)
-        logging.info('visualize: %s', visualize)
+        logging.info("phase: %s", phase)
+        logging.info("model_dir: %s", model_dir)
+        logging.info("load_model: %s", load_model)
+        logging.info("output_dir: %s", output_dir)
+        logging.info("steps_per_checkpoint: %d", steps_per_checkpoint)
+        logging.info("batch_size: %d", batch_size)
+        logging.info("learning_rate: %f", initial_learning_rate)
+        logging.info("reg_val: %d", reg_val)
+        logging.info("max_gradient_norm: %f", max_gradient_norm)
+        logging.info("clip_gradients: %s", clip_gradients)
+        logging.info("max_image_width %f", max_image_width)
+        logging.info("max_prediction_length %f", max_prediction_length)
+        logging.info("channels: %d", channels)
+        logging.info("target_embedding_size: %f", target_embedding_size)
+        logging.info("attn_num_hidden: %d", attn_num_hidden)
+        logging.info("attn_num_layers: %d", attn_num_layers)
+        logging.info("visualize: %s", visualize)
 
         if use_gru:
-            logging.info('using GRU in the decoder.')
+            logging.info("using GRU in the decoder.")
 
         self.reg_val = reg_val
         self.sess = session
@@ -103,7 +107,7 @@ class Model(object):
         self.clip_gradients = clip_gradients
         self.channels = channels
 
-        if phase == 'train':
+        if phase == "train":
             self.forward_only = False
         else:
             self.forward_only = True
@@ -113,32 +117,30 @@ class Model(object):
             self.height = tf.constant(DataGen.IMAGE_HEIGHT, dtype=tf.int32)
             self.height_float = tf.constant(DataGen.IMAGE_HEIGHT, dtype=tf.float64)
 
-            self.img_pl = tf.placeholder(tf.string, name='input_image_as_bytes')
+            self.img_pl = tf.placeholder(tf.string, name="input_image_as_bytes")
             self.img_data = tf.cond(
                 tf.less(tf.rank(self.img_pl), 1),
                 lambda: tf.expand_dims(self.img_pl, 0),
-                lambda: self.img_pl
+                lambda: self.img_pl,
             )
-            self.img_data = tf.map_fn(self._prepare_image, self.img_data, dtype=tf.float32)
+            self.img_data = tf.map_fn(
+                self._prepare_image, self.img_data, dtype=tf.float32
+            )
             num_images = tf.shape(self.img_data)[0]
 
             # TODO: create a mask depending on the image/batch size
             self.encoder_masks = []
             for i in xrange(self.encoder_size + 1):
-                self.encoder_masks.append(
-                    tf.tile([[1.]], [num_images, 1])
-                )
+                self.encoder_masks.append(tf.tile([[1.0]], [num_images, 1]))
 
             self.decoder_inputs = []
             self.target_weights = []
             for i in xrange(self.decoder_size + 1):
-                self.decoder_inputs.append(
-                    tf.tile([1], [num_images])
-                )
+                self.decoder_inputs.append(tf.tile([1], [num_images]))
                 if i < self.decoder_size:
-                    self.target_weights.append(tf.tile([1.], [num_images]))
+                    self.target_weights.append(tf.tile([1.0], [num_images]))
                 else:
-                    self.target_weights.append(tf.tile([0.], [num_images]))
+                    self.target_weights.append(tf.tile([0.0], [num_images]))
 
             cnn_model = CNN(self.img_data, not self.forward_only)
             self.conv_output = cnn_model.tf_output()
@@ -154,7 +156,8 @@ class Model(object):
                 attn_num_layers=attn_num_layers,
                 attn_num_hidden=attn_num_hidden,
                 forward_only=self.forward_only,
-                use_gru=use_gru)
+                use_gru=use_gru,
+            )
 
             table = tf.contrib.lookup.MutableHashTable(
                 key_dtype=tf.int64,
@@ -175,7 +178,8 @@ class Model(object):
                 for line in xrange(len(self.attention_decoder_model.output)):
                     guess = tf.argmax(self.attention_decoder_model.output[line], axis=1)
                     proba = tf.reduce_max(
-                        tf.nn.softmax(self.attention_decoder_model.output[line]), axis=1)
+                        tf.nn.softmax(self.attention_decoder_model.output[line]), axis=1
+                    )
                     num_feed.append(guess)
                     prb_feed.append(proba)
 
@@ -185,14 +189,15 @@ class Model(object):
                     lambda m: tf.foldr(
                         lambda a, x: tf.cond(
                             tf.equal(x, DataGen.EOS_ID),
-                            lambda: '',
-                            lambda: table.lookup(x) + a  # pylint: disable=undefined-variable
+                            lambda: "",
+                            lambda: table.lookup(x)
+                            + a,  # pylint: disable=undefined-variable
                         ),
                         m,
-                        initializer=''
+                        initializer="",
                     ),
                     trans_output,
-                    dtype=tf.string
+                    dtype=tf.string,
                 )
 
                 # Calculate the total probability of the output string.
@@ -202,10 +207,10 @@ class Model(object):
                     lambda m: tf.foldr(
                         lambda a, x: tf.multiply(tf.cast(x, tf.float64), a),
                         m,
-                        initializer=tf.cast(1, tf.float64)
+                        initializer=tf.cast(1, tf.float64),
                     ),
                     trans_outprb,
-                    dtype=tf.float64
+                    dtype=tf.float64,
                 )
 
                 self.prediction = tf.cond(
@@ -219,8 +224,8 @@ class Model(object):
                     lambda: trans_outprb,
                 )
 
-                self.prediction = tf.identity(self.prediction, name='prediction')
-                self.probability = tf.identity(self.probability, name='probability')
+                self.prediction = tf.identity(self.prediction, name="prediction")
+                self.probability = tf.identity(self.probability, name="probability")
 
             if not self.forward_only:  # train
                 self.updates = []
@@ -232,8 +237,8 @@ class Model(object):
 
                 if self.reg_val > 0:
                     reg_losses = tf.get_collection(tf.GraphKeys.REGULARIZATION_LOSSES)
-                    logging.info('Adding %s regularization losses', len(reg_losses))
-                    logging.debug('REGULARIZATION_LOSSES: %s', reg_losses)
+                    logging.info("Adding %s regularization losses", len(reg_losses))
+                    logging.debug("REGULARIZATION_LOSSES: %s", reg_losses)
                     loss_op = self.reg_val * tf.reduce_sum(reg_losses) + loss_op
 
                 gradients, params = list(zip(*opt.compute_gradients(loss_op, params)))
@@ -243,7 +248,7 @@ class Model(object):
                 # Summaries for loss, variables, gradients, gradient norms and total gradient norm.
                 summaries = [
                     tf.summary.scalar("loss", loss_op),
-                    tf.summary.scalar("total_gradient_norm", tf.global_norm(gradients))
+                    tf.summary.scalar("total_gradient_norm", tf.global_norm(gradients)),
                 ]
                 all_summaries = tf.summary.merge(summaries)
                 self.summaries_by_bucket.append(all_summaries)
@@ -253,8 +258,7 @@ class Model(object):
                 with tf.control_dependencies(update_ops):
                     self.updates.append(
                         opt.apply_gradients(
-                            list(zip(gradients, params)),
-                            global_step=self.global_step
+                            list(zip(gradients, params)), global_step=self.global_step
                         )
                     )
 
@@ -280,7 +284,7 @@ class Model(object):
         text = outputs[0]
         probability = outputs[1]
         if sys.version_info >= (3,):
-            text = text.decode('iso-8859-1')
+            text = text.decode("iso-8859-1")
 
         return (text, probability)
 
@@ -289,25 +293,27 @@ class Model(object):
         num_correct = 0.0
         num_total = 0.0
 
-        s_gen = DataGen(data_path, self.buckets, epochs=1, max_width=self.max_original_width)
+        s_gen = DataGen(
+            data_path, self.buckets, epochs=1, max_width=self.max_original_width
+        )
         for batch in s_gen.gen(1):
             current_step += 1
             # Get a batch (one image) and make a step.
             start_time = time.time()
             result = self.step(batch, self.forward_only)
-            curr_step_time = (time.time() - start_time)
+            curr_step_time = time.time() - start_time
 
             num_total += 1
 
-            output = result['prediction']
-            ground = batch['labels'][0]
-            comment = batch['comments'][0]
+            output = result["prediction"]
+            ground = batch["labels"][0]
+            comment = batch["comments"][0]
             if sys.version_info >= (3,):
-                output = output.decode('iso-8859-1')
-                ground = ground.decode('iso-8859-1')
-                comment = comment.decode('iso-8859-1')
+                output = output.decode("iso-8859-1")
+                ground = ground.decode("iso-8859-1")
+                comment = comment.decode("iso-8859-1")
 
-            probability = result['probability']
+            probability = result["probability"]
 
             if self.use_distance:
                 incorrect = distance.levenshtein(output, ground)
@@ -322,49 +328,58 @@ class Model(object):
             else:
                 incorrect = 0 if output == ground else 1
 
-            num_correct += 1. - incorrect
+            num_correct += 1.0 - incorrect
 
             if self.visualize:
                 # Attention visualization.
                 threshold = 0.5
                 normalize = True
                 binarize = True
-                attns_list = [[a.tolist() for a in step_attn] for step_attn in result['attentions']]
+                attns_list = [
+                    [a.tolist() for a in step_attn]
+                    for step_attn in result["attentions"]
+                ]
                 attns = np.array(attns_list).transpose([1, 0, 2])
-                visualize_attention(batch['data'],
-                                    'out',
-                                    attns,
-                                    output,
-                                    self.max_width,
-                                    DataGen.IMAGE_HEIGHT,
-                                    threshold=threshold,
-                                    normalize=normalize,
-                                    binarize=binarize,
-                                    ground=ground,
-                                    flag=None)
+                visualize_attention(
+                    batch["data"],
+                    "out",
+                    attns,
+                    output,
+                    self.max_width,
+                    DataGen.IMAGE_HEIGHT,
+                    threshold=threshold,
+                    normalize=normalize,
+                    binarize=binarize,
+                    ground=ground,
+                    flag=None,
+                )
 
-            step_accuracy = "{:>4.0%}".format(1. - incorrect)
+            step_accuracy = "{:>4.0%}".format(1.0 - incorrect)
             if incorrect:
-                correctness = step_accuracy + " ({} vs {}) {}".format(output, ground, comment)
+                correctness = step_accuracy + " ({} vs {}) {}".format(
+                    output, ground, comment
+                )
             else:
                 correctness = step_accuracy + " (" + ground + ")"
 
-            logging.info('Step {:.0f} ({:.3f}s). '
-                         'Accuracy: {:6.2%}, '
-                         'loss: {:f}, perplexity: {:0<7.6}, probability: {:6.2%} {}'.format(
-                             current_step,
-                             curr_step_time,
-                             num_correct / num_total,
-                             result['loss'],
-                             math.exp(result['loss']) if result['loss'] < 300 else float('inf'),
-                             probability,
-                             correctness))
+            logging.info(
+                "Step {:.0f} ({:.3f}s). "
+                "Accuracy: {:6.2%}, "
+                "loss: {:f}, perplexity: {:0<7.6}, probability: {:6.2%} {}".format(
+                    current_step,
+                    curr_step_time,
+                    num_correct / num_total,
+                    result["loss"],
+                    math.exp(result["loss"]) if result["loss"] < 300 else float("inf"),
+                    probability,
+                    correctness,
+                )
+            )
 
     def train(self, data_path, num_epoch):
-        logging.info('num_epoch: %d', num_epoch)
+        logging.info("num_epoch: %d", num_epoch)
         s_gen = DataGen(
-            data_path, self.buckets,
-            epochs=num_epoch, max_width=self.max_original_width
+            data_path, self.buckets, epochs=num_epoch, max_width=self.max_original_width
         )
         step_time = 0.0
         loss = 0.0
@@ -372,7 +387,7 @@ class Model(object):
         skipped_counter = 0
         writer = tf.summary.FileWriter(self.model_dir, self.sess.graph)
 
-        logging.info('Starting the training process.')
+        logging.info("Starting the training process.")
         for batch in s_gen.gen(self.batch_size):
 
             current_step += 1
@@ -384,14 +399,17 @@ class Model(object):
                 result = self.step(batch, self.forward_only)
             except Exception as e:
                 skipped_counter += 1
-                logging.info("Step {} failed, batch skipped." +
-                             " Total skipped: {}".format(current_step, skipped_counter))
+                logging.info(
+                    "Step {} failed, batch skipped."
+                    + " Total skipped: {}".format(current_step, skipped_counter)
+                )
                 logging.error(
-                    "Step {} failed. Exception details: {}".format(current_step, str(e)))
+                    "Step {} failed. Exception details: {}".format(current_step, str(e))
+                )
                 continue
 
-            loss += result['loss'] / self.steps_per_checkpoint
-            curr_step_time = (time.time() - start_time)
+            loss += result["loss"] / self.steps_per_checkpoint
+            curr_step_time = time.time() - start_time
             step_time += curr_step_time / self.steps_per_checkpoint
 
             # num_correct = 0
@@ -407,46 +425,69 @@ class Model(object):
             #         incorrect = 0 if output == ground else 1
             #     num_correct += 1. - incorrect
 
-            writer.add_summary(result['summaries'], current_step)
+            writer.add_summary(result["summaries"], current_step)
 
             # precision = num_correct / len(batch['labels'])
-            step_perplexity = math.exp(result['loss']) if result['loss'] < 300 else float('inf')
+            step_perplexity = (
+                math.exp(result["loss"]) if result["loss"] < 300 else float("inf")
+            )
 
             # logging.info('Step %i: %.3fs, precision: %.2f, loss: %f, perplexity: %f.'
             #              % (current_step, curr_step_time, precision*100,
             #                 result['loss'], step_perplexity))
 
-            logging.info('Step %i: %.3fs, loss: %f, perplexity: %f.',
-                         current_step, curr_step_time, result['loss'], step_perplexity)
+            logging.info(
+                "Step %i: %.3fs, loss: %f, perplexity: %f.",
+                current_step,
+                curr_step_time,
+                result["loss"],
+                step_perplexity,
+            )
 
             # Once in a while, we save checkpoint, print statistics, and run evals.
             if current_step % self.steps_per_checkpoint == 0:
-                perplexity = math.exp(loss) if loss < 300 else float('inf')
+                perplexity = math.exp(loss) if loss < 300 else float("inf")
                 # Print statistics for the previous epoch.
-                logging.info("Global step %d. Time: %.3f, loss: %f, perplexity: %.2f.",
-                             self.sess.run(self.global_step), step_time, loss, perplexity)
+                logging.info(
+                    "Global step %d. Time: %.3f, loss: %f, perplexity: %.2f.",
+                    self.sess.run(self.global_step),
+                    step_time,
+                    loss,
+                    perplexity,
+                )
                 # Save checkpoint and reset timer and loss.
                 logging.info("Saving the model at step %d.", current_step)
-                self.saver_all.save(self.sess, self.checkpoint_path, global_step=self.global_step)
+                self.saver_all.save(
+                    self.sess, self.checkpoint_path, global_step=self.global_step
+                )
                 step_time, loss = 0.0, 0.0
 
         # Print statistics for the previous epoch.
-        perplexity = math.exp(loss) if loss < 300 else float('inf')
-        logging.info("Global step %d. Time: %.3f, loss: %f, perplexity: %.2f.",
-                     self.sess.run(self.global_step), step_time, loss, perplexity)
+        perplexity = math.exp(loss) if loss < 300 else float("inf")
+        logging.info(
+            "Global step %d. Time: %.3f, loss: %f, perplexity: %.2f.",
+            self.sess.run(self.global_step),
+            step_time,
+            loss,
+            perplexity,
+        )
 
         if skipped_counter:
             logging.info("Skipped {} batches due to errors.".format(skipped_counter))
 
         # Save checkpoint and reset timer and loss.
-        logging.info("Finishing the training and saving the model at step %d.", current_step)
-        self.saver_all.save(self.sess, self.checkpoint_path, global_step=self.global_step)
+        logging.info(
+            "Finishing the training and saving the model at step %d.", current_step
+        )
+        self.saver_all.save(
+            self.sess, self.checkpoint_path, global_step=self.global_step
+        )
 
     # step, read one batch, generate gradients
     def step(self, batch, forward_only):
-        img_data = batch['data']
-        decoder_inputs = batch['decoder_inputs']
-        target_weights = batch['target_weights']
+        img_data = batch["data"]
+        decoder_inputs = batch["decoder_inputs"]
+        target_weights = batch["target_weights"]
 
         # Input feed: encoder inputs, decoder inputs, target_weights, as provided.
         input_feed = {}
@@ -466,8 +507,7 @@ class Model(object):
         ]
 
         if not forward_only:
-            output_feed += [self.summaries_by_bucket[0],
-                            self.updates[0]]
+            output_feed += [self.summaries_by_bucket[0], self.updates[0]]
         else:
             output_feed += [self.prediction]
             output_feed += [self.probability]
@@ -477,16 +517,16 @@ class Model(object):
         outputs = self.sess.run(output_feed, input_feed)
 
         res = {
-            'loss': outputs[0],
+            "loss": outputs[0],
         }
 
         if not forward_only:
-            res['summaries'] = outputs[1]
+            res["summaries"] = outputs[1]
         else:
-            res['prediction'] = outputs[1]
-            res['probability'] = outputs[2]
+            res["prediction"] = outputs[1]
+            res["probability"] = outputs[2]
             if self.visualize:
-                res['attentions'] = outputs[3:]
+                res["attentions"] = outputs[3:]
 
         return res
 
@@ -498,19 +538,25 @@ class Model(object):
         dims = tf.shape(img)
         width = self.max_width
 
-        max_width = tf.to_int32(tf.ceil(tf.truediv(dims[1], dims[0]) * self.height_float))
-        max_height = tf.to_int32(tf.ceil(tf.truediv(width, max_width) * self.height_float))
+        max_width = tf.to_int32(
+            tf.ceil(tf.truediv(dims[1], dims[0]) * self.height_float)
+        )
+        max_height = tf.to_int32(
+            tf.ceil(tf.truediv(width, max_width) * self.height_float)
+        )
 
         resized = tf.cond(
             tf.greater_equal(width, max_width),
             lambda: tf.cond(
                 tf.less_equal(dims[0], self.height),
                 lambda: tf.to_float(img),
-                lambda: tf.image.resize_images(img, [self.height, max_width],
-                                               method=tf.image.ResizeMethod.BICUBIC),
+                lambda: tf.image.resize_images(
+                    img, [self.height, max_width], method=tf.image.ResizeMethod.BICUBIC
+                ),
             ),
-            lambda: tf.image.resize_images(img, [max_height, width],
-                                           method=tf.image.ResizeMethod.BICUBIC)
+            lambda: tf.image.resize_images(
+                img, [max_height, width], method=tf.image.ResizeMethod.BICUBIC
+            ),
         )
 
         padded = tf.image.pad_to_bounding_box(resized, 0, 0, self.height, width)

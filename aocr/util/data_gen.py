@@ -20,17 +20,15 @@ class DataGen(object):
     GO_ID = 1
     EOS_ID = 2
     IMAGE_HEIGHT = 32
-    CHARMAP = ['', '', ''] + list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,\"\'.<>/?;:[]{}!@#$%^&*()-=+\|` ")
+    CHARMAP = ["", "", ""] + list(
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,\"'.<>/?;:[]{}!@#$%^&*()-=+\|` "
+    )
 
     @staticmethod
     def set_full_ascii_charmap():
-        DataGen.CHARMAP = ['', '', ''] + [chr(i) for i in range(32, 127)]
+        DataGen.CHARMAP = ["", "", ""] + [chr(i) for i in range(32, 127)]
 
-    def __init__(self,
-                 annotation_fn,
-                 buckets,
-                 epochs=1000,
-                 max_width=None):
+    def __init__(self, annotation_fn, buckets, epochs=1000, max_width=None):
         """
         :param annotation_fn:
         :param lexicon_fn:
@@ -61,22 +59,28 @@ class DataGen(object):
 
         images, labels, comments = iterator.get_next()
         config = tf.ConfigProto(allow_soft_placement=True)
-        config.gpu_options.allow_growth=True
+        config.gpu_options.allow_growth = True
         with tf.Session(config=config) as sess:
 
             while True:
                 try:
-                    raw_images, raw_labels, raw_comments = sess.run([images, labels, comments])
+                    raw_images, raw_labels, raw_comments = sess.run(
+                        [images, labels, comments]
+                    )
                     for img, lex, comment in zip(raw_images, raw_labels, raw_comments):
 
-                        if self.max_width and (Image.open(IO(img)).size[0] <= self.max_width):
+                        if self.max_width and (
+                            Image.open(IO(img)).size[0] <= self.max_width
+                        ):
                             word = self.convert_lex(lex)
 
-                            bucket_size = self.bucket_data.append(img, word, lex, comment)
+                            bucket_size = self.bucket_data.append(
+                                img, word, lex, comment
+                            )
                             if bucket_size >= batch_size:
                                 bucket = self.bucket_data.flush_out(
-                                    self.bucket_specs,
-                                    go_shift=1)
+                                    self.bucket_specs, go_shift=1
+                                )
                                 yield bucket
 
                 except tf.errors.OutOfRangeError:
@@ -86,7 +90,7 @@ class DataGen(object):
 
     def convert_lex(self, lex):
         if sys.version_info >= (3,):
-            lex = lex.decode('iso-8859-1')
+            lex = lex.decode("iso-8859-1")
 
         assert len(lex) < self.bucket_specs[-1][1]
         # print(lex)
@@ -94,15 +98,17 @@ class DataGen(object):
         # print(self.CHARMAP)
         return np.array(
             [self.GO_ID] + [self.CHARMAP.index(char) for char in lex] + [self.EOS_ID],
-            dtype=np.int32)
+            dtype=np.int32,
+        )
 
     @staticmethod
     def _parse_record(example_proto):
         features = tf.parse_single_example(
             example_proto,
             features={
-                'image': tf.FixedLenFeature([], tf.string),
-                'label': tf.FixedLenFeature([], tf.string),
-                'comment': tf.FixedLenFeature([], tf.string, default_value=''),
-            })
-        return features['image'], features['label'], features['comment']
+                "image": tf.FixedLenFeature([], tf.string),
+                "label": tf.FixedLenFeature([], tf.string),
+                "comment": tf.FixedLenFeature([], tf.string, default_value=""),
+            },
+        )
+        return features["image"], features["label"], features["comment"]
