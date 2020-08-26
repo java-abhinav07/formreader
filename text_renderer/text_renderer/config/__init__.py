@@ -99,8 +99,10 @@ class SimpleTextColorCfg(TextColorCfg):
         # r = np.random.randint(0, int(mean * 0.7))
         # g = np.random.randint(0, int(mean * 0.7))
         # b = np.random.randint(0, int(mean * 0.7))
+        colors = [0, 8, 16, 32, 48, 56]
+        r = np.random.choice(np.array(colors))
 
-        text_color = (0, 0, 0, alpha)
+        text_color = (r, r, r, alpha)
 
         return text_color
 

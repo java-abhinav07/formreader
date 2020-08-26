@@ -72,7 +72,7 @@ def draw_text_on_bg(
 
     c_x = int(width*0.05)
     c_y = int(0.08*height)
-    colors = ["#000", "#808080"]
+    colors = ["#000", "#080808", "#101010", "#181818", "#202020", "#282828", "#303030", "#383838", "#404040", "#484848", "#505050"]
     c_color = np.random.choice(np.array(colors))
 
     y_offset = font_text.offset[1]
@@ -104,7 +104,7 @@ def draw_text_on_bg(
         )
 
         # draw a box around text
-        draw.rectangle((xo, yo, x1, y1), width=1, outline="#000", fill=None)
+        draw.rectangle((xo, yo, x1, y1), width=1, outline=c_color, fill=None)
 
         c_x += chars_size[i][0] + char_spacings[i]
         # text_mask.show()

@@ -42,4 +42,4 @@ This file contains daily logs of work done in a sequential manner. For example, 
     1. Resuls still poor on new dataset, model attending to the vertical separators instead of text, overfitting
     1. Retraining with lower model complexity: params tweaked
     1. Accuracies on sample data largely improved, testing on public data. Still scope for improvement
-    1.  
+    1. Making model complexity lower makes results worse, attention mask too small, not learned properly. Need to tune further and generate new images 
