@@ -66,11 +66,12 @@ def draw_text_on_bg(
 
     width += sum(char_spacings[:-1])
 
-    text_mask = transparent_img((width, height))
+    text_mask = transparent_img((int(width*2), int(height*2.5)))
+
     draw = ImageDraw.Draw(text_mask)
 
-    c_x = 0
-    c_y = 0
+    c_x = width//2
+    c_y = 2*height//2.5
     colors = ["#000", "#808080"]
     c_color = np.random.choice(np.array(colors))
 
@@ -78,23 +79,19 @@ def draw_text_on_bg(
     for i, c in enumerate(font_text.text):
 
         xo = c_x - (char_spacings[i] // 2)
-        yo = c_y - y_offset
+        yo = c_y - y_offset - int(height//2.5)
 
-        y1 = c_y + height + y_offset
+        y1 = c_y + int(1.5*height)
         x1 = xo + chars_size[i][0] + char_spacings[i]
         # print(xo, yo, x1, y1)
-
-        # draw a box around text
-        draw.rectangle((xo, yo, x1, y1), outline="#000", width=1, fill=None)
 
         # draw random background text
         r = np.random.choice(np.array(["D", "M", "Y", ""]))
         draw.text(
             (c_x, c_y - y_offset),
             str(r),
-            fill=(60, 60, 60, 30),
+            fill=(20, 20, 20, 20),
             font=font_text.font,
-            stroke_width=1,
         )
 
         draw.text(
@@ -104,6 +101,9 @@ def draw_text_on_bg(
             font=font_text.font,
             stroke_fill="#000",
         )
+
+        # draw a box around text
+        draw.rectangle((xo, yo, x1, y1), width=1, outline="#000", fill=None)
 
         c_x += chars_size[i][0] + char_spacings[i]
         # text_mask.show()

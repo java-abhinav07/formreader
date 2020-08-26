@@ -13,7 +13,7 @@ from text_renderer.layout.extra_text_line import ExtraTextLineLayout
 
 
 CURRENT_DIR = Path(os.path.abspath(os.path.dirname(__file__)))
-OUT_DIR = "/home/abhinavjava/Projects/IITB_Assignment/dataset/realistic_alpha/"
+OUT_DIR = "/home/abhinavjava/Projects/IITB_Assignment/dataset/final_realistic/"
 DATA_DIR = CURRENT_DIR
 BG_DIR = DATA_DIR / "bg"
 CHAR_DIR = DATA_DIR / "char"
@@ -47,7 +47,7 @@ ocr_data = GeneratorCfg(
         ),
         # lighting conditions handled by backgrounds
         # handwritten fonts used
-        corpus_effects=Effects([Line(1), DropoutRand(0.020), Padding(1)]),
+        corpus_effects=Effects([Line(0.001), DropoutRand(0.020), Padding(0.5)]),
     ),
 )
 

@@ -48,21 +48,21 @@ class Line(Effect):
         # TODO: merge apply top/bottom/left.. to make it more efficient
         # func = np.random.choice(
         #     [
-        # # self.apply_top,
-        # # self.apply_bottom,
-        # # self.apply_left,
-        # # self.apply_right,
-        # # self.apply_top_left,
-        # # self.apply_top_right,
-        # # self.apply_bottom_left,
-        # # self.apply_bottom_right,
-        # # self.apply_horizontal_middle,
-        # # self.apply_vertical_middle,
+        # self.apply_top,
+        # self.apply_bottom,
+        # self.apply_left,
+        # self.apply_right,
+        # self.apply_top_left,
+        # self.apply_top_right,
+        # self.apply_bottom_left,
+        # self.apply_bottom_right,
+        # self.apply_horizontal_middle,
+        # self.apply_vertical_middle,
         # self.apply_char_box,
         #     ],
         #     p=self.line_pos_p,
         # )
-        func = self.apply_char_box
+        func = self.apply_top
         return func(img, text_bbox)
 
     def apply_char_box(self, img: PILImage, text_bbox: BBox) -> Tuple[PILImage, BBox]:
@@ -72,8 +72,8 @@ class Line(Effect):
 
         draw.rectangle(
             [(0, 0), (img.width, row)],
-            outline=self._get_line_color(img, text_bbox),
             width=thickness,
+            outline="#000"
         )
 
         return img, text_bbox
