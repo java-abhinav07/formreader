@@ -16,7 +16,7 @@ class Config(object):
 
     # I/O
     NEW_DATASET_PATH = "./dataset.tfrecords"
-    DATA_PATH = "/content/drive/My\ Drive/IITB_Assignment/datasets/final_realistic/training.tfrecords"
+    DATA_PATH = "/content/drive/My\ Drive/IITB_Assignment/datasets/ds0/training.tfrecords"
     MODEL_DIR = f"./checkpoints_{time}"
     # MODEL_DIR = (
     #     "/content/drive/My Drive/IITB_Assignment/checkpoints_2020-08-26 18:59:40.964779"
