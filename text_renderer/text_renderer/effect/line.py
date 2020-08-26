@@ -62,16 +62,21 @@ class Line(Effect):
         #     ],
         #     p=self.line_pos_p,
         # )
-        func = self.apply_top
+        func = self.apply_char_box
         return func(img, text_bbox)
 
     def apply_char_box(self, img: PILImage, text_bbox: BBox) -> Tuple[PILImage, BBox]:
         row = img.height - 1
-        thickness = np.random.randint(*self.thickness)
+        if row%234 == 0:
+            thickness = 2
+        else:
+            thickness = 1
         draw = ImageDraw.Draw(img)
 
+        width = img.width
+
         draw.rectangle(
-            [(0, 0), (img.width, row)],
+            [(int(width*0.02), 0), (width//1.1, row)],
             width=thickness,
             outline="#000"
         )

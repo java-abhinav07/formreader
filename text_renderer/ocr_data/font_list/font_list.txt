@@ -1,3 +1,6 @@
+oilbats.basic.ttf
+ReenieBeanie.ttf
 ShadowsIntoLight.ttf
-Blokletters-Balpen.ttf
+ReenieBeanie.ttf
+ReenieBeanie.ttf
 ReenieBeanie.ttf

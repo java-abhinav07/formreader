@@ -24,7 +24,7 @@ TEXT_DIR = DATA_DIR / "text"
 font_cfg = dict(
     font_dir=FONT_DIR,
     font_list_file=FONT_LIST_DIR / "font_list.txt",
-    font_size=(22, 24),
+    font_size=(40, 42),
 )
 
 perspective_transform = NormPerspectiveTransformCfg(30, 30, 1.5)
@@ -47,7 +47,7 @@ ocr_data = GeneratorCfg(
         ),
         # lighting conditions handled by backgrounds
         # handwritten fonts used
-        corpus_effects=Effects([Line(0.001), DropoutRand(0.020), Padding(0.5)]),
+        corpus_effects=Effects([Line(1), DropoutRand(0.60), Padding(1)]),
     ),
 )
 
