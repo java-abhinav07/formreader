@@ -37,3 +37,5 @@ This file contains daily logs of work done in a sequential manner. For example, 
     1. The network performs well on my testdata (97% acc)
     1. Made more realistic data
     1. Training again
+    1. Testing+Training complete, much better results on sample data however still scope for a lot of improvement
+    1. Improvement areas noted: a) Size of attention mask b) Dataset!  
