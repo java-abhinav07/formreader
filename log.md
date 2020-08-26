@@ -39,3 +39,5 @@ This file contains daily logs of work done in a sequential manner. For example, 
     1. Training again
     1. Testing+Training complete, much better results on sample data however still scope for a lot of improvement
     1. Improvement areas noted: a) Size of attention mask b) Dataset!  
+    1. Resuls still poor on new dataset, model attending to the vertical separators instead of text, overfitting
+    1. Retraining with lower model complexity: params tweaked
