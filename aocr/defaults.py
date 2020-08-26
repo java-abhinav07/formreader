@@ -15,7 +15,7 @@ class Config(object):
 
     # I/O
     NEW_DATASET_PATH = './dataset.tfrecords'
-    DATA_PATH = '/content/drive/My Drive/IITB_Assignment/datasets/training.tfrecords'
+    DATA_PATH = '/content/drive/My Drive/IITB_Assignment/datasets/realistic_alphanumeric/training.tfrecords'
     MODEL_DIR = f'./checkpoints_modified_{time}'
     LOG_PATH = f'aocr_modified_{time}.log'
     OUTPUT_DIR = './results'
@@ -27,8 +27,8 @@ class Config(object):
     FULL_ASCII = False
 
     # Optimization
-    NUM_EPOCH = 1000
-    BATCH_SIZE = 64
+    NUM_EPOCH = 32
+    BATCH_SIZE = 32
     INITIAL_LEARNING_RATE = 1.0
 
     # Network parameters
@@ -40,10 +40,10 @@ class Config(object):
     # (Encoder number of hidden units will be ATTN_NUM_HIDDEN*ATTN_NUM_LAYERS)
     LOAD_MODEL = True
     OLD_MODEL_VERSION = False
-    TARGET_VOCAB_SIZE = 96  # 0: PADDING, 1: GO, 2: EOS, >2: 0-9, a-z
+    TARGET_VOCAB_SIZE = 38  # 0: PADDING, 1: GO, 2: EOS, >2: 0-9, a-z
     CHANNELS = 1  # number of color channels from source image (1 = grayscale, 3 = rgb)
 
-    MAX_WIDTH = 480
+    MAX_WIDTH = 360
     MAX_HEIGHT = 32
     MAX_PREDICTION = 50
 
