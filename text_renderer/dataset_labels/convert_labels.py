@@ -3,7 +3,7 @@ import json
 import random
 
 
-with open("./realistic_alpha/labels.json", "r") as f:
+with open("/home/abhinavjava/Projects/IITB_Assignment/dataset/final_realistic/labels.json", "r") as f:
     data = json.loads(f.read())
     # num_samples = data["num_samples"]
     label_dict = data["labels"]

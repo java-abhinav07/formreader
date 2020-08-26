@@ -30,7 +30,7 @@ font_cfg = dict(
 perspective_transform = NormPerspectiveTransformCfg(30, 30, 1.5)
 
 ocr_data = GeneratorCfg(
-    num_image=6,
+    num_image=60000,
     save_dir=OUT_DIR,
     render_cfg=RenderCfg(
         bg_dir=BG_DIR,
