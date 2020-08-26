@@ -4,8 +4,8 @@ final_realistic/images/000000002.jpg 61 580 6647
 final_realistic/images/000000003.jpg 01 2020 03 08 2020 26 
 final_realistic/images/000000004.jpg 2 2020 06 07 2020 27 02
 final_realistic/images/000000005.jpg 2 02 2020 04 01 2020
-final_realistic/images/6.jpg 6379783995                    
-final_realistic/images/7.jpg 5410939819                    
+final_realistic/images/6.png 6379783995                    
+final_realistic/images/7.png 5410939819                    
 final_realistic/images/000000006.jpg UND HERSELF 
 final_realistic/images/000000007.jpg 2020 10 05 2020 1
 final_realistic/images/000000008.jpg  09 05 2020 31 01 2
