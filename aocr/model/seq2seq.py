@@ -189,7 +189,7 @@ def attention_decoder(
         batch_size = tf.shape(decoder_inputs[0])[0]  # Needed for reshaping.
         attn_length = attention_states.get_shape()[1].value
         
-        attn_size = attention_states.get_shape()[2].value * 2
+        attn_size = attention_states.get_shape()[2].value
 
         # To calculate W1 * h_t we use a 1-by-1 convolution, need to reshape before.
         hidden = tf.reshape(attention_states, [-1, attn_length, 1, attn_size])
