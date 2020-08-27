@@ -57,7 +57,7 @@ class Model(object):
         self.max_original_width = max_image_width
         self.max_width = int(math.ceil(max_resized_width))
 
-        self.encoder_size = int(math.ceil(1.50 * self.max_width / 4)) #### mod_aocr
+        self.encoder_size = int(math.ceil(self.max_width / 2)) #### mod_aocr
         self.decoder_size = max_prediction_length + 2
         self.buckets = [(self.encoder_size, self.decoder_size)]
 
