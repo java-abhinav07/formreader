@@ -195,7 +195,7 @@ def attention_decoder(
         hidden = tf.reshape(attention_states, [-1, attn_length, 1, attn_size])
         hidden_features = []
         v = []
-        attention_vec_size = attn_size * 2  # Size of query vectors for attention.
+        attention_vec_size = attn_size  # Size of query vectors for attention.
         for a in xrange(num_heads):
             k = tf.get_variable("AttnW_%d" % a, [1, 1, attn_size, attention_vec_size])
             hidden_features.append(tf.nn.conv2d(hidden, k, [1, 1, 1, 1], "SAME"))
@@ -215,7 +215,7 @@ def attention_decoder(
                     y = linear(query, attention_vec_size, True)
                     y = tf.reshape(y, [-1, 1, 1, attention_vec_size])
                     # Attention mask is a softmax of v^T * tanh(...).
-                    s = tf.reduce_sum(v[a] * tf.tanh(hidden_features[a] + y), [2, 3]) # 2, 3 why??
+                    s = tf.reduce_sum(v[a] * tf.tanh(hidden_features[a] + y), [2, 3])
                     a = tf.nn.softmax(s)
                     ss = a
                     # a = tf.Print(a, [a], message="a: ",summarize=30)
@@ -228,6 +228,10 @@ def attention_decoder(
             # MODIFIED ADD START
             return ds, ss
             # MODIFIED ADD END
+
+        def modified_attention(query):
+            pass
+
 
         outputs = []
         # MODIFIED ADD START

@@ -44,7 +44,7 @@ class Model(object):
         max_image_height=60,
         max_prediction_length=8,
         channels=1,
-        reg_val=0,
+        reg_val=0.0004, #### mod_aocr
     ):
 
         self.use_distance = use_distance
@@ -57,7 +57,7 @@ class Model(object):
         self.max_original_width = max_image_width
         self.max_width = int(math.ceil(max_resized_width))
 
-        self.encoder_size = int(math.ceil(1.0 * self.max_width / 4))
+        self.encoder_size = int(math.ceil(1.50 * self.max_width / 4)) #### mod_aocr
         self.decoder_size = max_prediction_length + 2
         self.buckets = [(self.encoder_size, self.decoder_size)]
 
