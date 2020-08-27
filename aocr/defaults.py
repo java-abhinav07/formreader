@@ -44,8 +44,8 @@ class Config(object):
     TARGET_VOCAB_SIZE = 38  # 0: PADDING, 1: GO, 2: EOS, >2: 0-9, a-z
     CHANNELS = 1  # number of color channels from source image (1 = grayscale, 3 = rgb)
 
-    MAX_WIDTH = 600
-    MAX_HEIGHT = 50
+    MAX_WIDTH = 480
+    MAX_HEIGHT = 32
     MAX_PREDICTION = 50
 
     USE_DISTANCE = True

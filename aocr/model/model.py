@@ -127,6 +127,7 @@ class Model(object):
                 self._prepare_image, self.img_data, dtype=tf.float32
             )
             num_images = tf.shape(self.img_data)[0]
+            logging.info(f"Number of images: {num_images}")
 
             # TODO: create a mask depending on the image/batch size
             self.encoder_masks = []
