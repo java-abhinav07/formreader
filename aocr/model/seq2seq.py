@@ -189,7 +189,8 @@ def attention_decoder(
         batch_size = tf.shape(decoder_inputs[0])[0]  # Needed for reshaping.
         attn_length = attention_states.get_shape()[1].value
         
-        attn_size = attention_states.get_shape()[2].value
+        attn_size = 
+        .get_shape()[2].value
 
         # To calculate W1 * h_t we use a 1-by-1 convolution, need to reshape before.
         hidden = tf.reshape(attention_states, [-1, attn_length, 1, attn_size])
@@ -215,9 +216,17 @@ def attention_decoder(
                     y = linear(query, attention_vec_size, True)
                     y = tf.reshape(y, [-1, 1, 1, attention_vec_size])
                     # Attention mask is a softmax of v^T * tanh(...).
+
+
                     s = tf.reduce_sum(v[a] * tf.tanh(hidden_features[a] + y), [2, 3])
-                    a = tf.nn.softmax(s)
+
+                    # this has an effect of smoothening the focus found by attention 
+                    s = tf.sigmoid(s)
+                    a = tf.nn.softmax(s) #### mod_aocr
                     ss = a
+
+
+
                     # a = tf.Print(a, [a], message="a: ",summarize=30)
                     # Now calculate the attention-weighted vector d.
                     d = tf.reduce_sum(
