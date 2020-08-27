@@ -43,6 +43,7 @@ This file contains daily logs of work done in a sequential manner. For example, 
     1. Retraining with lower model complexity: params tweaked
     1. Accuracies on sample data largely improved, testing on public data. Still scope for improvement
     1. Making model complexity lower makes results worse, attention mask too small, not learned properly. Need to tune further and generate new images
-    1. Despite multiple rounds of hyperparameter tuning and even with a dataset very similar to the original pubic dataset the accuracy on the public dataset is poor **due to small size of the attention mask/sliding window.**
+    
 1. 27/08/20
+    1. Improved results on sample and public dataset, but still not significant: Despite multiple rounds of hyperparameter tuning and even with a dataset very similar to the original pubic dataset the accuracy on the public dataset is poor **due to small size of the attention mask/sliding window.**
     1. Implementing the modified network to accomodate a larger window and location aware attention
