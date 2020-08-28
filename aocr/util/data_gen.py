@@ -53,7 +53,7 @@ class DataGen(object):
         dataset = dataset.map(self.color, num_parallel_calls=4)
 
         # Make sure that the values are still in [0, 1]
-        dataset = dataset.map(lambda x: tf.clip_by_value(x, 0, 1), num_parallel_calls=4
+        dataset = dataset.map(lambda x: tf.clip_by_value(x, 0, 1), num_parallel_calls=4))
 
 
         dataset = dataset.shuffle(buffer_size=10000)
@@ -62,7 +62,7 @@ class DataGen(object):
     def clear(self):
         self.bucket_data = BucketData()
     
-    def color(self, image, label):
+    def color(self, image, label, comment):
         x = image
         x = tf.image.random_hue(x, 0.03)
         x = tf.image.random_saturation(x, 0.3, 1.1)
