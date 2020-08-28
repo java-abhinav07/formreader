@@ -127,7 +127,7 @@ class Seq2SeqModel(object):
                 e * f for e, f in zip(pre_encoder_inputs, encoder_masks[:seq_length])
             ]
             top_states = [
-                tf.reshape(e, [-1, 1, num_hidden * 4]) for e in encoder_inputs
+                tf.reshape(e, [-1, 1, num_hidden * 2]) for e in encoder_inputs
             ]
             attention_states = tf.concat(top_states, 1)
             initial_state = tf.concat(axis=1, values=[output_state_fw, output_state_bw])
