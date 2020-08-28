@@ -24,7 +24,6 @@ class DataGen(object):
         "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,\"'.<>/?;:[]{}!@#$%^&*()-=+\|` "
     )
 
-
     @staticmethod
     def set_full_ascii_charmap():
         DataGen.CHARMAP = ["", "", ""] + [chr(i) for i in range(32, 127)]
@@ -47,26 +46,11 @@ class DataGen(object):
 
         dataset = TFRecordDataset([annotation_fn])
         dataset = dataset.map(self._parse_record)
-
-        # Apply the augmentation, run 4 jobs in parallel.
-        # dataset = dataset.map(self.color, num_parallel_calls=4)
-
-        # Make sure that the values are still in [0, 1]
-        # dataset = dataset.map(lambda x: tf.clip_by_value(x, 0, 1), num_parallel_calls=4)
-
         dataset = dataset.shuffle(buffer_size=10000)
         self.dataset = dataset.repeat(self.epochs)
 
     def clear(self):
         self.bucket_data = BucketData()
-    
-    def color(self, image, label):
-        x = image
-        x = tf.image.random_hue(x, 0.03)
-        x = tf.image.random_saturation(x, 0.3, 1.1)
-        x = tf.image.random_brightness(x, 0.02)
-        x = tf.image.random_contrast(x, 0.4, 1.1)
-        return x
 
     def gen(self, batch_size):
 
@@ -83,15 +67,12 @@ class DataGen(object):
                     raw_images, raw_labels, raw_comments = sess.run(
                         [images, labels, comments]
                     )
-                    dataset = dataset.map(self.color, num_parallel_calls=4)
-                    dataset = dataset.map(lambda x: tf.clip_by_value(x, 0, 1), num_parallel_calls=4)
                     for img, lex, comment in zip(raw_images, raw_labels, raw_comments):
 
                         if self.max_width and (
                             Image.open(IO(img)).size[0] <= self.max_width
                         ):
                             word = self.convert_lex(lex)
-
 
                             bucket_size = self.bucket_data.append(
                                 img, word, lex, comment
