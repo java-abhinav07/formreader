@@ -216,16 +216,13 @@ def attention_decoder(
                     y = tf.reshape(y, [-1, 1, 1, attention_vec_size])
                     # Attention mask is a softmax of v^T * tanh(...).
 
-
                     s = tf.reduce_sum(v[a] * tf.tanh(hidden_features[a] + y), [2, 3])
 
                     # this has an effect of smoothening the focus found by attention 
                     s = tf.sigmoid(s)
                     a = tf.nn.softmax(s) #### mod_aocr
                     ss = a
-
-
-
+                    
                     # a = tf.Print(a, [a], message="a: ",summarize=30)
                     # Now calculate the attention-weighted vector d.
                     d = tf.reduce_sum(
