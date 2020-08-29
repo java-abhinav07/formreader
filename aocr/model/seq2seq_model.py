@@ -24,7 +24,6 @@ import tensorflow as tf
 
 from .seq2seq import model_with_buckets
 from .seq2seq import embedding_attention_decoder
-from .temporal_seq2_seq import *
 
 
 class Seq2SeqModel(object):
@@ -122,7 +121,6 @@ class Seq2SeqModel(object):
                 scope=None,
             )
 
-
             # possible to change encoder masks start and end?
             encoder_inputs = [
                 e * f for e, f in zip(pre_encoder_inputs, encoder_masks[:seq_length])
@@ -151,7 +149,7 @@ class Seq2SeqModel(object):
 
         # Our targets are decoder inputs shifted by one.
         targets = [decoder_inputs[i + 1] for i in xrange(len(decoder_inputs) - 1)]
-        
+
         softmax_loss_function = (
             None  # default to tf.nn.sparse_softmax_cross_entropy_with_logits
         )

@@ -188,7 +188,7 @@ def attention_decoder(
     with tf.variable_scope(scope or "attention_decoder"):
         batch_size = tf.shape(decoder_inputs[0])[0]  # Needed for reshaping.
         attn_length = attention_states.get_shape()[1].value
-        
+
         attn_size = attention_states.get_shape()[2].value
 
         # To calculate W1 * h_t we use a 1-by-1 convolution, need to reshape before.
@@ -217,14 +217,14 @@ def attention_decoder(
                     # Attention mask is a softmax of v^T * tanh(...).
                     # location aware attention
                     s = tf.reduce_sum(v[a] * tf.tanh(hidden_features[a] + y), [2, 3])
-                    
+
                     # completely remove outliers
                     s = tf.nn.relu(s)
 
                     # sharpened attention
                     a = tf.nn.softmax(tf.pow(s, 1.2))
                     ss = a
-                    
+
                     # a = tf.Print(a, [a], message="a: ",summarize=30)
                     # Now calculate the attention-weighted vector d.
                     d = tf.reduce_sum(
@@ -235,7 +235,6 @@ def attention_decoder(
             # MODIFIED ADD START
             return ds, ss
             # MODIFIED ADD END
-
 
         outputs = []
         # MODIFIED ADD START
@@ -282,9 +281,12 @@ def attention_decoder(
                 attns, attn_weights = attention(state)
                 attention_weights_history.append(attn_weights)
                 # MODIFIED ADD END
-            
-            attns = [math_ops.div(attns[-1], math_ops.reduce_sum(temporal_attns), "temporal_attention")]
 
+            attns = [
+                math_ops.div(
+                    attns[-1], math_ops.reduce_sum(temporal_attns), "temporal_attention"
+                )
+            ]
 
             with tf.variable_scope("AttnOutputProjection"):
                 output = linear([cell_output] + attns, output_size, True)

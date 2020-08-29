@@ -44,10 +44,9 @@ ocr_data = GeneratorCfg(
                 chars_file=CHAR_DIR / "eng_AZ09.txt",
                 length=(5, 25),
                 char_spacing=(0.35, 0.36),
-                **font_cfg
+                **font_cfg,
             ),
         ),
-
         corpus_effects=Effects([Padding(1), Line(1), DropoutRand(0.20)]),
     ),
 )
@@ -58,9 +57,14 @@ rand_data = GeneratorCfg(
     render_cfg=RenderCfg(
         bg_dir=BG_DIR,
         perspective_transform=perspective_transform,
-        corpus=RandCorpus(RandCorpusCfg(chars_file=CHAR_DIR / "eng_AZ09.txt", **font_cfg, char_spacing=(0.39, 0.42), )),
+        corpus=RandCorpus(
+            RandCorpusCfg(
+                chars_file=CHAR_DIR / "eng_AZ09.txt",
+                **font_cfg,
+                char_spacing=(0.39, 0.42),
+            )
+        ),
         corpus_effects=Effects([Padding(1), Line(1), DropoutRand(0.10)]),
-
     ),
 )
 
@@ -76,11 +80,10 @@ enum_data = GeneratorCfg(
                 filter_by_chars=True,
                 chars_file=CHAR_DIR / "eng_AZ09.txt",
                 **font_cfg,
-                char_spacing=(0.45, 0.46)
+                char_spacing=(0.45, 0.46),
             ),
         ),
         corpus_effects=Effects([Padding(1), Line(1), DropoutRand(0.10)]),
-
     ),
 )
 
@@ -96,11 +99,10 @@ eng_word_data = GeneratorCfg(
                 filter_by_chars=True,
                 chars_file=CHAR_DIR / "eng_AZ09.txt",
                 **font_cfg,
-                char_spacing=(0.35, 0.36)
+                char_spacing=(0.35, 0.36),
             ),
         ),
         corpus_effects=Effects([Padding(1), Line(1), DropoutRand(0.10)]),
-
     ),
 )
 

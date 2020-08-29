@@ -44,8 +44,8 @@ class Model(object):
         max_image_height=60,
         max_prediction_length=8,
         channels=1,
-        reg_val=0.00001,): #### mod_aocr
-
+        reg_val=0.00001,
+    ):  #### mod_aocr
 
         self.use_distance = use_distance
 
