@@ -220,8 +220,8 @@ def attention_decoder(
                     s = tf.nn.relu(s)
                     # apply smoothenting function
                     factor = 0.20
-                    s *= (1 - factor)
-                    s += (factor / s.shape[1])
+                    tf.multiply(s, (1 - factor))
+                    tf.add(s, (factor // s.shape[1]))
                     a = tf.nn.softmax(s)
                     ss = a
                     
