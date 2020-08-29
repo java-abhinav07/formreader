@@ -24,7 +24,6 @@ import tensorflow as tf
 
 from .seq2seq import model_with_buckets
 from .seq2seq import embedding_attention_decoder
-from .temporal_seq2seq import temporal_embedding_attention_decoder
 
 
 class Seq2SeqModel(object):
@@ -131,7 +130,7 @@ class Seq2SeqModel(object):
             ]
             attention_states = tf.concat(top_states, 1)
             initial_state = tf.concat(axis=1, values=[output_state_fw, output_state_bw])
-            outputs, _, attention_weights_history = temporal_embedding_attention_decoder(
+            outputs, _, attention_weights_history = embedding_attention_decoder(
                 decoder_inputs,
                 initial_state,
                 attention_states,

@@ -222,7 +222,7 @@ def attention_decoder(
                     v[a] = (v[a]/tf.norm(v[a]))
                     s = tf.reduce_sum(v[a] * tf.tanh(hidden_features[a] + y), [2, 3])
 
-                    # Luong's attention is typically worse
+                    # Luong's attention is typically worse for our use case
                     
                     a = tf.nn.softmax(s)
                     ss = a
