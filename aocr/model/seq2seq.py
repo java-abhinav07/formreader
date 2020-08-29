@@ -223,7 +223,6 @@ def attention_decoder(
                     s *= (1 - factor)
 	                s += (factor / s.shape[1])
                     a = tf.nn.softmax(s)
-                    x
                     ss = a
                     
                     # a = tf.Print(a, [a], message="a: ",summarize=30)
