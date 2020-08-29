@@ -215,12 +215,16 @@ def attention_decoder(
             for a in xrange(num_heads):
                 with tf.variable_scope("Attention_%d" % a):
                     y = linear(query, attention_vec_size, True)
+                    y = linear(y, query, True)
                     y = tf.reshape(y, [-1, 1, 1, attention_vec_size])
                     # Attention mask is a softmax of v^T * tanh(...).
-                    # location aware attention
+                    # location aware attention: Normalized Bahnadu with focus on position
+                    v[a] = (v[a]/tf.norm(v[a]))
                     s = tf.reduce_sum(v[a] * tf.tanh(hidden_features[a] + y), [2, 3])
-                    # sharpened attention
-                    a = tf.nn.softmax(tf.pow(s, 1.2))
+
+                    # Luong's attention is typically worse
+                    
+                    a = tf.nn.softmax(s)
                     ss = a
 
                     # a = tf.Print(a, [a], message="a: ",summarize=30)

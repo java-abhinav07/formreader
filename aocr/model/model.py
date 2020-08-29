@@ -160,6 +160,7 @@ class Model(object):
                 forward_only=self.forward_only,
                 use_gru=use_gru,
             )
+            
 
             table = tf.contrib.lookup.MutableHashTable(
                 key_dtype=tf.int64,
