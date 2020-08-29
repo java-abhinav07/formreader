@@ -56,8 +56,19 @@ from tensorflow.python.ops import rnn_cell
 from tensorflow.python.ops import variable_scope
 from tensorflow.python.util import nest
 
-# TODO(ebrevdo): Remove once _linear is fully deprecated.
-linear = rnn_cell._linear
+
+try:
+    from tensorflow.contrib.rnn.python.ops import rnn_cell_impl
+except ImportError:
+    from tensorflow.python.ops import rnn_cell_impl
+
+try:
+    linear = rnn_cell_impl._linear  # pylint: disable=protected-access
+except AttributeError:
+    # pylint: disable=protected-access,no-name-in-module
+    from tensorflow.contrib.rnn.python.ops import core_rnn_cell
+
+    linear = core_rnn_cell._linear
 
 
 def temporal_attention_decoder(

@@ -241,7 +241,7 @@ def attention_decoder(
         prev = None
         batch_attn_size = tf.stack([batch_size, attn_size])
         attns = [tf.zeros(batch_attn_size, dtype=dtype) for _ in xrange(num_heads)]
-        
+
         for a in attns:  # Ensure the second shape of attention vectors is set.
             a.set_shape([None, attn_size])
         if initial_state_attention:
