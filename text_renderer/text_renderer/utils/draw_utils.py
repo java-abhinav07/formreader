@@ -66,32 +66,59 @@ def draw_text_on_bg(
 
     width += sum(char_spacings[:-1])
 
-    text_mask = transparent_img((width, height))
+    text_mask = transparent_img((int(width * 1.2), int(height * 1.1)))
+
     draw = ImageDraw.Draw(text_mask)
 
-    c_x = 0
-    c_y = 0
-    colors = ["#000", "#A9A9A9", "#808080"]
+    c_x = int(width * 0.05)
+    c_y = int(0.08 * height)
+    colors = [
+        "#000",
+        "#080808",
+        "#101010",
+        "#181818",
+        "#202020",
+        "#282828",
+        "#303030",
+        "#383838",
+        "#404040",
+        "#484848",
+        "#505050",
+    ]
     c_color = np.random.choice(np.array(colors))
 
     y_offset = font_text.offset[1]
     for i, c in enumerate(font_text.text):
-        top_left = (c_x - 2, c_y - y_offset - 4)
 
-        rand = int(10 * np.random.random_sample((1))[0])
+        xo = c_x - (char_spacings[i] // 2) * (1.05)
+        yo = c_y - y_offset
 
-        if rand % 24871 == 0:
-            bottom = c_x + chars_size[i][0] + char_spacings[i] + 1
-            draw.rectangle(
-                [top_left, bottom, c_y + height + 5], outline=c_color, width=1
-            )
-        else:
-            bottom = c_x + chars_size[i][0] + char_spacings[i] - 2
-            draw.rectangle(
-                [top_left, bottom, c_y + height + 5], outline=c_color, width=1
-            )
+        y1 = c_y + int(height) + y_offset
+        x1 = xo + chars_size[i][0] + int(char_spacings[i] * 1.05)
+        # print(xo, yo, x1, y1)
 
-        draw.text((c_x - 1, c_y - y_offset), c, fill=text_color, font=font_text.font)
+        # draw random background text
+        r = np.random.choice(np.array(["D", "M", "Y", ""]))
+        rgb = np.random.randint(90)
+        draw.text(
+            (c_x, c_y - y_offset),
+            str(r),
+            fill=(rgb, rgb, rgb, rgb),
+            font=font_text.font,
+            width=3,
+        )
+
+        draw.text(
+            (c_x, c_y - y_offset),
+            c,
+            fill=text_color,
+            font=font_text.font,
+            stroke_fill=text_color,
+        )
+
+        # draw a box around text
+        draw.rectangle((xo, yo, x1, y1), width=1, outline=c_color, fill=None)
+
         c_x += chars_size[i][0] + char_spacings[i]
         # text_mask.show()
 

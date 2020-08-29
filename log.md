@@ -20,7 +20,41 @@ This file contains daily logs of work done in a sequential manner. For example, 
     1. 50k images generated
     1. Started working on tfrecords for attention-net (target start training by 24th)
     1. Fixing training errors
-
+    1. Fixed training errors, started training: loss 0.001 after 30k steps
+    1. Fixing dataset: only alphanumeric (acc to problem statement)
+1. 25/08/2020
+    1. Preparing dataset again
+    1. Colab useage limit exceeded
+    1. Made new branch for testing the modified aocr: need to train both!
+    1. Training the aocr completed, onto testing the best model 
+    1. Testing of best model complete!
+    1. Added testing, training logs
+    1. Added result samples + visualizations
+    1. Train-Test distribution was same, need public dataset to evaluate properly
+    1. Starting to implement modified aocr 
+1. 26/08/2020
+    1. The results indicate that the network is unable to generalize on assignment data and the dataset used for training is not desirable
+    1. The network performs well on my testdata (97% acc)
+    1. Made more realistic data
+    1. Training again
+    1. Testing+Training complete, much better results on sample data however still scope for a lot of improvement
+    1. Improvement areas noted: a) Size of attention mask b) Dataset!  
+    1. Resuls still poor on new dataset, model attending to the vertical separators instead of text, overfitting
+    1. Retraining with lower model complexity: params tweaked
+    1. Accuracies on sample data largely improved, testing on public data. Still scope for improvement
+    1. Making model complexity lower makes results worse, attention mask too small, not learned properly. Need to tune further and generate new images
     
+1. 27/08/20
+    1. Improved results on sample and public dataset, but still not significant: Despite multiple rounds of hyperparameter tuning and even with a dataset very similar to the original pubic dataset the accuracy on the public dataset is poor **due to small size of the attention mask/sliding window.**
+    1. Implementing the modified network to accomodate a larger window and location aware attention
+    1. Larger window helped increase performance only marginally, needs tuning
+    1. Better performance after tuning, but dataset is a major roadblock
+   
+1. 28/08/20
+   1. Conclusions drawn: Model performing well for the distribution of synthetic data with a very high validation accuracy (98%) however it still cannot generalize but to facilitate proof of concept we can show that increasing the size of attention mask.
+   1. College commitment, no changes made today
 
-
+1. 29/08/20
+   1. Documentation and code cleanup started
+   1. Final models isolated
+   1. Plotting the accuracy for all the models 

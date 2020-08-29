@@ -48,17 +48,17 @@ class Line(Effect):
         # TODO: merge apply top/bottom/left.. to make it more efficient
         # func = np.random.choice(
         #     [
-        #         # self.apply_top,
-        #         # self.apply_bottom,
-        #         # self.apply_left,
-        #         # self.apply_right,
-        #         # self.apply_top_left,
-        #         # self.apply_top_right,
-        #         # self.apply_bottom_left,
-        #         # self.apply_bottom_right,
-        #         # self.apply_horizontal_middle,
-        #         # self.apply_vertical_middle,
-        #         self.apply_char_box,
+        # self.apply_top,
+        # self.apply_bottom,
+        # self.apply_left,
+        # self.apply_right,
+        # self.apply_top_left,
+        # self.apply_top_right,
+        # self.apply_bottom_left,
+        # self.apply_bottom_right,
+        # self.apply_horizontal_middle,
+        # self.apply_vertical_middle,
+        # self.apply_char_box,
         #     ],
         #     p=self.line_pos_p,
         # )
@@ -67,13 +67,18 @@ class Line(Effect):
 
     def apply_char_box(self, img: PILImage, text_bbox: BBox) -> Tuple[PILImage, BBox]:
         row = img.height - 1
-        thickness = np.random.randint(*self.thickness)
+        if row % 234 == 0:
+            thickness = 2
+        else:
+            thickness = 1
         draw = ImageDraw.Draw(img)
 
+        width = img.width
+
         draw.rectangle(
-            [(0, 0), (img.width, row)],
-            outline=self._get_line_color(img, text_bbox),
+            [(int(width * 0.02), 0), (width // 1.1, row)],
             width=thickness,
+            outline="#000",
         )
 
         return img, text_bbox

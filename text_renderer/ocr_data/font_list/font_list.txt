@@ -1,3 +1,5 @@
-simsun.ttf
+ReenieBeanie.ttf
+AnisaSans.ttf
+Blokletters-Balpen.ttf
 ShadowsIntoLight.ttf
-agengsans.ttf
+ReenieBeanie.ttf
