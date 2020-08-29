@@ -120,13 +120,9 @@ class Seq2SeqModel(object):
                 sequence_length=None,
                 scope=None,
             )
-<<<<<<< HEAD:aocr/model/seq2seq_model.py
 
 
             # possible to change encoder masks start and end?
-=======
-
->>>>>>> c97136f2a6b982aa70025f27dd209fb8ae9e2961:aocr/model/seq2seq_model.py
             encoder_inputs = [
                 e * f for e, f in zip(pre_encoder_inputs, encoder_masks[:seq_length])
             ]
@@ -153,11 +149,7 @@ class Seq2SeqModel(object):
 
         # Our targets are decoder inputs shifted by one.
         targets = [decoder_inputs[i + 1] for i in xrange(len(decoder_inputs) - 1)]
-<<<<<<< HEAD:aocr/model/seq2seq_model.py
         
-=======
-
->>>>>>> c97136f2a6b982aa70025f27dd209fb8ae9e2961:aocr/model/seq2seq_model.py
         softmax_loss_function = (
             None  # default to tf.nn.sparse_softmax_cross_entropy_with_logits
         )
