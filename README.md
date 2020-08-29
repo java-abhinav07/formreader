@@ -2,8 +2,8 @@
 
 This OCR pipeline attempts to detect text in a cropped handwritten forms. In order to convert cropped form data to text, synthetic data of the required type was generated and trained using a modified version of the attention OCR model.<br>
 
-![Sample prediction on real data](experiments/image.gif)
-
+![Sample prediction on real data](experiments/image.gif)<br>
+```Sample prediction on real data```
 
 
 To reproduce the results of the pipeline on test data kindly refer ```instructions.txt``` and for a details about the analysis, comparison and hyperparameter tuning of the neural network refer ```report.pdf```. A log report, ```log.md``` has also been included in this repository which constains succinct description of  daily work done.
