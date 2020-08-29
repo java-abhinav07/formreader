@@ -262,9 +262,10 @@ def attention_decoder(
             if loop_function is not None and prev is not None:
                 with tf.variable_scope("loop_function", reuse=True):
                     inp = loop_function(prev, i)
-            input_size = inp.get_shape().with_rank(2)[1]
-            if input_size.value is None:
-                raise ValueError("Could not infer input size from input: %s" % inp.name)
+            # input_size = inp.get_shape().with_rank(2)[1]
+            # if input_size.value is None:
+            #     raise ValueError("Could not infer input size from input: %s" % inp.name)
+            input_size = attn_num_hidden
             x = linear([inp] + attns, input_size, True)
             # Run the RNN.
             cell_output, state = cell(x, state)
