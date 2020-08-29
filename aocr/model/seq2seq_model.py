@@ -24,7 +24,7 @@ import tensorflow as tf
 
 from .seq2seq import model_with_buckets
 from .seq2seq import embedding_attention_decoder
-from .temporal_seq2seq import temporal_attention_decoder
+from .temporal_seq2seq import temporal_embedding_attention_decoder
 
 
 class Seq2SeqModel(object):
