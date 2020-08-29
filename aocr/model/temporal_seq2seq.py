@@ -136,6 +136,10 @@ def temporal_attention_decoder(
       of attention_states are not set, or input size cannot be inferred
       from the input.
   """
+    # MOD_AOCR
+    assert num_heads == 1, "We only consider the case where num_heads=1!"
+    # MOD_AOCR
+
     if not decoder_inputs:
         raise ValueError("Must provide at least 1 input to attention decoder.")
     if num_heads < 1:
@@ -173,8 +177,12 @@ def temporal_attention_decoder(
 
         state = initial_state
 
+        # MOD_AOCR
         def attention(query):
             """Put attention masks on hidden using hidden_features and query."""
+            # MOD_AOCR
+            ss = None  # record attention weights
+            # MOD_AOCR
             ds = []  # Results of attention reads will be stored here.
             if nest.is_sequence(query):  # If the query is a tuple, flatten it.
                 query_list = nest.flatten(query)
@@ -192,14 +200,18 @@ def temporal_attention_decoder(
                         v[a] * math_ops.tanh(hidden_features[a] + y), [2, 3]
                     )
                     a = nn_ops.softmax(s)
+                    ss = a
                     # Now calculate the attention-weighted vector d.
                     d = math_ops.reduce_sum(
                         array_ops.reshape(a, [-1, attn_length, 1, 1]) * hidden, [1, 2]
                     )
                     ds.append(array_ops.reshape(d, [-1, attn_size]))
-            return ds
+            return ds, ss
 
         outputs = []
+        # MOD_AOCR
+        attention_weights_history = []
+        # MOD_AOCR
         prev = None
         batch_attn_size = array_ops.pack([batch_size, attn_size])
         attns = [
@@ -209,7 +221,8 @@ def temporal_attention_decoder(
         for a in attns:  # Ensure the second shape of attention vectors is set.
             a.set_shape([None, attn_size])
         if initial_state_attention:
-            attns = attention(initial_state)
+            attns, attn_weights = attention(initial_state)
+            attention_weights_history.append(attn_weights)
         for i, inp in enumerate(decoder_inputs):
             if i > 0:
                 variable_scope.get_variable_scope().reuse_variables()
@@ -230,9 +243,10 @@ def temporal_attention_decoder(
                 with variable_scope.variable_scope(
                     variable_scope.get_variable_scope(), reuse=True
                 ):
-                    attns = attention(state)
+                    attns, attn_weights = attention(state)
             else:
-                attns = attention(state)
+                attns, attn_weights = attention(state)
+                attention_weights_history.append(attn_weights)
 
             attns = [
                 math_ops.div(
@@ -247,7 +261,7 @@ def temporal_attention_decoder(
                 prev = output
             outputs.append(output)
 
-    return outputs, state
+    return outputs, state, attention_weights_history
 
 
 def temporal_embedding_attention_decoder(
