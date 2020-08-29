@@ -19,10 +19,10 @@ class Config(object):
     DATA_PATH = (
         "/content/drive/My\ Drive/IITB_Assignment/datasets/ds0/training.tfrecords"
     )
-    # MODEL_DIR = f"./checkpoints_{time}"
-    MODEL_DIR = (
-        "/content/drive/My Drive/IITB_Assignment/checkpoints_2020-08-27 14:20:46.526195"
-    )
+    MODEL_DIR = f"./checkpoints_{time}"
+    # MODEL_DIR = (
+    #     "/content/drive/My Drive/IITB_Assignment/checkpoints_2020-08-27 14:20:46.526195"
+    # )
     LOG_PATH = f"aocr_{time}.log"
     OUTPUT_DIR = "/content/drive/My\ Drive/IITB_Assignment/results"
     STEPS_PER_CHECKPOINT = 500
@@ -33,7 +33,7 @@ class Config(object):
     FULL_ASCII = False
 
     # Optimization
-    NUM_EPOCH = 20
+    NUM_EPOCH = 16
     BATCH_SIZE = 64
     INITIAL_LEARNING_RATE = 1.0
 
