@@ -67,7 +67,7 @@ class Line(Effect):
 
     def apply_char_box(self, img: PILImage, text_bbox: BBox) -> Tuple[PILImage, BBox]:
         row = img.height - 1
-        if row%234 == 0:
+        if row % 234 == 0:
             thickness = 2
         else:
             thickness = 1
@@ -76,9 +76,9 @@ class Line(Effect):
         width = img.width
 
         draw.rectangle(
-            [(int(width*0.02), 0), (width//1.1, row)],
+            [(int(width * 0.02), 0), (width // 1.1, row)],
             width=thickness,
-            outline="#000"
+            outline="#000",
         )
 
         return img, text_bbox

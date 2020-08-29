@@ -66,33 +66,46 @@ def draw_text_on_bg(
 
     width += sum(char_spacings[:-1])
 
-    text_mask = transparent_img((int(width*1.2), int(height*1.1)))
+    text_mask = transparent_img((int(width * 1.2), int(height * 1.1)))
 
     draw = ImageDraw.Draw(text_mask)
 
-    c_x = int(width*0.05)
-    c_y = int(0.08*height)
-    colors = ["#000", "#080808", "#101010", "#181818", "#202020", "#282828", "#303030", "#383838", "#404040", "#484848", "#505050"]
+    c_x = int(width * 0.05)
+    c_y = int(0.08 * height)
+    colors = [
+        "#000",
+        "#080808",
+        "#101010",
+        "#181818",
+        "#202020",
+        "#282828",
+        "#303030",
+        "#383838",
+        "#404040",
+        "#484848",
+        "#505050",
+    ]
     c_color = np.random.choice(np.array(colors))
 
     y_offset = font_text.offset[1]
     for i, c in enumerate(font_text.text):
 
-        xo = c_x - (char_spacings[i] // 2)*(1.05)
+        xo = c_x - (char_spacings[i] // 2) * (1.05)
         yo = c_y - y_offset
 
         y1 = c_y + int(height) + y_offset
-        x1 = xo + chars_size[i][0] + int(char_spacings[i]*1.05)
+        x1 = xo + chars_size[i][0] + int(char_spacings[i] * 1.05)
         # print(xo, yo, x1, y1)
 
         # draw random background text
         r = np.random.choice(np.array(["D", "M", "Y", ""]))
+        rgb = np.random.randint(90)
         draw.text(
             (c_x, c_y - y_offset),
             str(r),
-            fill=(20, 20, 20, 30),
+            fill=(rgb, rgb, rgb, rgb),
             font=font_text.font,
-            width=3
+            width=3,
         )
 
         draw.text(
@@ -100,7 +113,7 @@ def draw_text_on_bg(
             c,
             fill=text_color,
             font=font_text.font,
-            #stroke_fill="#000",
+            stroke_fill=text_color,
         )
 
         # draw a box around text

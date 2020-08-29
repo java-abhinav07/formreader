@@ -16,7 +16,9 @@ class Config(object):
 
     # I/O
     NEW_DATASET_PATH = "./dataset.tfrecords"
-    DATA_PATH = "/content/drive/My\ Drive/IITB_Assignment/datasets/ds0/training.tfrecords"
+    DATA_PATH = (
+        "/content/drive/My\ Drive/IITB_Assignment/datasets/ds0/training.tfrecords"
+    )
     # MODEL_DIR = f"./checkpoints_{time}"
     MODEL_DIR = (
         "/content/drive/My Drive/IITB_Assignment/checkpoints_2020-08-27 14:20:46.526195"
@@ -47,7 +49,7 @@ class Config(object):
     TARGET_VOCAB_SIZE = 40  # 0: PADDING, 1: GO, 2: EOS, >2: 0-9, a-z
     CHANNELS = 1  # number of color channels from source image (1 = grayscale, 3 = rgb)
 
-    MAX_WIDTH = 330 # images with higher width will be discarded!!! --> fix now
+    MAX_WIDTH = 330  # images with higher width will be discarded!!! --> fix now
     MAX_HEIGHT = 40
     MAX_PREDICTION = 50
 
