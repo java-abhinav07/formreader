@@ -47,3 +47,14 @@ This file contains daily logs of work done in a sequential manner. For example, 
 1. 27/08/20
     1. Improved results on sample and public dataset, but still not significant: Despite multiple rounds of hyperparameter tuning and even with a dataset very similar to the original pubic dataset the accuracy on the public dataset is poor **due to small size of the attention mask/sliding window.**
     1. Implementing the modified network to accomodate a larger window and location aware attention
+    1. Larger window helped increase performance only marginally, needs tuning
+    1. Better performance after tuning, but dataset is a major roadblock
+   
+1. 28/08/20
+   1. Conclusions drawn: Model performing well for the distribution of synthetic data with a very high validation accuracy (98%) however it still cannot generalize but to facilitate proof of concept we can show that increasing the size of attention mask.
+   1. College commitment, no changes made today
+
+1. 29/08/20
+   1. Documentation and code cleanup started
+   1. Final models isolated
+   1. Plotting the accuracy for all the models 
