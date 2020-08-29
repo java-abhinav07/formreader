@@ -241,10 +241,7 @@ def attention_decoder(
         prev = None
         batch_attn_size = tf.stack([batch_size, attn_size])
         attns = [tf.zeros(batch_attn_size, dtype=dtype) for _ in xrange(num_heads)]
-
-        # using temporal attention
-        temporal_attns = [attns]
-
+        
         for a in attns:  # Ensure the second shape of attention vectors is set.
             a.set_shape([None, attn_size])
         if initial_state_attention:
@@ -280,12 +277,6 @@ def attention_decoder(
                 attns, attn_weights = attention(state)
                 attention_weights_history.append(attn_weights)
                 # MODIFIED ADD END
-
-            attns = [
-                math_ops.div(
-                    attns[-1], math_ops.reduce_sum(temporal_attns), "temporal_attention"
-                )
-            ]
 
             with tf.variable_scope("AttnOutputProjection"):
                 output = linear([cell_output] + attns, output_size, True)
