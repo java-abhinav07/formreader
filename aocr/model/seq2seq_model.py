@@ -131,7 +131,7 @@ class Seq2SeqModel(object):
             ]
             attention_states = tf.concat(top_states, 1)
             initial_state = tf.concat(axis=1, values=[output_state_fw, output_state_bw])
-            outputs, _, attention_weights_history = temporal_attention_decoder(
+            outputs, _, attention_weights_history = temporal_embedding_attention_decoder(
                 decoder_inputs,
                 initial_state,
                 attention_states,
