@@ -70,11 +70,10 @@ Root<br>
 |   
 |
 |____experiments
-|   |
-|   | TestSyntheticDataGen.ipnb
-|   | Tfwriter.ipnb
-|   | Train.ipnb
-|
+    |
+    | TestSyntheticDataGen.ipnb
+    | Tfwriter.ipnb
+    | Train.ipnb
 
 ```
 1. The folder ```aocr``` contains the main code for the attention ocr along with a separate ```README.md``` which can be used as a reference. 
