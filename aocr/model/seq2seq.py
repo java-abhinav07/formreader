@@ -215,12 +215,15 @@ def attention_decoder(
                     y = linear(query, attention_vec_size, True)
                     y = tf.reshape(y, [-1, 1, 1, attention_vec_size])
                     # Attention mask is a softmax of v^T * tanh(...).
-
                     s = tf.reduce_sum(v[a] * tf.tanh(hidden_features[a] + y), [2, 3])
-
-                    # this has an effect of smoothening the focus found by attention 
-                    s = tf.sigmoid(s)
-                    a = tf.nn.softmax(s) #### mod_aocr
+                    print(s)
+                    s = tf.nn.relu(s)
+                    # apply smoothenting function
+                    factor = 0.20
+                    s *= (1 - factor)
+	                s += (factor / s.shape[1])
+                    a = tf.nn.softmax(s)
+                    x
                     ss = a
                     
                     # a = tf.Print(a, [a], message="a: ",summarize=30)
@@ -233,9 +236,6 @@ def attention_decoder(
             # MODIFIED ADD START
             return ds, ss
             # MODIFIED ADD END
-
-        def modified_attention(query):
-            pass
 
 
         outputs = []
