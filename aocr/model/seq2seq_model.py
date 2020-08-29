@@ -24,6 +24,7 @@ import tensorflow as tf
 
 from .seq2seq import model_with_buckets
 from .seq2seq import embedding_attention_decoder
+from .temporal_seq2_seq import *
 
 
 class Seq2SeqModel(object):
@@ -145,6 +146,7 @@ class Seq2SeqModel(object):
                 initial_state_attention=False,
                 attn_num_hidden=attn_num_hidden,
             )
+
             return outputs, attention_weights_history
 
         # Our targets are decoder inputs shifted by one.

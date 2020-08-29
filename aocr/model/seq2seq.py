@@ -217,8 +217,10 @@ def attention_decoder(
                     # Attention mask is a softmax of v^T * tanh(...).
                     # location aware attention
                     s = tf.reduce_sum(v[a] * tf.tanh(hidden_features[a] + y), [2, 3])
+                    
                     # completely remove outliers
                     s = tf.nn.relu(s)
+
                     # sharpened attention
                     a = tf.nn.softmax(tf.pow(s, 1.2))
                     ss = a
@@ -242,6 +244,10 @@ def attention_decoder(
         prev = None
         batch_attn_size = tf.stack([batch_size, attn_size])
         attns = [tf.zeros(batch_attn_size, dtype=dtype) for _ in xrange(num_heads)]
+
+        # using temporal attention
+        temporal_attns = [attns]
+
         for a in attns:  # Ensure the second shape of attention vectors is set.
             a.set_shape([None, attn_size])
         if initial_state_attention:
@@ -257,10 +263,9 @@ def attention_decoder(
             if loop_function is not None and prev is not None:
                 with tf.variable_scope("loop_function", reuse=True):
                     inp = loop_function(prev, i)
-            # Merge input and previous attentions into one vector of the right size.
-            # input_size = inp.get_shape().with_rank(2)[1]
-            # todo: use input_size
-            input_size = attn_num_hidden
+            input_size = inp.get_shape().with_rank(2)[1]
+            if input_size.value is None:
+                raise ValueError("Could not infer input size from input: %s" % inp.name)
             x = linear([inp] + attns, input_size, True)
             # Run the RNN.
             cell_output, state = cell(x, state)
@@ -277,6 +282,9 @@ def attention_decoder(
                 attns, attn_weights = attention(state)
                 attention_weights_history.append(attn_weights)
                 # MODIFIED ADD END
+            
+            attns = [math_ops.div(attns[-1], math_ops.reduce_sum(temporal_attns), "temporal_attention")]
+
 
             with tf.variable_scope("AttnOutputProjection"):
                 output = linear([cell_output] + attns, output_size, True)
