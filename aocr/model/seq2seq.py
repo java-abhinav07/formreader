@@ -63,6 +63,8 @@ from six.moves import xrange  # pylint: disable=redefined-builtin
 from six.moves import zip  # pylint: disable=redefined-builtin
 
 import tensorflow as tf
+from tensorflow.python.ops import math_ops
+from tensorflow.python.ops import nn_ops
 
 try:
     from tensorflow.contrib.rnn.python.ops import rnn_cell_impl
