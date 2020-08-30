@@ -360,7 +360,7 @@ class Model(object):
                     flag=None,
                 )
             
-            saver()
+            saver("outputs", "predictions", output, ground=ground, flag=None)
 
             step_accuracy = "{:>4.0%}".format(1.0 - incorrect)
             if incorrect:
