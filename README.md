@@ -2,7 +2,7 @@
 
 This OCR pipeline attempts to detect text in a cropped handwritten forms. In order to convert cropped form data to text, synthetic data of the required type was generated and trained using a modified version of the attention OCR model.<br>
 
-![Sample prediction on real data](experiments/image.gif)<br>
+![Sample prediction on real data](experiments/image_2.gif)<br>
 ```Sample prediction on real data```
 
 
@@ -20,6 +20,8 @@ Root<br>
 | README.md
 | MANIFEST.in
 | setup.py
+| instructions.md
+| myrun.sh
 |
 |___aocr
 |   |
