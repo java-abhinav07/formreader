@@ -359,7 +359,11 @@ class Model(object):
                     flag=None,
                 )
 
-            saver("outputs", "predictions", output, ground=ground, flag=None)
+            logging.info("Saving outputs")
+            try:
+                saver("outputs", "predictions", output, ground=ground, flag=None)
+            except:
+                logging.debug("unable to save!")
 
             step_accuracy = "{:>4.0%}".format(1.0 - incorrect)
             if incorrect:
