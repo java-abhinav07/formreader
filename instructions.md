@@ -30,6 +30,6 @@ Please execute the following instructions step by step to reproduce the results 
 
 5. Testing:<br>
     ```aocr test ./datasets/testing.tfrecords --full-ascii --use-gru --model-dir ./checkpoint```
-    The list of optional arguments can be found in ```./aocr/README.md``` and the output will be in a folder ```./out```.
+    The list of optional arguments can be found in ```./aocr/README.md``` and the output will be in a folder ```./predictions```.
     
 
