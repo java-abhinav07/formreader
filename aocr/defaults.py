@@ -32,15 +32,15 @@ class Config(object):
     FULL_ASCII = False
 
     # Optimization
-    NUM_EPOCH = 16
-    BATCH_SIZE = 64
+    NUM_EPOCH = 32
+    BATCH_SIZE = 128
     INITIAL_LEARNING_RATE = 1.0
 
     # Network parameters
     CLIP_GRADIENTS = True  # whether to perform gradient clipping
     MAX_GRADIENT_NORM = 5.0  # Clip gradients to this norm
     TARGET_EMBEDDING_SIZE = 10  # embedding dimension for each target
-    ATTN_NUM_HIDDEN = 128  # number of hidden units in attention decoder cell
+    ATTN_NUM_HIDDEN = 160  # number of hidden units in attention decoder cell
     ATTN_NUM_LAYERS = 2  # number of layers in attention decoder cell
     # (Encoder number of hidden units will be ATTN_NUM_HIDDEN*ATTN_NUM_LAYERS)
     LOAD_MODEL = True
