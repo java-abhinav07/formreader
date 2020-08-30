@@ -204,6 +204,7 @@ def attention_decoder(
             v.append(tf.get_variable("AttnV_%d" % a, [attention_vec_size]))
 
         state = initial_state
+        g = tf.Variable(initial_value=2.718, trainable=True)
 
         # MODIFIED: return both context vector and attention weights
         def attention(query):
@@ -218,13 +219,14 @@ def attention_decoder(
                     y = tf.reshape(y, [-1, 1, 1, attention_vec_size])
                     # Attention mask is a softmax of v^T * tanh(...).
                     # location aware attention: Normalized Bahnadu with focus on position
-                    # v[a] = (v[a]/tf.norm(v[a]))
+                    
+                    v[a] = (v[a]/tf.norm(v[a]))*g
                     s = tf.reduce_sum(v[a] * tf.tanh(hidden_features[a] + y), [2, 3])
 
                     # Luong's attention is typically worse for our use case
                     
-                    # a = tf.nn.softmax(s)
-                    a = tf.sigmoid(s) / tf.reduce_sum(tf.sigmoid(s))
+                    a = tf.nn.softmax(s)
+                    # a = tf.sigmoid(s) / tf.reduce_sum(tf.sigmoid(s))
                     ss = a
 
                     # a = tf.Print(a, [a], message="a: ",summarize=30)
@@ -232,7 +234,8 @@ def attention_decoder(
                     d = tf.reduce_sum(
                         tf.reshape(a, [-1, attn_length, 1, 1]) * hidden, [1, 2]
                     )
-                    ds.append(tf.reshape(d, [-1, attn_size]))
+                    d_bar = tf.layers.dense(d, 128)
+                    ds.append(tf.reshape(d_bar, [-1, attn_size]))
             # MODIFIED DELETED return ds
             # MODIFIED ADD START
             return ds, ss
