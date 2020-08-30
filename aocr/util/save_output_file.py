@@ -37,6 +37,6 @@ def visualize_attention(
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
-    with open(f"{output_dir}/{filename}", "a") as f:
-        f.write(pred, " ", ground)
+    with open(f"{output_dir}/outputs.txt", "a") as f:
+        f.write(filename, " ", pred, " ", ground)
         f.write("\n")

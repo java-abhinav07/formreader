@@ -361,7 +361,7 @@ class Model(object):
 
             logging.info("Saving outputs")
             try:
-                saver("outputs", "predictions", output, ground=ground, flag=None)
+                saver(batch["data"], "predictions", output, ground=ground, flag=None)
             except:
                 logging.debug("unable to save!")
 
