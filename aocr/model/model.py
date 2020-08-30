@@ -18,6 +18,7 @@ from .cnn import CNN
 from .seq2seq_model import Seq2SeqModel
 from ..util.data_gen import DataGen
 from ..util.visualizations import visualize_attention
+from ..util.save_output_file import saver
 
 
 class Model(object):
@@ -358,6 +359,8 @@ class Model(object):
                     ground=ground,
                     flag=None,
                 )
+            
+            saver()
 
             step_accuracy = "{:>4.0%}".format(1.0 - incorrect)
             if incorrect:
