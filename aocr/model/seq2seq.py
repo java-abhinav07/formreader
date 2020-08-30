@@ -234,8 +234,8 @@ def attention_decoder(
                     d = tf.reduce_sum(
                         tf.reshape(a, [-1, attn_length, 1, 1]) * hidden, [1, 2]
                     )
-                    d_bar = tf.layers.dense(d, 128)
-                    ds.append(tf.reshape(d_bar, [-1, attn_size]))
+
+                    ds.append(tf.reshape(d, [-1, attn_size]))
             # MODIFIED DELETED return ds
             # MODIFIED ADD START
             return ds, ss
