@@ -219,12 +219,12 @@ def attention_decoder(
                     y = tf.reshape(y, [-1, 1, 1, attention_vec_size])
                     # Attention mask is a softmax of v^T * tanh(...).
                     # location aware attention: Normalized Bahnadu with focus on position
-                    
-                    v[a] = (v[a]/tf.norm(v[a]))*g
+
+                    v[a] = (v[a] / tf.norm(v[a])) * g
                     s = tf.reduce_sum(v[a] * tf.tanh(hidden_features[a] + y), [2, 3])
 
                     # Luong's attention is typically worse for our use case
-                    
+
                     a = tf.nn.softmax(s)
                     # a = tf.sigmoid(s) / tf.reduce_sum(tf.sigmoid(s))
                     ss = a

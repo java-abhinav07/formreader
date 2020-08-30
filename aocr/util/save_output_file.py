@@ -12,11 +12,7 @@ from PIL import Image
 
 
 def visualize_attention(
-    filename,
-    output_dir,
-    pred,
-    ground=None,
-    flag=None,
+    filename, output_dir, pred, ground=None, flag=None,
 ):
     """Write output predictions to file
 
@@ -40,8 +36,7 @@ def visualize_attention(
     """
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-    
+
     with open(f"{output_dir}/{filename}", "a") as f:
         f.write(pred, " ", ground)
         f.write("\n")
-

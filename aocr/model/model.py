@@ -161,7 +161,6 @@ class Model(object):
                 forward_only=self.forward_only,
                 use_gru=use_gru,
             )
-            
 
             table = tf.contrib.lookup.MutableHashTable(
                 key_dtype=tf.int64,
@@ -359,7 +358,7 @@ class Model(object):
                     ground=ground,
                     flag=None,
                 )
-            
+
             saver("outputs", "predictions", output, ground=ground, flag=None)
 
             step_accuracy = "{:>4.0%}".format(1.0 - incorrect)
