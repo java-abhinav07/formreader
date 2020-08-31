@@ -109,7 +109,7 @@ In order to run the app on your local machine follow these steps:
 2. Install aocr locally using ```setup.py```:<br>
 
     1. ```cd abhinav_java_9873155323-IITB-Assignment-Jul-Dec2020-Batch2```
-    2. ```pip(3) install -e ./``` <br>
+    2. ```pip3 install -e ./``` <br>
 
 3. Install necessary packages:<br>
 
