@@ -86,6 +86,27 @@ Root<br>
 
 ## Reproduce results on local machine
 ---
+In order to run the app on your local machine follow these steps:
+1. Clone the repository on your local machine:<br>
+
+    ```git clone https://github.com/java-abhinav07/abhinav_java_9873155323-IITB-Assignment-Jul-Dec2020-Batch2.git```
+
+2. Install aocr locally using ```setup.py```:<br>
+
+    1. ```cd abhinav_java_9873155323-IITB-Assignment-Jul-Dec2020-Batch2```
+    2. ```pip(3) install -e ./``` <br>
+
+3. Install necessary packages:<br>
+
+    ```pip3 install -r requirements.txt```
+4. Having installed all the packages run:
+   ```python3 app/app.py```<br>
+   This will run the server on the local machine on port **8001**(note that CPU inference might take upto 14 seconds to process)
+5. Send the request to localhost as follows:
+   1. Correct API Spec:<br>
+        ![API Spec](resources/valid.png)<br>
+   2. Incorrect API Spec:<br>
+        ![API Spec Incorrect](resources/invalid.png)<br>
 
 
 
