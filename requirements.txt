@@ -1,7 +1,6 @@
 absl-py==0.10.0
 aiocontextvars==0.2.2
 alabaster==0.7.12
--e git+https://github.com/java-abhinav07/abhinav_java_9873155323-IITB-Assignment-Jul-Dec2020-Batch2.git@d87db9ab35dc7f55584bcb35c518289510b0d775#egg=aocr
 astor==0.8.1
 astunparse==1.6.3
 attrs==20.1.0
