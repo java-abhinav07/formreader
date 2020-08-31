@@ -135,7 +135,12 @@ In order to run the app on your local machine follow these steps:
 
 6. Response Status will either be ```completed``` or ```invalid request``` to indicate a successful or unsuccessful response respectively.
 
+## Access Heroku App
+---
+Inorder to run request over a public web server use the following path:<br>
+```https://formreader.herokuapp.com/predict```<br>
 
+Use the same API Spec shared above in order to fetch the results
 
 
 ## References
