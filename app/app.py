@@ -10,12 +10,12 @@ from utils import *
 from aocr.__main__ import main_app
 from aocr.defaults import Config
 
-app = Flask(__name__)
+formreader = Flask(__name__)
 
 # {public_id: "827293842diwu323", version: "v1", image_url: "sample"}
 
 
-@app.route("/predict", methods=["POST"])
+@formreader.route("/predict", methods=["POST"])
 def handwritten_ocr_http():
     req = request.get_data()
     response = handwritten_ocr(req)
@@ -118,11 +118,11 @@ def handwritten_ocr(request):
 
 
 # index.html random index page
-@app.route("/")
+@formreader.route("/")
 def index():
     return json.dumps({"success": True}), 200, {"ContentType": "application/json"}
 
 
 if __name__ == "__main__":
-    app.debug = True
-    app.run(host="localhost", port=8001)
+    formreader.debug = True
+    formreader.run(host="localhost", port=8001)

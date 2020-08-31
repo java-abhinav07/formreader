@@ -43,35 +43,3 @@ All parameters related to the example image generation process are all configure
 
 Learn more at [documentation](https://oh-my-ocr.github.io/text_renderer/index.html)
 
-## Run in Docker
-
-Build image
-
-```bash
-docker build -f docker/Dockerfile -t text_renderer .
-```
-
-Config file is provided by `CONFIG` environment.
-In `example.py` file, data is generated in `example_data/output` directory,
-so we map this directory to the host.
-
-```bash
-docker run --rm \
--v `pwd`/example_data/docker_output/:/app/example_data/output \
---env CONFIG=/app/example_data/example.py \
---env DATASET=img \
---env NUM_PROCESSES=2 \
---env LOG_PERIOD=10 \
-text_renderer
-```
-
-## Build docs
-
-```bash
-cd docs
-make html
-```
-
-Open `_build/html/index.html`
-
-
