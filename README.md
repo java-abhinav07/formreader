@@ -1,4 +1,4 @@
-# Attention Based OCR Model
+# Handwritten Form Reader
 
 This OCR pipeline attempts to detect text in a cropped handwritten forms. In order to convert cropped form data to text, synthetic data of the required type was generated and trained using a modified version of the attention OCR model.<br>
 
@@ -22,6 +22,7 @@ Root<br>
 | setup.py
 | instructions.md
 | myrun.sh
+| Report.pdf
 |
 |___aocr
 |   |
@@ -72,16 +73,31 @@ Root<br>
 |   
 |
 |____experiments
-    |
-    | TestSyntheticDataGen.ipnb
-    | Tfwriter.ipnb
-    | Train.ipnb
+|   |
+|   | TestSyntheticDataGen.ipnb
+|   | Tfwriter.ipnb
+|   | Train.ipnb
+|   
+|____checkpoints
+|   
+|____app
+|   
+|____datasets
+|   
+|____utils
+|
+|
+
+
+
 
 ```
 1. The folder ```aocr``` contains the main code for the attention ocr along with a separate ```README.md``` which can be used as a reference. 
 2. The folder ```text_renderer``` contains the code used for generation of synthetic dataset. The exact details of configuration used is inside ```text-renderer/ocr_data/gen_data.py```.
 3. Since this model was trained and tested on Google Colab, sample ```ipnb``` files have been provided for reference in ```experiments```.
 4. And the app folder contains the flask based REST API for testing the endpoints
+5. The model checkpoints are located in the checkpoints directory
+6. Please read ```Report.pdf``` for a detailed summary of work done!
 
 
 ## Reproduce results on local machine
@@ -117,6 +133,8 @@ In order to run the app on your local machine follow these steps:
         }
    2. Incorrect API Spec:<br>
         ![API Spec Incorrect](resources/invalid.png)<br>
+
+6. Response Status will either be ```completed``` or ```invalid request``` to indicate a successful or unsuccessful response respectively.
 
 
 
