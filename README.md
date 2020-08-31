@@ -135,12 +135,26 @@ In order to run the app on your local machine follow these steps:
 
 6. Response Status will either be ```completed``` or ```invalid request``` to indicate a successful or unsuccessful response respectively.
 
+
+## Inference on GPU
+---
+To execute inference on your local machine you can also use the bash script provided as follows:<br>
+```./my_run.sh TestImageFolderPath Output.txt```<br>
+
+Subsequently the output file ```output.txt``` will have output:<br>
+```<Testimagefilename1> <recognized text>
+<Testimagefilename2> <recognized text>
+...```
+
+
+
 ## Access Heroku App
 ---
 Inorder to run request over a public web server use the following path:<br>
 ```https://formreader.herokuapp.com/predict```<br>
 
-Use the same API Spec shared above in order to fetch the results.
+Use the same API Spec shared above in order to fetch the results.<br>
+Kindly note that the public formreader might not work extremely efficiently due to CPU inference provided by Heroku. **It is recommended to use a GPU for inference since Heroku times out all requests after a certain time.**
 
 
 ## References

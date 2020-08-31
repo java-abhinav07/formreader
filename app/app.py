@@ -76,29 +76,29 @@ def handwritten_ocr(request):
         # print(help(aocr))
         # get results
         text, probability = main_app(
-                        log_path=Config.LOG_PATH,
-                        phase="predict",
-                        visualize=Config.VISUALIZE,
-                        output_dir=Config.OUTPUT_DIR,
-                        batch_size=1,
-                        initial_learning_rate=Config.INITIAL_LEARNING_RATE,
-                        steps_per_checkpoint=0,
-                        model_dir="./checkpoints",
-                        target_embedding_size=Config.TARGET_EMBEDDING_SIZE,
-                        attn_num_hidden=Config.ATTN_NUM_HIDDEN,
-                        attn_num_layers=Config.ATTN_NUM_LAYERS,
-                        clip_gradients=Config.CLIP_GRADIENTS,
-                        max_gradient_norm=Config.MAX_GRADIENT_NORM,
-                        load_model=True,
-                        gpu_id=Config.GPU_ID,
-                        use_gru=True,
-                        use_distance=Config.USE_DISTANCE,
-                        max_width=max_width,
-                        max_height=max_height,
-                        max_prediction=Config.MAX_PREDICTION,
-                        channels=Config.CHANNELS,
-                        full_ascii=True, 
-                        filename=image,
+            log_path=Config.LOG_PATH,
+            phase="predict",
+            visualize=Config.VISUALIZE,
+            output_dir=Config.OUTPUT_DIR,
+            batch_size=1,
+            initial_learning_rate=Config.INITIAL_LEARNING_RATE,
+            steps_per_checkpoint=0,
+            model_dir="./checkpoints",
+            target_embedding_size=Config.TARGET_EMBEDDING_SIZE,
+            attn_num_hidden=Config.ATTN_NUM_HIDDEN,
+            attn_num_layers=Config.ATTN_NUM_LAYERS,
+            clip_gradients=Config.CLIP_GRADIENTS,
+            max_gradient_norm=Config.MAX_GRADIENT_NORM,
+            load_model=True,
+            gpu_id=Config.GPU_ID,
+            use_gru=True,
+            use_distance=Config.USE_DISTANCE,
+            max_width=max_width,
+            max_height=max_height,
+            max_prediction=Config.MAX_PREDICTION,
+            channels=Config.CHANNELS,
+            full_ascii=True,
+            filename=image,
         )  # add appropriate arguments for prediction
 
         print("[INFO] OCR results fetched...")
@@ -121,6 +121,7 @@ def handwritten_ocr(request):
 @formreader.route("/")
 def index():
     return json.dumps({"success": True}), 200, {"ContentType": "application/json"}
+
 
 if __name__ == "__main__":
     formreader.debug = True
