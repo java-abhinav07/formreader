@@ -136,15 +136,13 @@ In order to run the app on your local machine follow these steps:
 6. Response Status will either be ```completed``` or ```invalid request``` to indicate a successful or unsuccessful response respectively.
 
 
-## Inference on GPU
+## Inference on Local Machine
 ---
 To execute inference on your local machine you can also use the bash script provided as follows:<br>
 ```./my_run.sh TestImageFolderPath Output.txt```<br>
 
 Subsequently the output file ```output.txt``` will have output:<br>
-```<Testimagefilename1> <recognized text>
-<Testimagefilename2> <recognized text>
-...```
+```<Testimagefilename1> <recognized text> <Testimagefilename2> <recognized text>```
 
 
 
