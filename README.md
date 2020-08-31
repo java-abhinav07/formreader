@@ -2,7 +2,7 @@
 
 This OCR pipeline attempts to detect text in a cropped handwritten forms. In order to convert cropped form data to text, synthetic data of the required type was generated and trained using a modified version of the attention OCR model.<br>
 
-![Sample prediction on real data](experiments/image_2.gif)<br>
+![Sample prediction on real data](resources/image_2.gif)<br>
 ```Sample prediction on real data```
 
 
@@ -81,6 +81,12 @@ Root<br>
 1. The folder ```aocr``` contains the main code for the attention ocr along with a separate ```README.md``` which can be used as a reference. 
 2. The folder ```text_renderer``` contains the code used for generation of synthetic dataset. The exact details of configuration used is inside ```text-renderer/ocr_data/gen_data.py```.
 3. Since this model was trained and tested on Google Colab, sample ```ipnb``` files have been provided for reference in ```experiments```.
+4. And the app folder contains the flask based REST API for testing the endpoints
+
+
+## Reproduce results on local machine
+---
+
 
 
 

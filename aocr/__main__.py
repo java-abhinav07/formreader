@@ -362,6 +362,8 @@ def main_app(
     max_height,
     max_prediction,
     channels,
+    full_ascii,
+    filename,
 ):
 
     logging.basicConfig(
@@ -412,7 +414,6 @@ def main_app(
                     img_file_data = img_file.read()
             except IOError:
                 logging.error("Result: error while opening file %s.", filename)
-                continue
             text, probability = model.predict(img_file_data)
             logging.info("Result: OK. %s %s", "{:.2f}".format(probability), text)
             return text, probability

@@ -7,8 +7,8 @@ from flask import jsonify
 from flask import Flask, request, jsonify
 
 from utils import *
-from aocr.__main__ import main
-from .defaults import Config
+from aocr.__main__ import main_app
+from aocr.defaults import Config
 
 app = Flask(__name__)
 
@@ -54,6 +54,18 @@ def handwritten_ocr(request):
             result = create_error_result("PE_UNSUPPORTED_VERSION")
             return generate_final_response(result, public_id, version)
 
+        max_width = int(request.get("max_width", None))
+        if max_width is None:
+            print("[ERR] Could not get reference image")
+            result = create_error_result("PE_BAD_REQUEST")
+            return generate_final_response(result, public_id, version)
+
+        max_height = int(request.get("max_width", None))
+        if max_height is None:
+            print("[ERR] Could not get reference image")
+            result = create_error_result("PE_BAD_REQUEST")
+            return generate_final_response(result, public_id, version)
+
         # download images
         image, error = download_image(image_url, public_id)
         if error is not None:
@@ -72,19 +84,21 @@ def handwritten_ocr(request):
                         initial_learning_rate=Config.INITIAL_LEARNING_RATE,
                         steps_per_checkpoint=0,
                         model_dir="./checkpoints",
-                        target_embedding_size=config.TARGET_EMBEDDING_SIZE,
+                        target_embedding_size=Config.TARGET_EMBEDDING_SIZE,
                         attn_num_hidden=Config.ATTN_NUM_HIDDEN,
                         attn_num_layers=Config.ATTN_NUM_LAYERS,
-                        clip_gradients=Config.CLIP_gradients,
+                        clip_gradients=Config.CLIP_GRADIENTS,
                         max_gradient_norm=Config.MAX_GRADIENT_NORM,
                         load_model=True,
                         gpu_id=Config.GPU_ID,
                         use_gru=True,
                         use_distance=Config.USE_DISTANCE,
-                        max_width=Config.MAX_WIDTH,
-                        max_height=Config.MAX_HEIGHT,
+                        max_width=max_width,
+                        max_height=max_height,
                         max_prediction=Config.MAX_PREDICTION,
                         channels=Config.CHANNELS,
+                        full_ascii=True, 
+                        filename=image,
         )  # add appropriate arguments for prediction
 
         print("[INFO] OCR results fetched...")
