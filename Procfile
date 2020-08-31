@@ -1,1 +1,1 @@
-web: gunicorn app:formreader
+web: gunicorn app.app:formreader
