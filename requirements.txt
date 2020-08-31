@@ -20,9 +20,6 @@ fire==0.3.1
 Flask==1.1.2
 fonttools==4.12.1
 gast==0.3.3
-google-auth==1.20.1
-google-auth-oauthlib==0.4.1
-google-pasta==0.2.0
 grpcio==1.31.0
 h5py==2.10.0
 idna==2.10
@@ -78,7 +75,6 @@ tensorboard-plugin-wit==1.7.0
 tensorflow-gpu==1.14.0
 tensorflow-estimator==1.14.0
 termcolor==1.1.0
--e git+https://github.com/java-abhinav07/abhinav_java_9873155323-IITB-Assignment-Jul-Dec2020-Batch2.git@d87db9ab35dc7f55584bcb35c518289510b0d775#egg=text_renderer&subdirectory=text_renderer
 toml==0.10.1
 tqdm==4.48.2
 urllib3==1.25.10
