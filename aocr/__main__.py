@@ -8,6 +8,7 @@ from __future__ import absolute_import
 import sys
 import argparse
 import logging
+import os
 
 import tensorflow as tf
 
@@ -332,7 +333,20 @@ def process_args(args, defaults):
     parser_predict = subparsers.add_parser(
         "predict",
         parents=[parser_base, parser_model],
-        help="Predict text from files (feed through stdin).",
+        help="Predict text from files.",
+    )
+    parser_predict.add_argument(
+        "--folder_path",
+        dest="folder_path",
+        type=str,
+        help=("Please enter image folder path") ,
+    )
+
+    parser_predict.add_argument(
+        "--output_dir",
+        dest="output_dir",
+        type=str,
+        help=("Please enter imageoutput folder path") ,
     )
     parser_predict.set_defaults(phase="predict", steps_per_checkpoint=0, batch_size=1)
 
@@ -487,8 +501,8 @@ def main(args=None):
         elif parameters.phase == "test":
             model.test(data_path=parameters.dataset_path)
         elif parameters.phase == "predict":
-            for line in sys.stdin:
-                filename = line.rstrip()
+            for line in os.listdir(parameters.folder_path):
+                filename = os.path.join(parameters.folder_path, line)
                 try:
                     with open(filename, "rb") as img_file:
                         img_file_data = img_file.read()
@@ -497,6 +511,11 @@ def main(args=None):
                     continue
                 text, probability = model.predict(img_file_data)
                 logging.info("Result: OK. %s %s", "{:.2f}".format(probability), text)
+
+                with open(parameters.output_dir, "a") as f:
+                    f.write(f"{line} {text}")
+                    f.write("\n")
+
         elif parameters.phase == "export":
             exporter = Exporter(model)
             exporter.save(parameters.export_path, parameters.format)
