@@ -4,8 +4,6 @@ alabaster==0.7.12
 -e ./
 astor==0.8.1
 astunparse==1.6.3
-attrs==20.1.0
-Babel==2.8.0
 cachetools==4.1.1
 certifi==2020.6.20
 cffi==1.14.2
@@ -15,14 +13,9 @@ contextvars==2.4
 cycler==0.10.0
 dataclasses==0.7
 Distance==0.1.3
-docutils==0.16
 fire==0.3.1
 Flask==1.1.2
-fonttools==4.12.1
 gast==0.3.3
-google-auth==1.20.1
-google-auth-oauthlib==0.4.1
-google-pasta==0.2.0
 grpcio==1.31.0
 h5py==2.10.0
 idna==2.10
@@ -32,9 +25,6 @@ importlib-metadata==1.7.0
 iniconfig==1.0.1
 itsdangerous==1.1.0
 Jinja2==2.11.2
-Keras-Applications==1.0.8
-Keras-Preprocessing==1.1.2
-kiwisolver==1.2.0
 lmdb==0.98
 loguru==0.5.1
 Markdown==3.2.2
@@ -76,3 +66,4 @@ urllib3==1.25.10
 Werkzeug==1.0.1
 wrapt==1.12.1
 zipp==3.1.0
+gunicorn
