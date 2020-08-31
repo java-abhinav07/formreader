@@ -140,7 +140,7 @@ In order to run the app on your local machine follow these steps:
 Inorder to run request over a public web server use the following path:<br>
 ```https://formreader.herokuapp.com/predict```<br>
 
-Use the same API Spec shared above in order to fetch the results
+Use the same API Spec shared above in order to fetch the results.
 
 
 ## References
