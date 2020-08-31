@@ -11,7 +11,7 @@ import numpy as np
 from PIL import Image
 
 
-def visualize_attention(
+def saver(
     filename, output_dir, pred, ground=None, flag=None,
 ):
     """Write output predictions to file

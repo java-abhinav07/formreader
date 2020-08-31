@@ -23,7 +23,7 @@ class Config(object):
     MODEL_DIR = "./checkpoints"
 
     LOG_PATH = f"aocr_modified_{time}.log"
-    OUTPUT_DIR = "./results"
+    OUTPUT_DIR = "./results_ocr"
     STEPS_PER_CHECKPOINT = 500
     EXPORT_FORMAT = "savedmodel"
     EXPORT_PATH = "exported"
