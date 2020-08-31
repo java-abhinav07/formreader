@@ -14,14 +14,6 @@ The model first runs a sliding CNN on the image (images are resized to height 32
 
 ![OCR example](http://cs.cmu.edu/~yuntiand/OCR-2.jpg)
 
-## Installation
-
-```
-pip install aocr
-```
-
-Note: Tensorflow and Numpy will be installed as dependencies. Additional dependencies are `PIL`/`Pillow`, `distance`, and `six`.
-
 ## Usage
 
 ### Create a dataset
