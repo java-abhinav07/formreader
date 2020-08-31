@@ -340,12 +340,94 @@ def process_args(args, defaults):
     return parameters
 
 
+def main_app(
+    log_path,
+    phase,
+    visualize,
+    output_dir,
+    batch_size,
+    initial_learning_rate,
+    steps_per_checkpoint,
+    model_dir,
+    target_embedding_size,
+    attn_num_hidden,
+    attn_num_layers,
+    clip_gradients,
+    max_gradient_norm,
+    load_model,
+    gpu_id,
+    use_gru,
+    use_distance,
+    max_width,
+    max_height,
+    max_prediction,
+    channels,
+    full_ascii,
+    filename,
+):
+
+    logging.basicConfig(
+        level=logging.DEBUG,
+        format="%(asctime)-15s %(name)-5s %(levelname)-8s %(message)s",
+        filename=log_path,
+    )
+    console = logging.StreamHandler()
+    console.setLevel(logging.INFO)
+    formatter = logging.Formatter(
+        "%(asctime)-15s %(name)-5s %(levelname)-8s %(message)s"
+    )
+    console.setFormatter(formatter)
+    logging.getLogger("").addHandler(console)
+
+    with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
+
+        if full_ascii:
+            DataGen.set_full_ascii_charmap()
+
+        model = Model(
+            phase=phase,
+            visualize=visualize,
+            output_dir=output_dir,
+            batch_size=batch_size,
+            initial_learning_rate=initial_learning_rate,
+            steps_per_checkpoint=steps_per_checkpoint,
+            model_dir=model_dir,
+            target_embedding_size=target_embedding_size,
+            attn_num_hidden=attn_num_hidden,
+            attn_num_layers=attn_num_layers,
+            clip_gradients=clip_gradients,
+            max_gradient_norm=max_gradient_norm,
+            session=sess,
+            load_model=load_model,
+            gpu_id=gpu_id,
+            use_gru=use_gru,
+            use_distance=use_distance,
+            max_image_width=max_width,
+            max_image_height=max_height,
+            max_prediction_length=max_prediction,
+            channels=channels,
+        )
+
+        if phase == "predict":
+            try:
+                with open(filename, "rb") as img_file:
+                    img_file_data = img_file.read()
+            except IOError:
+                logging.error("Result: error while opening file %s.", filename)
+            text, probability = model.predict(img_file_data)
+            logging.info("Result: OK. %s %s", "{:.2f}".format(probability), text)
+            return text, probability
+        else:
+            raise NotImplementedError
+
+
 def main(args=None):
 
     if args is None:
         args = sys.argv[1:]
 
     parameters = process_args(args, Config)
+    print(parameters)
     logging.basicConfig(
         level=logging.DEBUG,
         format="%(asctime)-15s %(name)-5s %(levelname)-8s %(message)s",

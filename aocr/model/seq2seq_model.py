@@ -121,6 +121,7 @@ class Seq2SeqModel(object):
                 scope=None,
             )
 
+            # possible to change encoder masks start and end?
             encoder_inputs = [
                 e * f for e, f in zip(pre_encoder_inputs, encoder_masks[:seq_length])
             ]
@@ -143,6 +144,7 @@ class Seq2SeqModel(object):
                 initial_state_attention=False,
                 attn_num_hidden=attn_num_hidden,
             )
+
             return outputs, attention_weights_history
 
         # Our targets are decoder inputs shifted by one.

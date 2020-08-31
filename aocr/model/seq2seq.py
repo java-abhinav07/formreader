@@ -63,6 +63,8 @@ from six.moves import xrange  # pylint: disable=redefined-builtin
 from six.moves import zip  # pylint: disable=redefined-builtin
 
 import tensorflow as tf
+from tensorflow.python.ops import math_ops
+from tensorflow.python.ops import nn_ops
 
 try:
     from tensorflow.contrib.rnn.python.ops import rnn_cell_impl
@@ -188,6 +190,7 @@ def attention_decoder(
     with tf.variable_scope(scope or "attention_decoder"):
         batch_size = tf.shape(decoder_inputs[0])[0]  # Needed for reshaping.
         attn_length = attention_states.get_shape()[1].value
+
         attn_size = attention_states.get_shape()[2].value
 
         # To calculate W1 * h_t we use a 1-by-1 convolution, need to reshape before.
@@ -201,6 +204,7 @@ def attention_decoder(
             v.append(tf.get_variable("AttnV_%d" % a, [attention_vec_size]))
 
         state = initial_state
+        g = tf.Variable(initial_value=2.718, trainable=True)
 
         # MODIFIED: return both context vector and attention weights
         def attention(query):
@@ -214,14 +218,23 @@ def attention_decoder(
                     y = linear(query, attention_vec_size, True)
                     y = tf.reshape(y, [-1, 1, 1, attention_vec_size])
                     # Attention mask is a softmax of v^T * tanh(...).
+                    # location aware attention: Normalized Bahnadu with focus on position
+
+                    v[a] = (v[a] / tf.norm(v[a])) * g
                     s = tf.reduce_sum(v[a] * tf.tanh(hidden_features[a] + y), [2, 3])
+
+                    # Luong's attention is typically worse for our use case
+
                     a = tf.nn.softmax(s)
+                    # a = tf.sigmoid(s) / tf.reduce_sum(tf.sigmoid(s))
                     ss = a
+
                     # a = tf.Print(a, [a], message="a: ",summarize=30)
                     # Now calculate the attention-weighted vector d.
                     d = tf.reduce_sum(
                         tf.reshape(a, [-1, attn_length, 1, 1]) * hidden, [1, 2]
                     )
+
                     ds.append(tf.reshape(d, [-1, attn_size]))
             # MODIFIED DELETED return ds
             # MODIFIED ADD START
@@ -235,6 +248,7 @@ def attention_decoder(
         prev = None
         batch_attn_size = tf.stack([batch_size, attn_size])
         attns = [tf.zeros(batch_attn_size, dtype=dtype) for _ in xrange(num_heads)]
+
         for a in attns:  # Ensure the second shape of attention vectors is set.
             a.set_shape([None, attn_size])
         if initial_state_attention:
@@ -250,9 +264,9 @@ def attention_decoder(
             if loop_function is not None and prev is not None:
                 with tf.variable_scope("loop_function", reuse=True):
                     inp = loop_function(prev, i)
-            # Merge input and previous attentions into one vector of the right size.
             # input_size = inp.get_shape().with_rank(2)[1]
-            # todo: use input_size
+            # if input_size.value is None:
+            #     raise ValueError("Could not infer input size from input: %s" % inp.name)
             input_size = attn_num_hidden
             x = linear([inp] + attns, input_size, True)
             # Run the RNN.

@@ -17,14 +17,13 @@ class Config(object):
     # I/O
     NEW_DATASET_PATH = "./dataset.tfrecords"
     DATA_PATH = (
-        "/content/drive/My\ Drive/IITB_Assignment/datasets/ds1/training.tfrecords"
+        "/content/drive/My Drive/IITB_Assignment/datasets/ds1/training.tfrecords"
     )
-    MODEL_DIR = f"./checkpoints_{time}"
-    # MODEL_DIR = (
-    #     "/content/drive/My Drive/IITB_Assignment/checkpoints_2020-08-27 14:20:46.526195"
-    # )
-    LOG_PATH = f"aocr_{time}.log"
-    OUTPUT_DIR = "/content/drive/My\ Drive/IITB_Assignment/results"
+    # MODEL_DIR = f"./checkpoints_modified_{time}"
+    MODEL_DIR = "./checkpoints"
+
+    LOG_PATH = f"aocr_modified_{time}.log"
+    OUTPUT_DIR = "./results_ocr"
     STEPS_PER_CHECKPOINT = 500
     EXPORT_FORMAT = "savedmodel"
     EXPORT_PATH = "exported"
@@ -33,14 +32,14 @@ class Config(object):
     FULL_ASCII = False
 
     # Optimization
-    NUM_EPOCH = 16
-    BATCH_SIZE = 64
+    NUM_EPOCH = 32
+    BATCH_SIZE = 128
     INITIAL_LEARNING_RATE = 1.0
 
     # Network parameters
     CLIP_GRADIENTS = True  # whether to perform gradient clipping
     MAX_GRADIENT_NORM = 5.0  # Clip gradients to this norm
-    TARGET_EMBEDDING_SIZE = 16  # embedding dimension for each target
+    TARGET_EMBEDDING_SIZE = 10  # embedding dimension for each target
     ATTN_NUM_HIDDEN = 160  # number of hidden units in attention decoder cell
     ATTN_NUM_LAYERS = 2  # number of layers in attention decoder cell
     # (Encoder number of hidden units will be ATTN_NUM_HIDDEN*ATTN_NUM_LAYERS)

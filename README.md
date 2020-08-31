@@ -1,8 +1,8 @@
-# Attention Based OCR Model
+# Handwritten Form Reader
 
 This OCR pipeline attempts to detect text in a cropped handwritten forms. In order to convert cropped form data to text, synthetic data of the required type was generated and trained using a modified version of the attention OCR model.<br>
 
-![Sample prediction on real data](experiments/image.gif)<br>
+![Sample prediction on real data](resources/image_2.gif)<br>
 ```Sample prediction on real data```
 
 
@@ -20,6 +20,9 @@ Root<br>
 | README.md
 | MANIFEST.in
 | setup.py
+| instructions.md
+| myrun.sh
+| Report.pdf
 |
 |___aocr
 |   |
@@ -70,15 +73,69 @@ Root<br>
 |   
 |
 |____experiments
-    |
-    | TestSyntheticDataGen.ipnb
-    | Tfwriter.ipnb
-    | Train.ipnb
+|   |
+|   | TestSyntheticDataGen.ipnb
+|   | Tfwriter.ipnb
+|   | Train.ipnb
+|   
+|____checkpoints
+|   
+|____app
+|   
+|____datasets
+|   
+|____utils
+|
+|
+
+
+
 
 ```
 1. The folder ```aocr``` contains the main code for the attention ocr along with a separate ```README.md``` which can be used as a reference. 
 2. The folder ```text_renderer``` contains the code used for generation of synthetic dataset. The exact details of configuration used is inside ```text-renderer/ocr_data/gen_data.py```.
 3. Since this model was trained and tested on Google Colab, sample ```ipnb``` files have been provided for reference in ```experiments```.
+4. And the app folder contains the flask based REST API for testing the endpoints
+5. The model checkpoints are located in the checkpoints directory
+6. Please read ```Report.pdf``` for a detailed summary of work done!
+
+
+## Reproduce results on local machine
+---
+In order to run the app on your local machine follow these steps:
+1. Clone the repository on your local machine:<br>
+
+    ```git clone https://github.com/java-abhinav07/abhinav_java_9873155323-IITB-Assignment-Jul-Dec2020-Batch2.git```
+
+2. Install aocr locally using ```setup.py```:<br>
+
+    1. ```cd abhinav_java_9873155323-IITB-Assignment-Jul-Dec2020-Batch2```
+    2. ```pip(3) install -e ./``` <br>
+
+3. Install necessary packages:<br>
+
+    ```pip3 install -r requirements.txt```
+4. Having installed all the packages run:
+   ```python3 app/app.py```<br>
+   This will run the server on the local machine on port **8001**(note that CPU inference might take upto 14 seconds to process)
+5. Send the request to localhost as follows:
+   1. Correct API Spec:<br>
+        ![API Spec](resources/valid.png)<br>
+        ```
+        {
+            "public_id": "74f4c926-250c-43ca-9c53-453e87ceacd1",
+            "version": "v1",
+            "max_width": "320",
+            "max_height": "40",
+            "data": {
+                "image_url": "http://0.0.0.0:8000/Projects/IITB_Assignment/dataset/public/public_test_crops/TCFCD0291000010459388_M_pdf-1_datefrom.jpg"
+            }
+        }
+   2. Incorrect API Spec:<br>
+        ![API Spec Incorrect](resources/invalid.png)<br>
+
+6. Response Status will either be ```completed``` or ```invalid request``` to indicate a successful or unsuccessful response respectively.
+
 
 
 

@@ -58,3 +58,8 @@ This file contains daily logs of work done in a sequential manner. For example, 
    1. Documentation and code cleanup started
    1. Final models isolated
    1. Plotting the accuracy for all the models 
+   1. Report drafted
+1. 30/08/20
+   1. Code cleanup
+   1. Coding the flask REST API 
+

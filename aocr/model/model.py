@@ -18,6 +18,7 @@ from .cnn import CNN
 from .seq2seq_model import Seq2SeqModel
 from ..util.data_gen import DataGen
 from ..util.visualizations import visualize_attention
+from ..util.save_output_file import saver
 
 
 class Model(object):
@@ -44,8 +45,8 @@ class Model(object):
         max_image_height=60,
         max_prediction_length=8,
         channels=1,
-        reg_val=0,
-    ):
+        reg_val=0.00001,
+    ):  #### mod_aocr
 
         self.use_distance = use_distance
 
@@ -57,7 +58,8 @@ class Model(object):
         self.max_original_width = max_image_width
         self.max_width = int(math.ceil(max_resized_width))
 
-        self.encoder_size = int(math.ceil(1.0 * self.max_width / 4))
+        self.encoder_size = int(math.ceil(self.max_width / 8))
+
         self.decoder_size = max_prediction_length + 2
         self.buckets = [(self.encoder_size, self.decoder_size)]
 
@@ -127,6 +129,7 @@ class Model(object):
                 self._prepare_image, self.img_data, dtype=tf.float32
             )
             num_images = tf.shape(self.img_data)[0]
+            # logging.info(f"Number of images: {num_images.eval()}")
 
             # TODO: create a mask depending on the image/batch size
             self.encoder_masks = []
@@ -355,6 +358,12 @@ class Model(object):
                     ground=ground,
                     flag=None,
                 )
+
+            logging.info("Saving outputs")
+            try:
+                saver(batch["data"], "predictions", output, ground=ground, flag=None)
+            except:
+                logging.debug("unable to save!")
 
             step_accuracy = "{:>4.0%}".format(1.0 - incorrect)
             if incorrect:
