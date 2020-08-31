@@ -105,7 +105,8 @@ In order to run the app on your local machine follow these steps:
 5. Send the request to localhost as follows:
    1. Correct API Spec:<br>
         ![API Spec](resources/valid.png)<br>
-        ```{
+        ```
+        {
             "public_id": "74f4c926-250c-43ca-9c53-453e87ceacd1",
             "version": "v1",
             "max_width": "320",
@@ -113,7 +114,7 @@ In order to run the app on your local machine follow these steps:
             "data": {
                 "image_url": "http://0.0.0.0:8000/Projects/IITB_Assignment/dataset/public/public_test_crops/TCFCD0291000010459388_M_pdf-1_datefrom.jpg"
             }
-        }```<br>
+        }
    2. Incorrect API Spec:<br>
         ![API Spec Incorrect](resources/invalid.png)<br>
 
