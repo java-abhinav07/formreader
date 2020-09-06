@@ -369,7 +369,7 @@ class FormNet:
         with self.graph.as_default():
             with self.sess.as_default():
                 self.net = Model(
-                    phase=Config.PHASE,
+                    phase="predict",
                     visualize=Config.VISUALIZE,
                     output_dir=Config.OUTPUT_DIR,
                     batch_size=Config.BATCH_SIZE,
