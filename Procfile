@@ -1,1 +1,1 @@
-web: gunicorn app.app:formreader --preload --timeout 50 --max-requests 1200
+web: gunicorn app.app:formreader --timeout 50
