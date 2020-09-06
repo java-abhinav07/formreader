@@ -352,85 +352,63 @@ def process_args(args, defaults):
     return parameters
 
 
-def main_app(
-    log_path,
-    phase,
-    visualize,
-    output_dir,
-    batch_size,
-    initial_learning_rate,
-    steps_per_checkpoint,
-    model_dir,
-    target_embedding_size,
-    attn_num_hidden,
-    attn_num_layers,
-    clip_gradients,
-    max_gradient_norm,
-    load_model,
-    gpu_id,
-    use_gru,
-    use_distance,
-    max_width,
-    max_height,
-    max_prediction,
-    channels,
-    full_ascii,
-    filename,
-):
+class FormNet:
+    def __init__(self, max_width=320, max_height=40):
+        # Session
+        config = tf.compat.v1.ConfigProto(allow_soft_placement=True)
+        config.gpu_options.allow_growth = True
+        self.sess = tf.compat.v1.Session(config=config)
+        tf.compat.v1.keras.backend.set_session(self.sess)
+        print("[INFO] Set GPU session done...")
 
-    logging.basicConfig(
-        level=logging.DEBUG,
-        format="%(asctime)-15s %(name)-5s %(levelname)-8s %(message)s",
-        filename=log_path,
-    )
-    console = logging.StreamHandler()
-    console.setLevel(logging.INFO)
-    formatter = logging.Formatter(
-        "%(asctime)-15s %(name)-5s %(levelname)-8s %(message)s"
-    )
-    console.setFormatter(formatter)
-    logging.getLogger("").addHandler(console)
+        self.graph = tf.get_default_graph()
+        with self.graph.as_default():
+            with self.sess.as_default():
+                print("[INFO] Neural Net initialized...")
 
-    with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
+        with self.graph.as_default():
+            with self.sess.as_default():
+                self.net = Model(
+                    phase=Config.PHASE,
+                    visualize=Config.VISUALIZE,
+                    output_dir=Config.OUTPUT_DIR,
+                    batch_size=Config.BATCH_SIZE,
+                    initial_learning_rate=Config.INITIAL_LEARNING_RATE,
+                    steps_per_checkpoint=Config.STEPS_PER_CHECKPOINT,
+                    model_dir=Config.MODEL_DIR,
+                    target_embedding_size=Config.TARGET_EMBEDDING_SIZE,
+                    attn_num_hidden=Config.ATTN_NUM_HIDDEN,
+                    attn_num_layers=Config.ATTN_NUM_LAYERS,
+                    clip_gradients=Config.CLIP_GRADIENTS,
+                    max_gradient_norm=Config.MAX_GRADIENT_NORM,
+                    session=self.sess,
+                    load_model=Config.LOAD_MODEL,
+                    gpu_id=Config.GPU_ID,
+                    use_gru=Config.USE_GRU,
+                    use_distance=Config.USE_DISTANCE,
+                    max_image_width=max_width,
+                    max_image_height=max_height,
+                    max_prediction_length=Config.MAX_PREDICTION,
+                    channels=Config.CHANNELS,
+                )
+                print("[INFO] Loading the model for testing done...")
 
-        if full_ascii:
-            DataGen.set_full_ascii_charmap()
+    def predict(self, filename):
+        try:
+            with open(filename, "rb") as img_file:
+                img_file_data = img_file.read()
+        except IOError:
+            logging.error("Result: error while opening file %s.", filename)
+            continue
+        text, probability = self.net.predict(img_file_data)
+        text_final = ""
+        for letter in text:
+            if letter != " ":
+                text_final += letter
 
-        model = Model(
-            phase=phase,
-            visualize=visualize,
-            output_dir=output_dir,
-            batch_size=batch_size,
-            initial_learning_rate=initial_learning_rate,
-            steps_per_checkpoint=steps_per_checkpoint,
-            model_dir=model_dir,
-            target_embedding_size=target_embedding_size,
-            attn_num_hidden=attn_num_hidden,
-            attn_num_layers=attn_num_layers,
-            clip_gradients=clip_gradients,
-            max_gradient_norm=max_gradient_norm,
-            session=sess,
-            load_model=load_model,
-            gpu_id=gpu_id,
-            use_gru=use_gru,
-            use_distance=use_distance,
-            max_image_width=max_width,
-            max_image_height=max_height,
-            max_prediction_length=max_prediction,
-            channels=channels,
-        )
+        logging.info("Result: OK. %s %s", "{:.2f}".format(probability), text_final)
 
-        if phase == "predict":
-            try:
-                with open(filename, "rb") as img_file:
-                    img_file_data = img_file.read()
-            except IOError:
-                logging.error("Result: error while opening file %s.", filename)
-            text, probability = model.predict(img_file_data)
-            logging.info("Result: OK. %s %s", "{:.2f}".format(probability), text)
-            return text, probability
-        else:
-            raise NotImplementedError
+        return text_final, probability
 
 
 def main(args=None):
@@ -508,10 +486,17 @@ def main(args=None):
                     logging.error("Result: error while opening file %s.", filename)
                     continue
                 text, probability = model.predict(img_file_data)
-                logging.info("Result: OK. %s %s", "{:.2f}".format(probability), text)
+                text_final = ""
+                for letter in text:
+                    if letter != " ":
+                        text_final += letter
+
+                logging.info(
+                    "Result: OK. %s %s", "{:.2f}".format(probability), text_final
+                )
 
                 with open(parameters.output_dir, "a") as f:
-                    f.write(f"{line} {text}")
+                    f.write(f"{line} {text_final}")
                     f.write("\n")
 
         elif parameters.phase == "export":

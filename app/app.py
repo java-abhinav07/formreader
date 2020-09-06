@@ -6,13 +6,15 @@ import requests
 from flask import jsonify
 from flask import Flask, request, jsonify
 
-from utils import *
-from aocr.__main__ import main_app
+from aocr.utils import *
+from aocr.__main__ import main_app, FormNet
 from aocr.defaults import Config
 
 formreader = Flask(__name__)
 
 # {public_id: "827293842diwu323", version: "v1", image_url: "sample"}
+
+formnet = FormNet()
 
 
 @formreader.route("/predict", methods=["POST"])
@@ -75,30 +77,8 @@ def handwritten_ocr(request):
         print("[INFO] Successfully downloaded images...")
         # print(help(aocr))
         # get results
-        text, probability = main_app(
-            log_path=Config.LOG_PATH,
-            phase="predict",
-            visualize=Config.VISUALIZE,
-            output_dir=Config.OUTPUT_DIR,
-            batch_size=1,
-            initial_learning_rate=Config.INITIAL_LEARNING_RATE,
-            steps_per_checkpoint=0,
-            model_dir="./checkpoints",
-            target_embedding_size=Config.TARGET_EMBEDDING_SIZE,
-            attn_num_hidden=Config.ATTN_NUM_HIDDEN,
-            attn_num_layers=Config.ATTN_NUM_LAYERS,
-            clip_gradients=Config.CLIP_GRADIENTS,
-            max_gradient_norm=Config.MAX_GRADIENT_NORM,
-            load_model=True,
-            gpu_id=Config.GPU_ID,
-            use_gru=True,
-            use_distance=Config.USE_DISTANCE,
-            max_width=max_width,
-            max_height=max_height,
-            max_prediction=Config.MAX_PREDICTION,
-            channels=Config.CHANNELS,
-            full_ascii=True,
-            filename=image,
+        text, probability = formnet.predict(
+            image
         )  # add appropriate arguments for prediction
 
         print("[INFO] OCR results fetched...")
