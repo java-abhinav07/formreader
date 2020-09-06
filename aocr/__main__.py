@@ -2,10 +2,10 @@
 # TODO: restoring a model without recreating it (use constants / op names in the code?)
 # TODO: move all the training parameters inside the training parser
 # TODO: switch to https://www.tensorflow.org/api_docs/python/tf/nn/dynamic_rnn instead of buckets
+
+from __future__ import absolute_import
 from warnings import simplefilter 
 simplefilter(action='ignore', category=FutureWarning)
-from __future__ import absolute_import
-
 import sys
 import argparse
 import logging
