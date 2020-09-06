@@ -6,7 +6,7 @@ import requests
 from flask import jsonify
 from flask import Flask, request, jsonify
 
-from .utils import *
+from utils import *
 from aocr.__main__ import FormNet
 from aocr.defaults import Config
 

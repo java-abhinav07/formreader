@@ -12,14 +12,15 @@ import logging
 import os
 
 import tensorflow as tf
-
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 from .model.model import Model
 from .defaults import Config
 from .util import dataset
 from .util.data_gen import DataGen
 from .util.export import Exporter
 
-tf.logging.set_verbosity(tf.logging.ERROR)
+tf.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
 
 def process_args(args, defaults):
