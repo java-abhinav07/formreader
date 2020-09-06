@@ -365,6 +365,8 @@ class FormNet:
         with self.graph.as_default():
             with self.sess.as_default():
                 print("[INFO] Neural Net initialized...")
+            
+        DataGen.set_full_ascii_charmap()
 
         with self.graph.as_default():
             with self.sess.as_default():
@@ -384,7 +386,7 @@ class FormNet:
                     session=self.sess,
                     load_model=Config.LOAD_MODEL,
                     gpu_id=Config.GPU_ID,
-                    use_gru=Config.USE_GRU,
+                    use_gru=True,
                     use_distance=Config.USE_DISTANCE,
                     max_image_width=max_width,
                     max_image_height=max_height,
