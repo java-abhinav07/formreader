@@ -105,5 +105,5 @@ def index():
 
 if __name__ == "__main__":
     formreader.debug = True
-    formreader.run(host="localhost", port=8001)
-    # formreader.run()
+    # formreader.run(host="localhost", port=8001)
+    formreader.run()
