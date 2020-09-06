@@ -354,9 +354,10 @@ def process_args(args, defaults):
     return parameters
 
 
-class FormNet:
+class FormNet(object):
     def __init__(self, max_width=320, max_height=40):
         # Session
+        print("[INFO] Initializing formnet object...")
         config = tf.compat.v1.ConfigProto(allow_soft_placement=True)
         config.gpu_options.allow_growth = True
         self.sess = tf.compat.v1.Session(config=config)
@@ -372,6 +373,7 @@ class FormNet:
 
         with self.graph.as_default():
             with self.sess.as_default():
+                print("[INFO] Working on model instance...")
                 self.net = Model(
                     phase="predict",
                     visualize=Config.VISUALIZE,
@@ -397,7 +399,7 @@ class FormNet:
                 )
                 print("[INFO] Loading the model for testing done...")
 
-    def predict(self, filename):
+    def prediction(self, filename):
         with self.graph.as_default():
             with self.sess.as_default():
                 try:

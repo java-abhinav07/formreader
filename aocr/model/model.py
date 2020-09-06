@@ -2,7 +2,8 @@
 
 from __future__ import absolute_import
 from __future__ import division
-
+from warnings import simplefilter 
+simplefilter(action='ignore', category=FutureWarning)
 import time
 import os
 import math

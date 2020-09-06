@@ -10,11 +10,13 @@ from utils import *
 from aocr.__main__ import FormNet
 from aocr.defaults import Config
 
+formnet = FormNet()
+
 formreader = Flask(__name__)
 
 # {public_id: "827293842diwu323", version: "v1", image_url: "sample"}
 
-formnet = FormNet()
+
 
 
 @formreader.route("/predict", methods=["POST"])
@@ -77,7 +79,7 @@ def handwritten_ocr(request):
         print("[INFO] Successfully downloaded images...")
         # print(help(aocr))
         # get results
-        text, probability = formnet.predict(
+        text, probability = formnet.prediction(
             image
         )  # add appropriate arguments for prediction
 
