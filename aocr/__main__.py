@@ -399,7 +399,6 @@ class FormNet:
                 img_file_data = img_file.read()
         except IOError:
             logging.error("Result: error while opening file %s.", filename)
-            continue
         text, probability = self.net.predict(img_file_data)
         text_final = ""
         for letter in text:
