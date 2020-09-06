@@ -364,9 +364,9 @@ class FormNet:
         print("[INFO] Set GPU session done...")
 
         self.graph = tf.get_default_graph()
-        with self.graph.as_default():
-            with self.sess.as_default():
-                print("[INFO] Neural Net initialized...")
+        # with self.graph.as_default():
+        #     with self.sess.as_default():
+        #         print("[INFO] Neural Net initialized...")
             
         DataGen.set_full_ascii_charmap()
 
@@ -398,18 +398,20 @@ class FormNet:
                 print("[INFO] Loading the model for testing done...")
 
     def predict(self, filename):
-        try:
-            with open(filename, "rb") as img_file:
-                img_file_data = img_file.read()
-        except IOError:
-            logging.error("Result: error while opening file %s.", filename)
-        text, probability = self.net.predict(img_file_data)
-        text_final = ""
-        for letter in text:
-            if letter != " ":
-                text_final += letter
+        with self.graph.as_default():
+            with self.sess.as_default():
+                try:
+                    with open(filename, "rb") as img_file:
+                        img_file_data = img_file.read()
+                except IOError:
+                    logging.error("Result: error while opening file %s.", filename)
+                text, probability = self.net.predict(img_file_data)
+                text_final = ""
+                for letter in text:
+                    if letter != " ":
+                        text_final += letter
 
-        logging.info("Result: OK. %s %s", "{:.2f}".format(probability), text_final)
+                logging.info("Result: OK. %s %s", "{:.2f}".format(probability), text_final)
 
         return text_final, probability
 
