@@ -7,7 +7,7 @@ from flask import jsonify
 from flask import Flask, request, jsonify
 
 from aocr.utils import *
-from aocr.__main__ import main_app, FormNet
+from aocr.__main__ import FormNet
 from aocr.defaults import Config
 
 formreader = Flask(__name__)
