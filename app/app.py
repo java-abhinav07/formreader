@@ -6,7 +6,7 @@ import requests
 from flask import jsonify
 from flask import Flask, request, jsonify
 
-from aocr.utils import *
+from utils import *
 from aocr.__main__ import FormNet
 from aocr.defaults import Config
 
@@ -105,5 +105,5 @@ def index():
 
 if __name__ == "__main__":
     formreader.debug = True
-    # formreader.run(host="localhost", port=8001)
-    formreader.run()
+    formreader.run(host="localhost", port=8001)
+    # formreader.run()
