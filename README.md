@@ -151,8 +151,7 @@ Subsequently the output file ```output.txt``` will have output:<br>
 Inorder to run request over a public web server use the following path:<br>
 ```https://formreader.herokuapp.com/predict```<br>
 
-Use the same API Spec shared above in order to fetch the results.<br>
-Kindly note that the public formreader might not work extremely efficiently due to CPU inference provided by Heroku. **It is recommended to use a GPU for inference since Heroku times out all requests after a certain time.**
+Use the same API Spec shared above in order to fetch the results.<br> **Heroku app has been modified and is now fully functional**
 
 
 ## References
