@@ -161,3 +161,7 @@ This repository contains code from the following two repositories:<br>
 2. https://github.com/oh-my-ocr/text_renderer : text_renderer
 
 The reports contains a list of papers which were referenced during the design of this ocr rendition.
+
+## Acknowledgements
+---
+This project was part of the application process for Research Internship at IIT Bombay.
