@@ -151,7 +151,7 @@ Subsequently the output file ```output.txt``` will have output:<br>
 Inorder to run request over a public web server use the following path:<br>
 ```https://formreader.herokuapp.com/predict```<br>
 
-Use the same API Spec shared above in order to fetch the results.<br> **Heroku app has been modified and is now fully functional**
+Use the same API Spec shared above in order to fetch the results.<br> **Heroku app has been modified and is now fully functional however the model initialization (first request) might take a little time due to low memeory constraints on heroku.**
 
 
 ## References
