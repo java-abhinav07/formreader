@@ -52,7 +52,7 @@ ocr_data = GeneratorCfg(
 )
 
 rand_data = GeneratorCfg(
-    num_image=70000,
+    num_image=30000,
     save_dir=OUT_DIR,
     render_cfg=RenderCfg(
         bg_dir=BG_DIR,
