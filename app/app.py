@@ -17,8 +17,6 @@ formreader = Flask(__name__)
 # {public_id: "827293842diwu323", version: "v1", image_url: "sample"}
 
 
-
-
 @formreader.route("/predict", methods=["POST"])
 def handwritten_ocr_http():
     req = request.get_data()
@@ -107,5 +105,5 @@ def index():
 
 if __name__ == "__main__":
     formreader.debug = True
-    # formreader.run(host="localhost", port=8001)
-    formreader.run()
+    formreader.run(host="localhost", port=8001)
+    # formreader.run()

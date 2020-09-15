@@ -10,7 +10,7 @@ from .base_effect import Effect
 
 
 class DropoutRand(Effect):
-    def __init__(self, p=0.5, dropout_p=(0.2, 0.3)):
+    def __init__(self, p=0.5, dropout_p=(0.01, 0.03)):
         """
 
         Parameters

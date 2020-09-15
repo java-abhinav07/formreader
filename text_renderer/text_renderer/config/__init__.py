@@ -94,11 +94,15 @@ class SimpleTextColorCfg(TextColorCfg):
     def get_color(self, bg_img: PILImage) -> Tuple[int, int, int, int]:
         np_img = np.array(bg_img)
         mean = np.mean(np_img)
+        if mean > 150:
+            mean = 150
+        if mean < 50:
+            mean = 60
 
         alpha = np.random.randint(*self.alpha)
-        r = np.random.randint(0, int(mean * 0.5))
-        g = np.random.randint(0, int(mean * 0.5))
-        b = np.random.randint(0, int(mean * 0.5))
+        r = np.random.randint(60, int(mean * 0.5))
+        g = np.random.randint(60, int(mean * 0.5))
+        b = np.random.randint(60, int(mean * 0.5))
         # colors = [0, 8, 16, 32, 48, 56]
         # r = np.random.choice(np.array(colors))
 

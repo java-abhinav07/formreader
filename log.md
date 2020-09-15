@@ -62,4 +62,6 @@ This file contains daily logs of work done in a sequential manner. For example, 
 1. 30/08/20
    1. Code cleanup
    1. Coding the flask REST API 
-
+1. 15/09
+   1. Removed contextual ocr
+   1. Color balancing and better fonts

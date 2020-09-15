@@ -4,8 +4,9 @@
 # TODO: switch to https://www.tensorflow.org/api_docs/python/tf/nn/dynamic_rnn instead of buckets
 
 from __future__ import absolute_import
-from warnings import simplefilter 
-simplefilter(action='ignore', category=FutureWarning)
+from warnings import simplefilter
+
+simplefilter(action="ignore", category=FutureWarning)
 import sys
 import argparse
 import logging
@@ -13,7 +14,8 @@ import os
 
 import tensorflow as tf
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 from .model.model import Model
 from .defaults import Config
 from .util import dataset
@@ -368,7 +370,7 @@ class FormNet(object):
         # with self.graph.as_default():
         #     with self.sess.as_default():
         #         print("[INFO] Neural Net initialized...")
-            
+
         DataGen.set_full_ascii_charmap()
 
         with self.graph.as_default():
@@ -413,7 +415,9 @@ class FormNet(object):
                     if letter != " ":
                         text_final += letter
 
-                logging.info("Result: OK. %s %s", "{:.2f}".format(probability), text_final)
+                logging.info(
+                    "Result: OK. %s %s", "{:.2f}".format(probability), text_final
+                )
 
         return text_final, probability
 

@@ -8,7 +8,7 @@ import numpy as np
 
 
 class Dataset:
-    def __init__(self, data_dir: str, jpg_quality: int = 95):
+    def __init__(self, data_dir: str, jpg_quality: int = 100):
         self.data_dir = data_dir
         if not os.path.exists(data_dir):
             os.makedirs(data_dir)
