@@ -17,7 +17,7 @@ class Config(object):
     # I/O
     NEW_DATASET_PATH = "./dataset.tfrecords"
     DATA_PATH = (
-        "/content/drive/My Drive/IITB_Assignment/datasets/ds1/training.tfrecords"
+        "/content/drive/My Drive/IITB_Assignment/datasets/ds2/training.tfrecords"
     )
     # MODEL_DIR = f"./checkpoints_modified_{time}"
     MODEL_DIR = "./checkpoints"
@@ -32,15 +32,15 @@ class Config(object):
     FULL_ASCII = False
 
     # Optimization
-    NUM_EPOCH = 32
-    BATCH_SIZE = 128
+    NUM_EPOCH = 16
+    BATCH_SIZE = 64
     INITIAL_LEARNING_RATE = 1.0
 
     # Network parameters
     CLIP_GRADIENTS = True  # whether to perform gradient clipping
-    MAX_GRADIENT_NORM = 5.0  # Clip gradients to this norm
-    TARGET_EMBEDDING_SIZE = 10  # embedding dimension for each target
-    ATTN_NUM_HIDDEN = 160  # number of hidden units in attention decoder cell
+    MAX_GRADIENT_NORM = 4.0  # Clip gradients to this norm
+    TARGET_EMBEDDING_SIZE = 16  # embedding dimension for each target
+    ATTN_NUM_HIDDEN = 128  # number of hidden units in attention decoder cell
     ATTN_NUM_LAYERS = 2  # number of layers in attention decoder cell
     # (Encoder number of hidden units will be ATTN_NUM_HIDDEN*ATTN_NUM_LAYERS)
     LOAD_MODEL = True
@@ -48,7 +48,7 @@ class Config(object):
     TARGET_VOCAB_SIZE = 40  # 0: PADDING, 1: GO, 2: EOS, >2: 0-9, a-z
     CHANNELS = 1  # number of color channels from source image (1 = grayscale, 3 = rgb)
 
-    MAX_WIDTH = 320  # images with higher width will be discarded!!! --> fix now
+    MAX_WIDTH = 1000  # images with higher width will be discarded!!! --> fix now
     MAX_HEIGHT = 40
     MAX_PREDICTION = 50
 
