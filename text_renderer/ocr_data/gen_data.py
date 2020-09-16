@@ -7,6 +7,7 @@ from text_renderer.config import (
     RenderCfg,
     NormPerspectiveTransformCfg,
     GeneratorCfg,
+    UniformPerspectiveTransformCfg
 )
 from text_renderer.layout.same_line import SameLineLayout
 from text_renderer.layout.extra_text_line import ExtraTextLineLayout
@@ -15,7 +16,7 @@ from text_renderer.layout.extra_text_line import ExtraTextLineLayout
 # handwritten fonts used
 
 CURRENT_DIR = Path(os.path.abspath(os.path.dirname(__file__)))
-OUT_DIR = "/home/abhinavjava/Projects/IITB_Assignment/dataset/test/"
+OUT_DIR = "/home/abhinavjava/Projects/IITB_Assignment/dataset/ds2/"
 DATA_DIR = CURRENT_DIR
 BG_DIR = DATA_DIR / "bg"
 CHAR_DIR = DATA_DIR / "char"
@@ -29,10 +30,10 @@ font_cfg = dict(
     font_size=(45, 50),
 )
 
-perspective_transform = NormPerspectiveTransformCfg(1, 1, 0.25)
+perspective_transform = NormPerspectiveTransformCfg(12, 12, 0.15)
 
 ocr_data = GeneratorCfg(
-    num_image=17000,
+    num_image=20000,
     save_dir=OUT_DIR,
     render_cfg=RenderCfg(
         bg_dir=BG_DIR,
@@ -43,11 +44,11 @@ ocr_data = GeneratorCfg(
                 filter_by_chars=True,
                 chars_file=CHAR_DIR / "eng_AZ09.txt",
                 length=(5, 25),
-                char_spacing=(0.35, 0.36),
+                char_spacing=(0.30, 1.0),
                 **font_cfg,
             ),
         ),
-        corpus_effects=Effects([Padding(1), Line(1), DropoutRand(0.20)]),
+        corpus_effects=Effects([Padding(0.3), Line(0.3), DropoutRand(0.0001)]),
     ),
 )
 
@@ -116,7 +117,7 @@ configs = [
     # eng_word_data,
     # same_line_data,
     # extra_text_line_data,
-    # ocr_data,
+    ocr_data,
 
 ]
 # fmt: on
