@@ -16,7 +16,7 @@ from text_renderer.layout.extra_text_line import ExtraTextLineLayout
 # handwritten fonts used
 
 CURRENT_DIR = Path(os.path.abspath(os.path.dirname(__file__)))
-OUT_DIR = "/home/abhinavjava/Projects/IITB_Assignment/dataset/ds2/"
+OUT_DIR = "/home/abhinavjava/Projects/IITB_Assignment/dataset/ds3/"
 DATA_DIR = CURRENT_DIR
 BG_DIR = DATA_DIR / "bg"
 CHAR_DIR = DATA_DIR / "char"
@@ -30,7 +30,7 @@ font_cfg = dict(
     font_size=(45, 50),
 )
 
-perspective_transform = NormPerspectiveTransformCfg(12, 12, 0.15)
+perspective_transform = NormPerspectiveTransformCfg(25, 25, 0.15)
 
 ocr_data = GeneratorCfg(
     num_image=20000,

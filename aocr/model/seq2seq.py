@@ -241,6 +241,21 @@ def attention_decoder(
             return ds, ss
             # MODIFIED ADD END
 
+        # TODO
+        def gated_attention_similarity_unit(attention_reads, threshold_p):
+            """If the attention context vector cannot focus on a valid character area,
+               then the adaptive operation will not help.
+               In order to solve this problem, GAS is proposed,
+               a gating mechanism, which can filter the attention context vector
+               that is effective for adaptation."""
+            ds = attention_reads
+            # adaptive_gating_function = 
+            # context_set = adaptive_gating_function()
+
+
+
+
+
         outputs = []
         # MODIFIED ADD START
         attention_weights_history = []

@@ -88,6 +88,10 @@ def draw_text_on_bg(
     c_color = np.random.choice(np.array(colors))
 
     y_offset = font_text.offset[1]
+    x = np.random.choice([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+    flag  = True
+    if x%7 == 0:
+        flag = False
     for i, c in enumerate(font_text.text):
 
         xo = c_x - (char_spacings[i] // 2) * (1.05)
@@ -123,7 +127,8 @@ def draw_text_on_bg(
         # text_mask.show()
 
         # draw a box around text
-        draw.rectangle((xo, yo, x1, y1), width=2, outline="#000", fill=None)
+        if flag:
+            draw.rectangle((xo, yo, x1, y1), width=2, outline="#000", fill=None)
 
     return text_mask
 
